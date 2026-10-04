@@ -21,7 +21,7 @@ const NEURONS_PER_M_OUT = 27273;
 const DAILY_NEURONS = 10000; // ücretsiz günlük kota, 00:00 UTC'de sıfırlanır
 const WARN_RATIO = 0.8;
 const MAX_QUESTION = 600;
-const MAX_OUTPUT_TOKENS = 1200;
+const MAX_OUTPUT_TOKENS = 600;
 
 const RULES = `
 SOCCER CHESS KURALLARI
@@ -68,7 +68,7 @@ HAMLELER
 
 TOPUN DIŞARI ÇIKMASI
 - Vuruştan sonra top saha dışına çıkarsa, topun çıktığı yere en yakın rakip oyuncu topa sahip olur ve top o oyuncunun karesine alınır.
-- Top rakip futbolcuya çarpıp çıksa dahi vuruşu yapan takımdan çıkmış sayılır, top rakibe geçer (opsiyonel "Taç Bizim" kuralı uygulanmıyorsa).
+- Top rakip futbolcuya çarpıp çıksa dahi vuruşu yapan takımdan çıkmış sayılır, top rakibe geçer (opsiyonel "Taç Bizim" kuralı uygulanmıyorsa). Yani top, vuruşu yapan takımın rakibine geçer.
 - Gole veya topun çıkmasına karar verilirken topun tamamının çizgiyi geçmiş olmasına bakılır (izdüşüm olarak çizgiye temas etmemesi).
 
 KALECİ
@@ -80,7 +80,7 @@ OPSİYONEL KURALLAR (uygulanıp uygulanmayacağı maçtan önce kararlaştırıl
 1) Top Kapma: Hamle sırası topa sahip olmayan takıma geçtiğinde, bir oyuncusunun pozisyon alma gücü topa sahip rakip oyuncunun karesine ulaşmaya yetiyorsa ve genel becerisi daha yüksekse topu kapar; hamlesini topu kaptığı karenin bitişiğindeki herhangi bir kareden başlayarak yapma hakkı kazanır. Genel becerisi düşükse, rakibe ulaştıktan sonra artan pozisyon alma gücünün her birimi için genel beceriye +3 eklenir. Örnek: pozisyon alma gücü 5 olan futbolcu rakibine 3. karede ulaşıyorsa ve genel becerisi 80 ise 86 sayılır. Hesap sonunda genel beceriler eşitse girişim başarısızdır ve hamle baştan yapılır.
 2) Yarı Saha Gerisi Gol Yok: Topa sahip oyuncu orta saha çizgisinin gerisindeyken vuruş yaparsa gol olsa bile sayılmaz ve vuruş tekrarlanır.
 3) Ofsayt: Vuruşu yapan takımın bir oyuncusu, en gerideki rakip oyuncunun bulunduğu kare sırasından 1 veya daha fazla kare öndeyse topa sahip olma hesaplamasında dikkate alınmaz.
-4) Taç Bizim: Top bir oyuncuya çarpıp taç çizgisinden çıkarsa taç, topun çarptığı takımın rakibinin olur. Top, çıktığı yere en yakın, taç hakkını kazanan takımın oyuncusunun karesine bırakılır.
+4) Taç Bizim: Top bir oyuncuya çarpıp taç çizgisinden çıkarsa taç, topun çarptığı takımın rakibinin olur. Top, çıktığı yere en yakın, taç hakkını kazanan takımın oyuncusunun karesine bırakılır. Örnek: A takımı vurdu, top B takımının oyuncusuna çarpıp taç çizgisinden çıktı; bu kural uygulanıyorsa taç A takımının olur, uygulanmıyorsa top B takımına geçer.
 5) Üç Korner Bir Penaltı: Top rakip oyuncuya çarpıp kale çizgisinden çıkarsa korner sayılır; korner kullanılmaz, 3 korner olunca 1 penaltı kazanılır. Penaltı sırasında kale önündeki savunma oyuncuları geçici olarak kaldırılır, vuruştan sonra aynı karelere geri konur.
 6) Özel Kart Sayılır: Yalnızca koleksiyonu tamamlayanların sahip olabildiği özel kartlar oyuna dahil edilir ve sahibine avantaj sağlar. İki tarafta da olması daha adil bir maç sağlar.
 7) Pas Şartı: Oyuna başlamadan önce takımlar bir x sayısında anlaşır. Kaleye şut çekme hakkı için topu rakibe kaptırmadan art arda en az x isabetli pas yapmak gerekir.
@@ -90,7 +90,8 @@ const SYSTEM = `Sen Soccer Chess masa oyununun hakemisin. Oyuncular maç sıras�
 
 Yanıt kuralları:
 - Soru hangi dilde sorulduysa o dilde yanıt ver (çoğunlukla Türkçe).
-- Önce kararı tek cümleyle söyle, sonra hangi kurala dayandığını kısaca açıkla. En fazla 6-7 cümle yaz.
+- Sayı içeren durumlarda (mesafe, genel beceri, Top Kapma gibi) önce hesabı adım adım yaz, sonucu hesaptan sonra söyle. Top Kapma hesabı: artan güç = pozisyon alma gücü eksi rakibe ulaşana kadar harcanan kare sayısı; eklenen puan = artan güç çarpı 3; yeni beceri = genel beceri artı eklenen puan; yeni beceri rakibin genel becerisinden büyükse top kapılır, eşitse girişim başarısızdır, küçükse kapılamaz.
+- Yanıtın sonunda "Karar:" ile başlayan tek cümleyle net sonucu yaz. Toplam en fazla 7 cümle yaz.
 - Düz metin yaz; madde işareti, yıldız, başlık ya da başka biçimlendirme kullanma.
 - Karar opsiyonel bir kurala bağlıysa, o kuralın maçta uygulanıp uygulanmadığına göre iki durumu da belirt.
 - Kurallar bu durumu kapsamıyorsa bunu açıkça söyle, kural uydurma; takımların aralarında anlaşmasını ya da en yakın kurala göre makul bir çözümü öner ve bunun öneri olduğunu belirt.
@@ -216,7 +217,8 @@ async function recordSuccess(env, usage) {
   const tokensOut = (usage && usage.completion_tokens) || 0;
   stats.soru += 1;
   stats.yanit += 1;
-  stats.noron += (tokensIn * NEURONS_PER_M_IN + tokensOut * NEURONS_PER_M_OUT) / 1e6;
+  // Model kesin nöron sayısını döndürürse onu kullan, yoksa belirteçlerden tahmin et
+  stats.noron += usage && typeof usage.neurons === "number" ? usage.neurons : (tokensIn * NEURONS_PER_M_IN + tokensOut * NEURONS_PER_M_OUT) / 1e6;
   await env.KV.put(`gun:${day}`, JSON.stringify(stats), { expirationTtl: 40 * 86400 });
 
   if (stats.noron >= DAILY_NEURONS * WARN_RATIO) {
@@ -279,20 +281,27 @@ async function handleQuestion(data, env, ctx) {
   let answer = "";
   let usage = null;
   let failure = "";
-  try {
-    const result = await env.AI.run(AI_MODEL, {
-      messages: [
-        { role: "system", content: SYSTEM },
-        { role: "user", content: question },
-      ],
-      max_tokens: MAX_OUTPUT_TOKENS,
-      temperature: 0.2,
-    });
-    answer = clean(extractAnswer(result), 3000, true);
-    usage = result && result.usage;
-    if (!answer) failure = "Model boş yanıt döndürdü";
-  } catch (err) {
-    failure = (err && err.message) || "Bilinmeyen hata";
+  // Geçici hatalarda bir kez daha denenir; kota hatasında tekrar denenmez
+  for (let attempt = 0; attempt < 2; attempt++) {
+    failure = "";
+    try {
+      const result = await env.AI.run(AI_MODEL, {
+        messages: [
+          { role: "system", content: SYSTEM },
+          { role: "user", content: question },
+        ],
+        max_tokens: MAX_OUTPUT_TOKENS,
+        temperature: 0.2,
+        // Düşünme modu kapalı: yanıt saniyeler içinde gelir ve kota az harcanır
+        chat_template_kwargs: { enable_thinking: false },
+      });
+      answer = clean(extractAnswer(result), 3000, true);
+      usage = result && result.usage;
+      if (!answer) failure = "Model boş yanıt döndürdü";
+    } catch (err) {
+      failure = (err && err.message) || "Bilinmeyen hata";
+    }
+    if (!failure || isQuotaError(failure)) break;
   }
 
   if (failure) {

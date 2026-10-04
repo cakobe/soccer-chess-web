@@ -61,6 +61,10 @@ ol, ul {
   list-style: none;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -711,10 +715,10 @@ h1, h2, h3, h4 {
 /* Yapay zeka ipucu */
 
 .tip {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  align-items: start;
+  gap: 28px 40px;
   margin-top: 88px;
   padding: 32px;
   border: 1px solid rgba(212, 255, 58, 0.28);
@@ -772,6 +776,117 @@ h1, h2, h3, h4 {
 .copy__btn:hover,
 .copy__btn.is-copied {
   background: var(--text);
+}
+
+/* Hakeme sor */
+
+.ask__label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.ask__input {
+  display: block;
+  width: 100%;
+  min-height: 120px;
+  padding: 12px 16px;
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.18);
+  color: var(--text);
+  font: inherit;
+  resize: vertical;
+}
+
+.ask__input::placeholder {
+  color: var(--muted);
+  opacity: 0.7;
+}
+
+.ask__input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+  border-color: transparent;
+}
+
+.ask__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 14px;
+}
+
+.ask .btn {
+  cursor: pointer;
+}
+
+.ask .btn:disabled {
+  opacity: 0.7;
+  cursor: default;
+  transform: none;
+}
+
+.ask__counter {
+  font-size: 13px;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.ask__status {
+  min-height: 1.6em;
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--accent);
+}
+
+.ask__answer,
+.ask__fallback,
+.ask__note {
+  grid-column: 1 / -1;
+}
+
+.ask__answer {
+  padding: 22px 24px;
+  border-left: 3px solid var(--accent);
+  border-radius: 0 12px 12px 0;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.ask__answer-title {
+  margin-bottom: 8px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.ask__answer-text {
+  white-space: pre-wrap;
+}
+
+.ask__fallback {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.ask__fallback p {
+  flex: 1 1 320px;
+  max-width: 60ch;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.ask__note {
+  font-size: 13px;
+  color: var(--muted);
 }
 
 /* --- Anket -------------------------------------------------------------- */
@@ -1114,8 +1229,7 @@ h1, h2, h3, h4 {
   }
 
   .tip {
-    flex-direction: column;
-    align-items: flex-start;
+    grid-template-columns: 1fr;
   }
 
   .tiebreak__item + .tiebreak__item {

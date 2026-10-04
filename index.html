@@ -24,6 +24,7 @@
       <nav class="nav__links" aria-label="Ana menü">
         <a href="#kurallar">Nasıl Oynanır</a>
         <a href="#opsiyonel">Opsiyonel Kurallar</a>
+        <a href="#hakem">Hakeme Sor</a>
         <a href="#anket" class="nav__cta">Anket</a>
       </nav>
     </div>
@@ -293,21 +294,46 @@
           </details>
         </div>
 
-        <!-- Yapay zeka ipucu -->
-        <aside class="tip">
+        <!-- Hakeme sor (yapay zekâ) -->
+        <aside class="tip" id="hakem">
           <div class="tip__text">
-            <p class="eyebrow">İpucu</p>
+            <p class="eyebrow">Hakeme sor</p>
             <h3>Kararsız kaldığınız bir an mı var?</h3>
             <p>
-              Oyunda karşılaştığınız ve ne yapacağınızı bilmediğiniz bir durumda, kendi kullandığınız yapay zekaya
-              durumu anlatıp “bu sitedeki kurallara göre nasıl devam edeceğimizi anlat” diyebilirsiniz.
-              Site adresini kopyalayıp mesajınıza eklemeniz yeterli.
+              Maçta ne yapacağınızı bilemediğiniz durumu yazın; yapay zekâ hakem bu sitedeki kurallara göre nasıl devam
+              edeceğinizi söylesin. Kareleri sahadaki harf ve sayılarla, mesafeleri kare sayısıyla belirtebilirsiniz.
             </p>
           </div>
-          <div class="copy">
-            <span class="copy__url">www.soccer-chess.com</span>
-            <button type="button" class="copy__btn" id="copy-btn" data-copy="www.soccer-chess.com">Kopyala</button>
+
+          <form class="ask" id="soru-form" novalidate>
+            <label class="ask__label" for="soru-metin">Durumu anlatın</label>
+            <textarea class="ask__input" id="soru-metin" rows="4" maxlength="600" placeholder="Örn. Vuruştan sonra topa iki takımdan da birer oyuncu 2 kare uzakta kaldı. Top kimde?"></textarea>
+            <input type="text" id="soru-tuzak" name="website" class="survey__trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="ask__row">
+              <button type="submit" class="btn btn--primary" id="soru-gonder">Hakeme sor</button>
+              <span class="ask__counter" id="soru-sayac"></span>
+            </div>
+            <p class="ask__status" id="soru-durum" role="status"></p>
+          </form>
+
+          <div class="ask__answer" id="soru-yanit" hidden aria-live="polite">
+            <p class="ask__answer-title">Hakemin kararı</p>
+            <p class="ask__answer-text" id="soru-yanit-metin"></p>
           </div>
+
+          <!-- Hakem yanıt veremezse (kota dolması dahil) görünür -->
+          <div class="ask__fallback" id="soru-yedek" hidden>
+            <p>
+              Bu arada kendi kullandığınız yapay zekâya durumu anlatıp “bu sitedeki kurallara göre nasıl devam
+              edeceğimizi anlat” diyebilirsiniz. Site adresini kopyalayıp mesajınıza eklemeniz yeterli.
+            </p>
+            <div class="copy">
+              <span class="copy__url">www.soccer-chess.com</span>
+              <button type="button" class="copy__btn" id="copy-btn" data-copy="www.soccer-chess.com">Kopyala</button>
+            </div>
+          </div>
+
+          <p class="ask__note">Yanıtları yapay zekâ üretir ve hata yapabilir; son söz kurallarda ve takımların anlaşmasındadır.</p>
         </aside>
       </div>
     </section>
@@ -339,6 +365,7 @@
   </footer>
 
   <script src="anket.js" defer></script>
+  <script src="hakem.js" defer></script>
 
   <script>
     // Site adresini panoya kopyalar
