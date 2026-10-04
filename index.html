@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soccer Chess — Beceri ve Stratejinin Maçı</title>
+  <meta name="description" content="Soccer Chess: satrancın stratejisini futbolun vuruş becerisiyle birleştiren masa oyunu. Kuralları öğren, deneme sürümünü değerlendir.">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ÜST MENÜ -->
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#top" class="logo" aria-label="Soccer Chess ana sayfa">
+        <img class="logo__img" src="logo.png" alt="" width="1278" height="674">
+        SOCCER<span class="logo__thin">CHESS</span>
+      </a>
+      <nav class="nav__links" aria-label="Ana menü">
+        <a href="#kurallar">Nasıl Oynanır</a>
+        <a href="#opsiyonel">Opsiyonel Kurallar</a>
+        <a href="#anket" class="nav__cta">Anket</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__text">
+          <img class="hero__logo" src="logo.png" alt="Soccer Chess logosu" width="1278" height="674">
+          <p class="eyebrow">Beceri ve Strateji Oyunu</p>
+          <h1>Hamleyle kur.<br><span class="accent">Vuruşla bitir.</span></h1>
+          <p class="hero__lead">
+            Soccer Chess'te doğru hamle tek başına yetmez: iyi yapılmayan her vuruş topu rakibe verir.
+            Maçı, satranççı gibi düşünüp futbolcu gibi vuranlar kazanır.
+          </p>
+          <div class="hero__actions">
+            <a href="#kurallar" class="btn btn--primary">Nasıl Oynanır</a>
+            <a href="#anket" class="btn btn--ghost">Deneme Sürümü Anketi</a>
+          </div>
+          <dl class="hero__facts">
+            <div><dt>2</dt><dd>Takım</dd></div>
+            <div><dt>2+</dt><dd>Oyuncu</dd></div>
+            <div><dt>3</dt><dd>Hareket değeri</dd></div>
+            <div><dt>7</dt><dd>Opsiyonel kural</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero__board" aria-hidden="true">
+          <img src="saha.jpg" alt="" width="1200" height="1576">
+        </div>
+      </div>
+    </section>
+
+    <!-- İKİ YÖN -->
+    <section class="pillars" aria-label="Oyunun iki yönü">
+      <div class="container pillars__grid">
+        <article class="pillar">
+          <p class="pillar__label">Hamle turunda</p>
+          <h2>Strateji</h2>
+          <p>Kimi nereye koşturacağını, topu nereye süreceğini, rakibin hangi boşluğu kapatacağını hesaplarsın. Her kare bir karardır.</p>
+        </article>
+        <span class="pillars__x" aria-hidden="true">×</span>
+        <article class="pillar">
+          <p class="pillar__label">Vuruş anında</p>
+          <h2>Beceri</h2>
+          <p>Planın ne kadar iyi olursa olsun topa gerçekten vurursun. Vuruş isabetli değilse top rakibe geçer; sağlam bir el ve ayar ister.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- NASIL OYNANIR -->
+    <section id="kurallar" class="section">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">01 — Kurallar</p>
+          <h2>Nasıl Oynanır</h2>
+          <p class="section__lead">
+            Oyun tek bir döngü üzerine kurulu: vuruş, topun sahibini belirleme, hamle turu, yeniden vuruş.
+            Hamleler aklını, vuruşlar becerini sınar.
+          </p>
+        </header>
+
+        <!-- Saha -->
+        <div class="field">
+          <a class="field__img" href="saha.jpg" target="_blank" rel="noopener" aria-label="Sahayı büyük boyutta aç">
+            <img src="saha.jpg" alt="Soccer Chess sahası: 30 sütun ve 40 sıradan oluşan kareli futbol sahası" width="1200" height="1576" loading="lazy">
+          </a>
+          <div class="field__text">
+            <h3>Saha</h3>
+            <p>
+              Oyun, karelere bölünmüş bir futbol sahasında oynanır. Piyonlar karelerin üzerine dizilir,
+              mesafeler kare sayılarak ölçülür.
+            </p>
+            <dl class="field__facts">
+              <div><dt>30 × 40</dt><dd>Kare</dd></div>
+              <div><dt>1 – 30</dt><dd>Sütunlar</dd></div>
+              <div><dt>A – U</dt><dd>Her yarı sahada sıralar</dd></div>
+            </dl>
+            <p>
+              Koordinatlar her iki oyuncunun kendi tarafından okunacak şekilde yazılmıştır. Bir pozisyonu tarif ederken
+              ya da yapay zekaya danışırken kareleri bu harf ve sayılarla belirtebilirsiniz.
+            </p>
+          </div>
+        </div>
+
+        <!-- Temel ilkeler -->
+        <div class="principles">
+          <article class="card">
+            <h3>Hareket düz, sayım çapraz</h3>
+            <p>
+              Futbolcu piyonları yalnızca ileri-geri ve sağ-sol hareket eder; hiçbir piyon çapraz gidemez.
+              Ancak topun kimde olduğunu belirlerken futbolcudan topa olan mesafe sayılırken çapraz kareler de sayılır.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Hamle turu</h3>
+            <p>
+              Maçtan önce kaç hamle turuyla oynanacağına birlikte karar verilir. 1 turda her vuruştan önce iki takım birer hamle yapar:
+              beceri öne çıkar, maç akıcı olur. Tur sayısı arttıkça strateji ağır basar, vuruş azalır.
+              Maç içinde değişiklik ancak iki takımın anlaşmasıyla yapılır.
+            </p>
+          </article>
+          <article class="card card--wide">
+            <h3>2 takım, 2 veya daha fazla oyuncu</h3>
+            <p>
+              Sahada her zaman iki takım vardır, ancak bir takımı birden fazla kişi yönetebilir. Takım arkadaşları sırayla oynar:
+              bir kişi takımı vuruş yapılana kadar yönetir, vuruştan sonraki hamle döngüsünde bir sonraki vuruşa kadar yönetimi diğer kişi devralır.
+              Böylece oyun bire bir oynanabildiği gibi ikişerli ya da daha kalabalık takımlarla da oynanabilir.
+            </p>
+          </article>
+        </div>
+
+        <!-- Kart değerleri -->
+        <h3 class="sub">Kart değerleri</h3>
+        <p class="sub__lead">Her futbolcu piyonunun arka alt kısmında, hamlede en fazla kaç kare gidebileceğini belirleyen üç sayı bulunur.</p>
+        <div class="stats">
+          <article class="stat stat--blue">
+            <span class="stat__dot"></span>
+            <p class="stat__label">Mavi sayı</p>
+            <h4>Pozisyon Alma</h4>
+            <p>Top rakipteyken, hamle sırası size geldiğinde herhangi bir futbolcunuzun gidebileceği en fazla kare.</p>
+          </article>
+          <article class="stat stat--green">
+            <span class="stat__dot"></span>
+            <p class="stat__label">Yeşil sayı</p>
+            <h4>Top Sürme</h4>
+            <p>Topa sahip olan futbolcunuzun topla birlikte gidebileceği en fazla kare.</p>
+          </article>
+          <article class="stat stat--red">
+            <span class="stat__dot"></span>
+            <p class="stat__label">Kırmızı sayı</p>
+            <h4>Topsuz Koşu</h4>
+            <p>Top sizdeyken, topa sahip olan futbolcu dışındaki oyuncularınızın gidebileceği en fazla kare.</p>
+          </article>
+        </div>
+
+        <!-- Maç akışı -->
+        <h3 class="sub">Maç akışı</h3>
+        <ol class="steps">
+          <li>
+            <h4>Hazırlık</h4>
+            <p>Oyun sahası masa veya yer gibi dümdüz bir zemine konur. Hamle turu sayısı ve uygulanacak opsiyonel kurallar üzerinde anlaşılır.</p>
+          </li>
+          <li>
+            <h4>Yazı tura ve diziliş</h4>
+            <p>Yazı turayı kazanan, santra vuruşunu kimin yapacağını belirler. Santrayı yapacak oyuncu piyonlarını karelere denk gelecek şekilde, tüm saha serbest olarak dizer; ardından rakip de serbestçe dizilir.</p>
+          </li>
+          <li>
+            <h4>Vuruş</h4>
+            <p>Topa sahip olan takım vuruşunu yapar. Topa, futbolcu piyonunun istediğiniz yeriyle vurabilirsiniz. Bir futbolcuyla topa dokunulduğu anda vuruş hakkı kullanılmış sayılır.</p>
+          </li>
+          <li>
+            <h4>Topun sahibi</h4>
+            <p>Topun durduğu kareye en yakın futbolcu topa sahip olur ve topun başına taşınır. Top hareket ettirilmez, piyon taşınır.</p>
+          </li>
+          <li>
+            <h4>Hamle turu</h4>
+            <p>
+              İlk hamleyi topa sahip olan takım yapar: ya topsuz koşu ya da top sürme. Sıra rakibe geçtiğinde, pozisyon alma değeriyle herhangi bir oyuncusunu hareket ettirir.
+              İki taraf da hamle yerine “pas” diyerek sırayı devredebilir.
+            </p>
+          </li>
+          <li>
+            <h4>Yeniden vuruş</h4>
+            <p>Anlaşılan hamle turu bittiğinde topa sahip olan takım vuruş yapar ve döngü baştan başlar.</p>
+          </li>
+        </ol>
+
+        <!-- Topa sahip olma -->
+        <h3 class="sub">Top kimde?</h3>
+        <p class="sub__lead">Yakınlık, futbolcunun topa en az kareyle ulaşabildiği mesafedir. Eşitlik sırayla şöyle bozulur:</p>
+        <div class="tiebreak">
+          <div class="tiebreak__item"><span>1</span><p><strong>Mesafe</strong>Topa en az kareyle ulaşan futbolcu.</p></div>
+          <div class="tiebreak__item"><span>2</span><p><strong>Genel beceri</strong>Mesafe eşitse genel becerisi yüksek olan.</p></div>
+          <div class="tiebreak__item"><span>3</span><p><strong>Son vuran</strong>İkisi de eşitse topa son vuran takımın oyuncusu.</p></div>
+        </div>
+
+        <!-- Özel durumlar -->
+        <h3 class="sub">Özel durumlar</h3>
+        <ul class="notes">
+          <li>
+            <h4>Vuran oyuncu</h4>
+            <p>Vuruşu yapan futbolcu topa en yakın olsa bile tekrar sahip olamaz; hesaplamada yok sayılır.</p>
+          </li>
+          <li>
+            <h4>Top dışarıda</h4>
+            <p>Top saha dışına çıkarsa, çıktığı yere en yakın rakip oyuncu topa sahip olur ve top onun karesine alınır. Top rakibe çarpıp çıksa dahi vuruşu yapan takımdan çıkmış sayılır.</p>
+          </li>
+          <li>
+            <h4>Kaleci</h4>
+            <p>Topun sahibi hesaplanırken kaleci, altıpasın içinde topa yakın olan taraftaki karede duruyormuş gibi varsayılır ve yakınlığı o kareden sayılır. Bu hesapla topa sahip olma hakkı kaleciye çıkarsa, kaleciye en yakın takım arkadaşı topa sahip olur ve top onun karesine alınır.</p>
+          </li>
+          <li>
+            <h4>Şut ve kaleci yönetimi</h4>
+            <p>Kaleye şut çekmeye karar veren oyuncu, vuruştan önce bunu rakibine bildirmek zorundadır. Rakip, kaleciyi arkasındaki çubukla istediği pozisyona getirir; çubuğu bıraktığı andan itibaren kaleciye tekrar müdahale edemez ve kaleci olduğu yerde kalır. Langırttaki gibi şut anında kaleciyi çevirmek ya da oynatmak yoktur: kaleci önceden konumlandırılır, şut sonra çekilir.</p>
+          </li>
+          <li>
+            <h4>Çizgi kararı</h4>
+            <p>Gol ve dışarı kararlarında topun tamamının çizgiyi geçmesi gerekir: izdüşümü çizgiye temas etmemelidir.</p>
+          </li>
+        </ul>
+
+        <!-- Opsiyonel kurallar -->
+        <div id="opsiyonel" class="optional">
+          <h3 class="sub">Opsiyonel kurallar</h3>
+          <p class="sub__lead">İsteğe bağlıdır. Hangilerinin uygulanacağı konusunda maç başlamadan önce anlaşılmış olmalıdır.</p>
+
+          <details class="rule">
+            <summary><span class="rule__no">01</span>Top Kapma<span class="rule__tag">Strateji +</span></summary>
+            <div class="rule__body">
+              <p>Topa sahip olmayan takımın bir oyuncusu, pozisyon alma gücüyle topa sahip rakibin karesine ulaşabiliyorsa ve genel becerisi daha yüksekse topu kapar; hamlesini, topu kaptığı karenin bitişiğindeki herhangi bir kareden başlayarak yapar.</p>
+              <p>Genel becerisi düşükse, rakibe ulaştıktan sonra artan her pozisyon alma birimi için genel beceriye +3 eklenir. Örnek: pozisyon alma gücü 5 olan ve rakibine 3. karede ulaşan 80 becerili futbolcu 86 sayılır.</p>
+              <p>Hesap sonunda beceriler eşitse girişim başarısızdır ve hamle baştan yapılır.</p>
+              <p class="rule__effect">Stratejik ve aritmetik düşünmeyi öne çıkarır; hamleler yavaşladığı için akıcılığı düşürür.</p>
+            </div>
+          </details>
+
+          <details class="rule">
+            <summary><span class="rule__no">02</span>Yarı Saha Gerisi Gol Yok<span class="rule__tag">Akıcılık +</span></summary>
+            <div class="rule__body">
+              <p>Topa sahip olan oyuncu orta saha çizgisinin gerisindeyken vuruş yaparsa gol olsa bile sayılmaz ve vuruş tekrarlanır.</p>
+              <p class="rule__effect">Topun dışarı çıkma oranını azaltır, oyunu akıcılaştırır; gol atmayı zorlaştırır.</p>
+            </div>
+          </details>
+
+          <details class="rule">
+            <summary><span class="rule__no">03</span>Ofsayt<span class="rule__tag">Gerçekçilik +</span></summary>
+            <div class="rule__body">
+              <p>Vuruşu yapan takımın bir oyuncusu, en gerideki rakip oyuncunun bulunduğu kare sırasından 1 veya daha fazla kare öndeyse topa sahip olma hesaplamasında dikkate alınmaz.</p>
+              <p class="rule__effect">Gol sayısını düşürür, daha gerçekçi bir maç sunar.</p>
+            </div>
+          </details>
+
+          <details class="rule">
+            <summary><span class="rule__no">04</span>Taç Bizim<span class="rule__tag">Gerçekçilik +</span></summary>
+            <div class="rule__body">
+              <p>Top bir oyuncuya çarpıp taç çizgisinden çıkarsa taç, topun çarptığı takımın rakibinin olur. Top, taç hakkını kazanan takımın çıkış noktasına en yakın oyuncusunun karesine bırakılır.</p>
+              <p class="rule__effect">Takımlar arasında “değdi / değmedi” anlaşmazlıklarına yol açabilir.</p>
+            </div>
+          </details>
+
+          <details class="rule">
+            <summary><span class="rule__no">05</span>Üç Korner Bir Penaltı<span class="rule__tag">Hücum +</span></summary>
+            <div class="rule__body">
+              <p>Top rakip oyuncuya çarpıp kale çizgisinden çıkarsa korner sayılır; korner kullanılmaz, 3 korner olunca 1 penaltı kazanılır.</p>
+              <p>Penaltı sırasında kale önündeki savunma oyuncuları geçici olarak kaldırılır ve vuruştan sonra aynı karelere geri konur.</p>
+            </div>
+          </details>
+
+          <details class="rule">
+            <summary><span class="rule__no">06</span>Özel Kart Sayılır<span class="rule__tag">Koleksiyon</span></summary>
+            <div class="rule__body">
+              <p>Yalnızca koleksiyonu tamamlayanların sahip olabildiği özel kartlar oyuna dahil edilir ve sahibine avantaj sağlar.</p>
+              <p class="rule__effect">İki tarafın da bu kartlara sahip olması daha adil bir maç sağlar.</p>
+            </div>
+          </details>
+
+          <details class="rule">
+            <summary><span class="rule__no">07</span>Pas Şartı<span class="rule__tag">Strateji +</span></summary>
+            <div class="rule__body">
+              <p>Oyuna başlamadan önce takımlar bir x sayısı üzerinde anlaşır. Bir takımın kaleye şut çekme hakkını elde edebilmesi için topu rakibe kaptırmadan art arda en az x isabetli pas yapması gerekir.</p>
+              <p class="rule__effect">x sayısı karşılıklı anlaşmayla belirlenir.</p>
+            </div>
+          </details>
+        </div>
+
+        <!-- Yapay zeka ipucu -->
+        <aside class="tip">
+          <div class="tip__text">
+            <p class="eyebrow">İpucu</p>
+            <h3>Kararsız kaldığınız bir an mı var?</h3>
+            <p>
+              Oyunda karşılaştığınız ve ne yapacağınızı bilmediğiniz bir durumda, kendi kullandığınız yapay zekaya
+              durumu anlatıp “bu sitedeki kurallara göre nasıl devam edeceğimizi anlat” diyebilirsiniz.
+              Site adresini kopyalayıp mesajınıza eklemeniz yeterli.
+            </p>
+          </div>
+          <div class="copy">
+            <span class="copy__url">www.soccer-chess.com</span>
+            <button type="button" class="copy__btn" id="copy-btn" data-copy="www.soccer-chess.com">Kopyala</button>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ANKET -->
+    <section id="anket" class="section section--alt">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow">02 — Geri Bildirim</p>
+          <h2>Deneme Sürümü Anketi</h2>
+          <p class="section__lead">
+            Deneme sürümünü oynadıysan görüşlerin oyunun son halini şekillendirecek.
+          </p>
+        </header>
+
+        <!-- Anket içeriği buraya eklenecek -->
+        <div class="survey" id="anket-alani">
+          <span class="survey__badge">Yakında</span>
+          <p class="survey__title">Anket hazırlanıyor</p>
+          <p class="survey__text">Sorular çok yakında burada yayınlanacak.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo logo--small"><img class="logo__img" src="logo.png" alt="" width="1278" height="674">SOCCER<span class="logo__thin">CHESS</span></span>
+      <span>© 2026 Soccer Chess. Tüm hakları saklıdır.</span>
+    </div>
+  </footer>
+
+  <script>
+    // Site adresini panoya kopyalar
+    (function () {
+      var btn = document.getElementById('copy-btn');
+      if (!btn) return;
+      var label = btn.textContent;
+
+      function fallbackCopy(text) {
+        var ta = document.createElement('textarea');
+        ta.value = text;
+        ta.setAttribute('readonly', '');
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        var ok = false;
+        try { ok = document.execCommand('copy'); } catch (e) {}
+        document.body.removeChild(ta);
+        return ok;
+      }
+
+      function done(ok) {
+        btn.textContent = ok ? 'Kopyalandı ✓' : 'Kopyalanamadı';
+        btn.classList.toggle('is-copied', ok);
+        setTimeout(function () {
+          btn.textContent = label;
+          btn.classList.remove('is-copied');
+        }, 2000);
+      }
+
+      btn.addEventListener('click', function () {
+        var text = btn.getAttribute('data-copy');
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(text).then(
+            function () { done(true); },
+            function () { done(fallbackCopy(text)); }
+          );
+        } else {
+          done(fallbackCopy(text));
+        }
+      });
+    })();
+  </script>
+
+</body>
+</html>

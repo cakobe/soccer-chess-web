@@ -1,0 +1,7 @@
+# Baskı / kaynak dosyaları (çok büyük, sitede kullanılmıyor)
+*.ai
+*.tif
+*.pdf
+
+# Site içeriği olmayan notlar
+Soccer Chess Kuralları.txt
