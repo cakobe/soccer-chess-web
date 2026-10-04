@@ -105,155 +105,158 @@
 112|Passes obligatoires
 113|Avant de commencer, les équipes s'accordent sur un nombre x. Pour obtenir le droit de tirer au but, une équipe doit réussir au moins x passes précises d'affilée sans perdre le ballon.
 114|Le nombre x est fixé d'un commun accord.
-115|Demander à l'arbitre
+115|L'arbitre
 116|Vous ne savez pas comment continuer ?
 117|Décrivez la situation qui vous bloque ; l'arbitre IA vous dira comment continuer selon les règles de ce site. Vous pouvez désigner les cases par les lettres et chiffres du terrain et donner les distances en cases.
 118|Décrivez la situation
 119|Exemple de question
 120|Après la frappe, un joueur de chaque équipe se trouve à 2 cases du ballon. Qui a le ballon ?
 121|Touchez pour l'écrire dans le champ
-122|Décision de l'arbitre
-123|En attendant, vous pouvez décrire la situation à l'IA que vous utilisez et lui dire « explique-nous comment continuer selon les règles de ce site ». Il suffit de copier l'adresse du site et de l'ajouter à votre message.
-125|Copier
-126|Les réponses sont générées par une IA et peuvent contenir des erreurs ; le dernier mot revient aux règles et à l'accord entre les équipes.
-127|02 — Vos retours
-128|Si vous avez joué à la version d'essai, votre avis façonnera la version finale du jeu.
-129|JavaScript doit être activé dans votre navigateur pour répondre au sondage.
-130|© 2026 Soccer Chess. Tous droits réservés.
-131|Page d'accueil de Soccer Chess
-132|Menu principal
-134|Logo de Soccer Chess
-135|Les deux facettes du jeu
-136|Ouvrir le terrain en grand format
-137|Terrain de Soccer Chess : terrain de football quadrillé de 30 colonnes et 40 rangées
-138|Écrivez la situation ici
-139|Échauffement
-140|D'abord, faisons connaissance.
-141|Votre tranche d'âge ?
-142|12 ans et moins
-143|45 ans et plus
-144|Combien de matchs avez-vous joués ?
-145|7 ou plus
-146|À combien avez-vous joué ?
-147|2 personnes
-148|3–4 personnes
-149|5 ou plus
-150|Votre rapport aux jeux de société ?
-151|J'y joue souvent
-152|De temps en temps
-153|Rarement
-154|Et au football ?
-155|Je joue et je regarde
-156|Je regarde seulement
-157|Peu d'intérêt
-158|Règles
-159|Comment s'est passé l'apprentissage du jeu ?
-160|Apprendre les règles, c'était comment ?
-161|Très facile
-162|Facile
-163|Moyen
-164|Difficile
-165|Très difficile
-166|Combien de temps pour comprendre les règles ?
-167|Moins de 5 minutes
-168|5–15 minutes
-169|15–30 minutes
-170|Plus de 30 minutes
-171|Où avez-vous appris les règles ?
-172|Sur ce site
-173|Dans les règles écrites
-174|Quelqu'un me les a expliquées
-175|En jouant
-176|Y a-t-il eu des désaccords sur les règles pendant le match ?
-177|Jamais
-178|Une ou deux fois
-179|Souvent
-180|Calculer qui a le ballon (compter les cases), c'était comment ?
-181|Facile et rapide
-182|Correct
-183|Ça ralentit le jeu
-184|Déroutant
-185|Sur le terrain
-186|Le match lui-même.
-187|Avec combien de tours de coups avez-vous joué ?
-188|1 tour
-189|2 tours
-190|3 ou plus
-191|Combien de temps a duré un match environ ?
-192|Moins de 15 minutes
-193|30–60 minutes
-194|Plus d'une heure
-195|Que pensez-vous de la durée du match ?
-196|Courte
-197|Juste comme il faut
-198|Longue
-199|Frapper le ballon, c'était comment ?
-200|Difficile mais amusant
-201|Trop facile
-202|Qu'est-ce qui a le plus pesé dans le match ?
-203|Équilibré
-204|Adresse de frappe
-205|Quelles règles optionnelles avez-vous essayées ?
-206|Aucune
-207|Que pensez-vous de la qualité du terrain, des pions, du ballon et du gardien ?
-208|Très bonne
-209|Bonne
-210|Faible
-211|Depuis les tribunes
-212|Votre impression générale.
-213|Qu'avez-vous le plus aimé ?
-214|Élaborer une stratégie
-215|Frapper le ballon
-216|Marquer des buts
-217|Contrarier le plan adverse
-218|La compétition entre amis
-219|Les cartes des footballeurs et leurs valeurs
-220|Quelle note sur 10 donnez-vous à Soccer Chess ?
-221|Rejoueriez-vous ?
-222|Absolument
-223|Probablement
-224|Pas sûr
-225|Je ne pense pas
-226|Le recommanderiez-vous à un ami ?
-227|Peut-être
-228|Non
-229|Coup de sifflet final
-230|Dernières questions avant la mise en vente.
-231|L'achèteriez-vous s'il était mis en vente ?
-232|Je l'achèterais tout de suite
-233|Ça dépend du prix
-234|Je l'achèterais pour l'offrir
-235|Je ne l'achèterais pas
-236|Selon vous, quel serait un prix raisonnable ? (livres turques)
-237|Ce site a-t-il suffi pour comprendre les règles ?
-238|Oui, c'était suffisant
-239|En partie
-240|Une vidéo serait mieux
-241|Envoi trop rapide. Pouvez-vous réessayer dans une minute ?
-242|Échec de l'envoi. Pouvez-vous vérifier votre connexion et réessayer ?
-243|Plusieurs choix possibles
-244|ex. 2500
-246|répondues
-247|Environ 2 minutes. Aucune question n'est obligatoire ; cochez ce qui vous correspond et passez le reste.
-248|Envoyer les réponses et passer aux avis et suggestions détaillés
-249|Pouvez-vous répondre à au moins une question avant d'envoyer ?
-250|Envoi en cours…
-251|Votre nom ou un moyen de vous joindre, si vous le souhaitez
-252|Que changeriez-vous ? Quelle règle vous a dérouté ? Tout ce qui vous vient à l'esprit nous est utile.
-253|Envoyer
-254|Terminer sans écrire
-255|Vos réponses sont bien arrivées
-256|Avis et suggestions détaillés
-257|Les options ne disent pas tout. Écrivez avec vos mots votre idée pour améliorer le jeu, un problème rencontré ou ce qui vous a plu.
-258|Votre avis et vos suggestions
-259|Nom / contact (facultatif)
-260|Pouvez-vous écrire quelques phrases à envoyer ? Si vous préférez ne rien écrire, choisissez "Terminer sans écrire".
-261|Terminé
-262|Merci, vous êtes l'homme du match.
-263|Nous avons bien reçu vos réponses et votre avis. Vous aurez votre part dans la version finale de Soccer Chess.
-264|Nous avons bien reçu vos réponses. Vous aurez votre part dans la version finale de Soccer Chess.
-265|L'arbitre réfléchit…
-266|Pouvez-vous décrire la situation en quelques mots ?
-267|Question posée trop vite. Pouvez-vous réessayer dans une minute ?
-268|L'arbitre ne peut pas répondre pour le moment.
-269|Impossible de joindre l'arbitre.
+122|En attendant, vous pouvez décrire la situation à l'IA que vous utilisez et lui dire « explique-nous comment continuer selon les règles de ce site ». Il suffit de copier l'adresse du site et de l'ajouter à votre message.
+124|Copier
+125|Les réponses sont générées par une IA et peuvent contenir des erreurs ; le dernier mot revient aux règles et à l'accord entre les équipes.
+126|02 — Vos retours
+127|Si vous avez joué à la version d'essai, votre avis façonnera la version finale du jeu.
+128|JavaScript doit être activé dans votre navigateur pour répondre au sondage.
+129|© 2026 Soccer Chess. Tous droits réservés.
+130|Page d'accueil de Soccer Chess
+131|Menu principal
+133|Logo de Soccer Chess
+134|Les deux facettes du jeu
+135|Ouvrir le terrain en grand format
+136|Terrain de Soccer Chess : terrain de football quadrillé de 30 colonnes et 40 rangées
+137|Écrivez la situation ici
+138|Échauffement
+139|D'abord, faisons connaissance.
+140|Votre tranche d'âge ?
+141|12 ans et moins
+142|45 ans et plus
+143|Combien de matchs avez-vous joués ?
+144|7 ou plus
+145|À combien avez-vous joué ?
+146|2 personnes
+147|3–4 personnes
+148|5 ou plus
+149|Votre rapport aux jeux de société ?
+150|J'y joue souvent
+151|De temps en temps
+152|Rarement
+153|Et au football ?
+154|Je joue et je regarde
+155|Je regarde seulement
+156|Peu d'intérêt
+157|Règles
+158|Comment s'est passé l'apprentissage du jeu ?
+159|Apprendre les règles, c'était comment ?
+160|Très facile
+161|Facile
+162|Moyen
+163|Difficile
+164|Très difficile
+165|Combien de temps pour comprendre les règles ?
+166|Moins de 5 minutes
+167|5–15 minutes
+168|15–30 minutes
+169|Plus de 30 minutes
+170|Où avez-vous appris les règles ?
+171|Sur ce site
+172|Dans les règles écrites
+173|Quelqu'un me les a expliquées
+174|En jouant
+175|Y a-t-il eu des désaccords sur les règles pendant le match ?
+176|Jamais
+177|Une ou deux fois
+178|Souvent
+179|Calculer qui a le ballon (compter les cases), c'était comment ?
+180|Facile et rapide
+181|Correct
+182|Ça ralentit le jeu
+183|Déroutant
+184|Sur le terrain
+185|Le match lui-même.
+186|Avec combien de tours de coups avez-vous joué ?
+187|1 tour
+188|2 tours
+189|3 ou plus
+190|Combien de temps a duré un match environ ?
+191|Moins de 15 minutes
+192|30–60 minutes
+193|Plus d'une heure
+194|Que pensez-vous de la durée du match ?
+195|Courte
+196|Juste comme il faut
+197|Longue
+198|Frapper le ballon, c'était comment ?
+199|Difficile mais amusant
+200|Trop facile
+201|Qu'est-ce qui a le plus pesé dans le match ?
+202|Équilibré
+203|Adresse de frappe
+204|Quelles règles optionnelles avez-vous essayées ?
+205|Aucune
+206|Que pensez-vous de la qualité du terrain, des pions, du ballon et du gardien ?
+207|Très bonne
+208|Bonne
+209|Faible
+210|Depuis les tribunes
+211|Votre impression générale.
+212|Qu'avez-vous le plus aimé ?
+213|Élaborer une stratégie
+214|Frapper le ballon
+215|Marquer des buts
+216|Contrarier le plan adverse
+217|La compétition entre amis
+218|Les cartes des footballeurs et leurs valeurs
+219|Quelle note sur 10 donnez-vous à Soccer Chess ?
+220|Rejoueriez-vous ?
+221|Absolument
+222|Probablement
+223|Pas sûr
+224|Je ne pense pas
+225|Le recommanderiez-vous à un ami ?
+226|Peut-être
+227|Non
+228|Coup de sifflet final
+229|Dernières questions avant la mise en vente.
+230|L'achèteriez-vous s'il était mis en vente ?
+231|Je l'achèterais tout de suite
+232|Ça dépend du prix
+233|Je l'achèterais pour l'offrir
+234|Je ne l'achèterais pas
+235|Selon vous, quel serait un prix raisonnable ? (livres turques)
+236|Ce site a-t-il suffi pour comprendre les règles ?
+237|Oui, c'était suffisant
+238|En partie
+239|Une vidéo serait mieux
+240|Envoi trop rapide. Pouvez-vous réessayer dans une minute ?
+241|Échec de l'envoi. Pouvez-vous vérifier votre connexion et réessayer ?
+242|Plusieurs choix possibles
+243|ex. 2500
+245|répondues
+246|Environ 2 minutes. Aucune question n'est obligatoire ; cochez ce qui vous correspond et passez le reste.
+247|Envoyer les réponses et passer aux avis et suggestions détaillés
+248|Pouvez-vous répondre à au moins une question avant d'envoyer ?
+249|Envoi en cours…
+250|Votre nom ou un moyen de vous joindre, si vous le souhaitez
+251|Que changeriez-vous ? Quelle règle vous a dérouté ? Tout ce qui vous vient à l'esprit nous est utile.
+252|Envoyer
+253|Terminer sans écrire
+254|Vos réponses sont bien arrivées
+255|Avis et suggestions détaillés
+256|Les options ne disent pas tout. Écrivez avec vos mots votre idée pour améliorer le jeu, un problème rencontré ou ce qui vous a plu.
+257|Votre avis et vos suggestions
+258|Nom / contact (facultatif)
+259|Pouvez-vous écrire quelques phrases à envoyer ? Si vous préférez ne rien écrire, choisissez "Terminer sans écrire".
+260|Terminé
+261|Merci, vous êtes l'homme du match.
+262|Nous avons bien reçu vos réponses et votre avis. Vous aurez votre part dans la version finale de Soccer Chess.
+263|Nous avons bien reçu vos réponses. Vous aurez votre part dans la version finale de Soccer Chess.
+267|Pouvez-vous décrire la situation en quelques mots ?
+268|L'arbitre réfléchit…
+269|Question posée trop vite. Pouvez-vous réessayer dans une minute ?
+270|L'arbitre ne peut pas répondre pour le moment.
+271|Impossible de joindre l'arbitre.
+264|Vous
+265|Arbitre
+266|Ajoutez des précisions ou posez une nouvelle question
+274|Effacer la conversation

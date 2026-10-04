@@ -39,9 +39,39 @@ foreach ($file in 'anket.js', 'hakem.js') {
   }
 }
 
-$out = New-Object System.Text.StringBuilder
-for ($i = 0; $i -lt $list.Count; $i++) { [void]$out.Append("$i|$($list[$i])`n") }
 $dir = Join-Path $root 'i18n'
 if (-not (Test-Path $dir)) { New-Item -ItemType Directory $dir | Out-Null }
-[IO.File]::WriteAllText((Join-Path $dir 'kaynak.txt'), $out.ToString(), $utf8)
+$sourcePath = Join-Path $dir 'kaynak.txt'
+
+function Read-Table([string]$path) {
+  $table = @{}
+  if (-not (Test-Path $path)) { return $table }
+  foreach ($line in [IO.File]::ReadAllLines($path, $utf8)) {
+    $sep = $line.IndexOf('|')
+    if ($sep -lt 1) { continue }
+    $table[[int]$line.Substring(0, $sep)] = $line.Substring($sep + 1).Trim()
+  }
+  return $table
+}
+
+# Numaralar kayabileceği için eski çeviriler metne göre yeni numaralara taşınır
+$oldSource = Read-Table $sourcePath
+foreach ($lang in 'en', 'es', 'de', 'fr') {
+  $langPath = Join-Path $dir "$lang.txt"
+  $old = Read-Table $langPath
+  if (-not $old.Count) { continue }
+  $byText = @{}
+  foreach ($k in $old.Keys) { if ($oldSource.ContainsKey($k)) { $byText[$oldSource[$k]] = $old[$k] } }
+  $sb = New-Object System.Text.StringBuilder
+  $missing = @()
+  for ($i = 0; $i -lt $list.Count; $i++) {
+    if ($byText.ContainsKey($list[$i])) { [void]$sb.Append("$i|$($byText[$list[$i]])`n") } else { $missing += "$i|$($list[$i])" }
+  }
+  [IO.File]::WriteAllText($langPath, $sb.ToString(), $utf8)
+  if ($lang -eq 'en') { "Çevirisi olmayan metinler:"; $missing }
+}
+
+$out = New-Object System.Text.StringBuilder
+for ($i = 0; $i -lt $list.Count; $i++) { [void]$out.Append("$i|$($list[$i])`n") }
+[IO.File]::WriteAllText($sourcePath, $out.ToString(), $utf8)
 "Toplam $($list.Count) metin -> i18n\kaynak.txt"

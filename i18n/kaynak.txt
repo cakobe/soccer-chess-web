@@ -120,151 +120,156 @@
 119|Örnek soru
 120|Vuruştan sonra topa iki takımdan da birer oyuncu 2 kare uzakta kaldı. Top kimde?
 121|Dokunursan kutuya yazılır
-122|Hakemin kararı
-123|Bu arada kendi kullandığınız yapay zekâya durumu anlatıp “bu sitedeki kurallara göre nasıl devam edeceğimizi anlat” diyebilirsiniz. Site adresini kopyalayıp mesajınıza eklemeniz yeterli.
-124|www.soccer-chess.com
-125|Kopyala
-126|Yanıtları yapay zekâ üretir ve hata yapabilir; son söz kurallarda ve takımların anlaşmasındadır.
-127|02 — Geri Bildirim
-128|Deneme sürümünü oynadıysan görüşlerin oyunun son halini şekillendirecek.
-129|Anketi doldurmak için tarayıcında JavaScript açık olmalı.
-130|© 2026 Soccer Chess. Tüm hakları saklıdır.
-131|Soccer Chess ana sayfa
-132|Ana menü
-133|Dil / Language
-134|Soccer Chess logosu
-135|Oyunun iki yönü
-136|Sahayı büyük boyutta aç
-137|Soccer Chess sahası: 30 sütun ve 40 sıradan oluşan kareli futbol sahası
-138|Durumu buraya yazın
-139|Isınma turu
-140|Önce seni tanıyalım.
-141|Yaş aralığın?
-142|12 ve altı
-143|45 ve üzeri
-144|Kaç maç oynadın?
-145|7 ve üzeri
-146|Kaç kişiyle oynadınız?
-147|2 kişi
-148|3–4 kişi
-149|5 ve üzeri
-150|Masa oyunlarıyla aran nasıl?
-151|Sık oynarım
-152|Ara sıra
-153|Nadiren
-154|Futbolla aran nasıl?
-155|Oynarım ve izlerim
-156|Sadece izlerim
-157|Pek ilgim yok
-158|Kurallar
-159|Oyunu öğrenmek nasıl geçti?
-160|Kuralları öğrenmek nasıldı?
-161|Çok kolay
-162|Kolay
-163|Orta
-164|Zor
-165|Çok zor
-166|Kuralları kavraman ne kadar sürdü?
-167|5 dakikadan az
-168|5–15 dakika
-169|15–30 dakika
-170|30 dakikadan fazla
-171|Kuralları nereden öğrendin?
-172|Bu siteden
-173|Yazılı kural metninden
-174|Biri anlattı
-175|Oynarken çözdük
-176|Maç sırasında kural anlaşmazlığı yaşadınız mı?
-177|Hiç
-178|Bir iki kez
-179|Sık sık
-180|Topun kimde olduğunu hesaplamak (kare sayma) nasıldı?
-181|Kolay ve hızlı
-182|İdare eder
-183|Oyunu yavaşlatıyor
-184|Kafa karıştırıcı
-185|Sahada
-186|Maçın kendisi.
-187|Kaç hamle turuyla oynadınız?
-188|1 tur
-189|2 tur
-190|3 ve üzeri
-191|Bir maç yaklaşık ne kadar sürdü?
-192|15 dakikadan az
-193|30–60 dakika
-194|1 saatten fazla
-195|Maç süresi nasıl geldi?
-196|Kısa
-197|Tam kıvamında
-198|Uzun
-199|Vuruş yapmak nasıldı?
-200|Zor ama keyifli
-201|Fazla kolay
-202|Maçta hangisi daha ağır bastı?
-203|İkisi dengeli
-204|Vuruş becerisi
-205|Hangi opsiyonel kuralları denediniz?
-206|Hiçbirini
-207|Saha, piyonlar, top ve kalecinin kalitesi nasıldı?
-208|Çok iyi
-209|İyi
-210|Zayıf
-211|Tribünden yorum
-212|Genel izlenimin.
-213|En çok neyi sevdin?
-214|Strateji kurmak
-215|Vuruş yapmak
-216|Gol atmak
-217|Rakibin planını bozmak
-218|Arkadaşlarla rekabet
-219|Futbolcu kartları ve değerleri
-220|Soccer Chess'e 10 üzerinden kaç verirsin?
-221|Tekrar oynar mısın?
-222|Kesinlikle
-223|Muhtemelen
-224|Emin değilim
-225|Sanmıyorum
-226|Arkadaşına önerir misin?
-227|Belki
-228|Hayır
-229|Son düdük
-230|Piyasaya çıkmadan önce son sorular.
-231|Satışa çıksa alır mıydın?
-232|Hemen alırım
-233|Fiyatına bağlı
-234|Hediye olarak alırım
-235|Almam
-236|Sence makul fiyatı ne olmalı? (TL)
-237|Bu site kuralları anlamana yetti mi?
-238|Evet, yeterli
-239|Kısmen
-240|Video olsa daha iyi olurdu
-241|Çok hızlı gönderildi. Bir dakika sonra tekrar dener misin?
-242|Gönderilemedi. Bağlantını kontrol edip tekrar dener misin?
-243|Birden fazla seçebilirsin
-244|Örn. 2500
-245|TL
-246|yanıtlandı
-247|Yaklaşık 2 dakika sürer. Hiçbir soru zorunlu değil; aklına yatanları işaretle, gerisini geç.
-248|Yanıtları gönder ve detaylı görüş ve öneriye geç
-249|Göndermeden önce en az bir soruyu yanıtlar mısın?
-250|Gönderiliyor…
-251|İstersen adın ya da ulaşabileceğimiz bir adres
-252|Neyi değiştirirdin? Hangi kural kafanı karıştırdı? Aklına gelen her şey işimize yarar.
-253|Gönder
-254|Yazmadan bitir
-255|Yanıtların ulaştı
-256|Detaylı görüş ve öneri
-257|Seçenekler her şeyi anlatmaz. Oyunu daha iyi yapacak fikrini, yaşadığın sorunu ya da hoşuna gideni kendi cümlelerinle yaz.
-258|Görüş ve önerin
-259|Ad / iletişim (isteğe bağlı)
-260|Göndermek için birkaç cümle yazar mısın? Yazmak istemezsen "Yazmadan bitir" de.
-261|Tamamlandı
-262|Teşekkürler, maçın adamı sensin.
-263|Yanıtların ve görüşün bize ulaştı. Soccer Chess'in son hâlinde senin de payın olacak.
-264|Yanıtların bize ulaştı. Soccer Chess'in son hâlinde senin de payın olacak.
-265|Hakem düşünüyor…
-266|Durumu birkaç kelimeyle yazar mısın?
-267|Çok hızlı soruldu. Bir dakika sonra tekrar dener misin?
-268|Hakem şu an yanıt veremiyor.
-269|Hakeme ulaşılamadı.
+122|Bu arada kendi kullandığınız yapay zekâya durumu anlatıp “bu sitedeki kurallara göre nasıl devam edeceğimizi anlat” diyebilirsiniz. Site adresini kopyalayıp mesajınıza eklemeniz yeterli.
+123|www.soccer-chess.com
+124|Kopyala
+125|Yanıtları yapay zekâ üretir ve hata yapabilir; son söz kurallarda ve takımların anlaşmasındadır.
+126|02 — Geri Bildirim
+127|Deneme sürümünü oynadıysan görüşlerin oyunun son halini şekillendirecek.
+128|Anketi doldurmak için tarayıcında JavaScript açık olmalı.
+129|© 2026 Soccer Chess. Tüm hakları saklıdır.
+130|Soccer Chess ana sayfa
+131|Ana menü
+132|Dil / Language
+133|Soccer Chess logosu
+134|Oyunun iki yönü
+135|Sahayı büyük boyutta aç
+136|Soccer Chess sahası: 30 sütun ve 40 sıradan oluşan kareli futbol sahası
+137|Durumu buraya yazın
+138|Isınma turu
+139|Önce seni tanıyalım.
+140|Yaş aralığın?
+141|12 ve altı
+142|45 ve üzeri
+143|Kaç maç oynadın?
+144|7 ve üzeri
+145|Kaç kişiyle oynadınız?
+146|2 kişi
+147|3–4 kişi
+148|5 ve üzeri
+149|Masa oyunlarıyla aran nasıl?
+150|Sık oynarım
+151|Ara sıra
+152|Nadiren
+153|Futbolla aran nasıl?
+154|Oynarım ve izlerim
+155|Sadece izlerim
+156|Pek ilgim yok
+157|Kurallar
+158|Oyunu öğrenmek nasıl geçti?
+159|Kuralları öğrenmek nasıldı?
+160|Çok kolay
+161|Kolay
+162|Orta
+163|Zor
+164|Çok zor
+165|Kuralları kavraman ne kadar sürdü?
+166|5 dakikadan az
+167|5–15 dakika
+168|15–30 dakika
+169|30 dakikadan fazla
+170|Kuralları nereden öğrendin?
+171|Bu siteden
+172|Yazılı kural metninden
+173|Biri anlattı
+174|Oynarken çözdük
+175|Maç sırasında kural anlaşmazlığı yaşadınız mı?
+176|Hiç
+177|Bir iki kez
+178|Sık sık
+179|Topun kimde olduğunu hesaplamak (kare sayma) nasıldı?
+180|Kolay ve hızlı
+181|İdare eder
+182|Oyunu yavaşlatıyor
+183|Kafa karıştırıcı
+184|Sahada
+185|Maçın kendisi.
+186|Kaç hamle turuyla oynadınız?
+187|1 tur
+188|2 tur
+189|3 ve üzeri
+190|Bir maç yaklaşık ne kadar sürdü?
+191|15 dakikadan az
+192|30–60 dakika
+193|1 saatten fazla
+194|Maç süresi nasıl geldi?
+195|Kısa
+196|Tam kıvamında
+197|Uzun
+198|Vuruş yapmak nasıldı?
+199|Zor ama keyifli
+200|Fazla kolay
+201|Maçta hangisi daha ağır bastı?
+202|İkisi dengeli
+203|Vuruş becerisi
+204|Hangi opsiyonel kuralları denediniz?
+205|Hiçbirini
+206|Saha, piyonlar, top ve kalecinin kalitesi nasıldı?
+207|Çok iyi
+208|İyi
+209|Zayıf
+210|Tribünden yorum
+211|Genel izlenimin.
+212|En çok neyi sevdin?
+213|Strateji kurmak
+214|Vuruş yapmak
+215|Gol atmak
+216|Rakibin planını bozmak
+217|Arkadaşlarla rekabet
+218|Futbolcu kartları ve değerleri
+219|Soccer Chess'e 10 üzerinden kaç verirsin?
+220|Tekrar oynar mısın?
+221|Kesinlikle
+222|Muhtemelen
+223|Emin değilim
+224|Sanmıyorum
+225|Arkadaşına önerir misin?
+226|Belki
+227|Hayır
+228|Son düdük
+229|Piyasaya çıkmadan önce son sorular.
+230|Satışa çıksa alır mıydın?
+231|Hemen alırım
+232|Fiyatına bağlı
+233|Hediye olarak alırım
+234|Almam
+235|Sence makul fiyatı ne olmalı? (TL)
+236|Bu site kuralları anlamana yetti mi?
+237|Evet, yeterli
+238|Kısmen
+239|Video olsa daha iyi olurdu
+240|Çok hızlı gönderildi. Bir dakika sonra tekrar dener misin?
+241|Gönderilemedi. Bağlantını kontrol edip tekrar dener misin?
+242|Birden fazla seçebilirsin
+243|Örn. 2500
+244|TL
+245|yanıtlandı
+246|Yaklaşık 2 dakika sürer. Hiçbir soru zorunlu değil; aklına yatanları işaretle, gerisini geç.
+247|Yanıtları gönder ve detaylı görüş ve öneriye geç
+248|Göndermeden önce en az bir soruyu yanıtlar mısın?
+249|Gönderiliyor…
+250|İstersen adın ya da ulaşabileceğimiz bir adres
+251|Neyi değiştirirdin? Hangi kural kafanı karıştırdı? Aklına gelen her şey işimize yarar.
+252|Gönder
+253|Yazmadan bitir
+254|Yanıtların ulaştı
+255|Detaylı görüş ve öneri
+256|Seçenekler her şeyi anlatmaz. Oyunu daha iyi yapacak fikrini, yaşadığın sorunu ya da hoşuna gideni kendi cümlelerinle yaz.
+257|Görüş ve önerin
+258|Ad / iletişim (isteğe bağlı)
+259|Göndermek için birkaç cümle yazar mısın? Yazmak istemezsen "Yazmadan bitir" de.
+260|Tamamlandı
+261|Teşekkürler, maçın adamı sensin.
+262|Yanıtların ve görüşün bize ulaştı. Soccer Chess'in son hâlinde senin de payın olacak.
+263|Yanıtların bize ulaştı. Soccer Chess'in son hâlinde senin de payın olacak.
+264|Siz
+265|Hakem
+266|Ek bilgi verin ya da yeni bir soru sorun
+267|Durumu birkaç kelimeyle yazar mısın?
+268|Hakem düşünüyor…
+269|Çok hızlı soruldu. Bir dakika sonra tekrar dener misin?
+270|Hakem şu an yanıt veremiyor.
+271|Hakeme ulaşılamadı.
+272|(pointer: fine)
+273|Enter
+274|Sohbeti temizle

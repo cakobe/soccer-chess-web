@@ -187,7 +187,7 @@
     });
 
     // Botlar için tuzak alan; insanlar görmez
-    var trap = el('input', { type: 'text', name: 'website', tabindex: '-1', autocomplete: 'off', 'aria-hidden': 'true', class: 'survey__trap' });
+    var trap = el('input', { type: 'text', name: 'website', hidden: '', tabindex: '-1', autocomplete: 'off', 'aria-hidden': 'true', class: 'survey__trap' });
     form.appendChild(trap);
 
     var status = el('p', { class: 'survey__status', role: 'status' });

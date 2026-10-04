@@ -112,148 +112,151 @@
 119|Beispielfrage
 120|Nach dem Schuss ist von jedem Team ein Spieler 2 Felder vom Ball entfernt. Wer hat den Ball?
 121|Antippen, um sie ins Feld zu schreiben
-122|Entscheidung des Schiedsrichters
-123|Inzwischen könnt ihr die Situation eurer eigenen KI schildern und sagen: „Erkläre uns, wie es nach den Regeln dieser Seite weitergeht.“ Kopiert einfach die Adresse der Seite und fügt sie eurer Nachricht hinzu.
-125|Kopieren
-126|Die Antworten erzeugt eine KI, sie können Fehler enthalten; das letzte Wort haben die Regeln und die Absprache der Teams.
-127|02 — Rückmeldung
-128|Wenn du die Testversion gespielt hast, prägt deine Meinung das fertige Spiel.
-129|Zum Ausfüllen der Umfrage muss JavaScript im Browser aktiviert sein.
-130|© 2026 Soccer Chess. Alle Rechte vorbehalten.
-131|Soccer Chess Startseite
-132|Hauptmenü
-134|Soccer Chess Logo
-135|Die zwei Seiten des Spiels
-136|Spielfeld in voller Größe öffnen
-137|Soccer-Chess-Spielfeld: kariertes Fußballfeld mit 30 Spalten und 40 Reihen
-138|Situation hier eingeben
-139|Aufwärmen
-140|Zuerst ein wenig über dich.
-141|Deine Altersgruppe?
-142|12 und jünger
-143|45 und älter
-144|Wie viele Spiele hast du gespielt?
-145|7 oder mehr
-146|Zu wievielt habt ihr gespielt?
-147|2 Personen
-148|3–4 Personen
-149|5 oder mehr
-150|Wie stehst du zu Brettspielen?
-151|Ich spiele oft
-152|Ab und zu
-153|Selten
-154|Und zu Fußball?
-155|Ich spiele und schaue
-156|Ich schaue nur
-157|Kaum Interesse
-158|Regeln
-159|Wie lief das Lernen des Spiels?
-160|Wie war es, die Regeln zu lernen?
-161|Sehr leicht
-162|Leicht
-163|Mittel
-164|Schwer
-165|Sehr schwer
-166|Wie lange hast du gebraucht, um die Regeln zu verstehen?
-167|Weniger als 5 Minuten
-168|5–15 Minuten
-169|15–30 Minuten
-170|Mehr als 30 Minuten
-171|Woher hast du die Regeln gelernt?
-172|Von dieser Seite
-173|Aus den schriftlichen Regeln
-174|Jemand hat sie erklärt
-175|Beim Spielen herausgefunden
-176|Gab es während des Spiels Uneinigkeit über die Regeln?
-177|Nie
-178|Ein- oder zweimal
-179|Oft
-180|Wie war es, den Ballbesitz zu berechnen (Felder zählen)?
-181|Leicht und schnell
-182|Geht so
-183|Bremst das Spiel
-184|Verwirrend
-185|Auf dem Platz
-186|Das Spiel selbst.
-187|Mit wie vielen Zugrunden habt ihr gespielt?
-188|1 Runde
-189|2 Runden
-190|3 oder mehr
-191|Wie lange hat ein Spiel ungefähr gedauert?
-192|Weniger als 15 Minuten
-193|30–60 Minuten
-194|Mehr als 1 Stunde
-195|Wie fandest du die Spieldauer?
-196|Kurz
-197|Genau richtig
-198|Lang
-199|Wie war das Schießen?
-200|Schwer, aber macht Spaß
-201|Zu leicht
-202|Was hat im Spiel mehr gezählt?
-203|Ausgeglichen
-204|Schussgefühl
-205|Welche optionalen Regeln habt ihr ausprobiert?
-206|Keine
-207|Wie war die Qualität von Spielfeld, Figuren, Ball und Torwart?
-208|Sehr gut
-209|Gut
-210|Schwach
-211|Von der Tribüne
-212|Dein Gesamteindruck.
-213|Was hat dir am besten gefallen?
-214|Strategie planen
-215|Schießen
-216|Tore schießen
-217|Den Plan des Gegners durchkreuzen
-218|Wettkampf mit Freunden
-219|Spielerkarten und ihre Werte
-220|Wie viele von 10 Punkten gibst du Soccer Chess?
-221|Würdest du wieder spielen?
-222|Auf jeden Fall
-223|Wahrscheinlich
-224|Bin nicht sicher
-225|Eher nicht
-226|Würdest du es Freunden empfehlen?
-227|Vielleicht
-228|Nein
-229|Schlusspfiff
-230|Letzte Fragen vor dem Verkaufsstart.
-231|Würdest du es kaufen, wenn es in den Handel käme?
-232|Ich würde es sofort kaufen
-233|Kommt auf den Preis an
-234|Ich würde es verschenken
-235|Würde ich nicht kaufen
-236|Welcher Preis wäre deiner Meinung nach angemessen? (türkische Lira)
-237|Hat diese Seite gereicht, um die Regeln zu verstehen?
-238|Ja, sie hat gereicht
-239|Teilweise
-240|Ein Video wäre besser
-241|Zu schnell gesendet. Versuchst du es in einer Minute noch einmal?
-242|Senden fehlgeschlagen. Prüfst du deine Verbindung und versuchst es noch einmal?
-243|Mehrfachauswahl möglich
-244|z. B. 2500
-246|beantwortet
-247|Dauert etwa 2 Minuten. Keine Frage ist Pflicht; kreuze an, was passt, und überspringe den Rest.
-248|Antworten senden und weiter zu ausführlicher Meinung und Vorschlägen
-249|Beantwortest du vor dem Senden mindestens eine Frage?
-250|Wird gesendet…
-251|Dein Name oder eine Kontaktmöglichkeit, wenn du magst
-252|Was würdest du ändern? Welche Regel hat dich verwirrt? Alles, was dir einfällt, hilft uns.
-253|Senden
-254|Ohne Text beenden
-255|Deine Antworten sind angekommen
-256|Ausführliche Meinung und Vorschläge
-257|Auswahlmöglichkeiten sagen nicht alles. Schreib in eigenen Worten deine Idee, die das Spiel besser macht, ein Problem oder was dir gefallen hat.
-258|Deine Meinung und Vorschläge
-259|Name / Kontakt (freiwillig)
-260|Schreibst du ein paar Sätze zum Senden? Wenn du nichts schreiben möchtest, wähle "Ohne Text beenden".
-261|Fertig
-262|Danke, du bist der Spieler des Spiels.
-263|Deine Antworten und deine Meinung sind bei uns angekommen. Du hast Anteil am fertigen Soccer Chess.
-264|Deine Antworten sind bei uns angekommen. Du hast Anteil am fertigen Soccer Chess.
-265|Der Schiedsrichter überlegt…
-266|Beschreibst du die Situation in ein paar Worten?
-267|Zu schnell gefragt. Versuchst du es in einer Minute noch einmal?
-268|Der Schiedsrichter kann gerade nicht antworten.
-269|Der Schiedsrichter ist nicht erreichbar.
+122|Inzwischen könnt ihr die Situation eurer eigenen KI schildern und sagen: „Erkläre uns, wie es nach den Regeln dieser Seite weitergeht.“ Kopiert einfach die Adresse der Seite und fügt sie eurer Nachricht hinzu.
+124|Kopieren
+125|Die Antworten erzeugt eine KI, sie können Fehler enthalten; das letzte Wort haben die Regeln und die Absprache der Teams.
+126|02 — Rückmeldung
+127|Wenn du die Testversion gespielt hast, prägt deine Meinung das fertige Spiel.
+128|Zum Ausfüllen der Umfrage muss JavaScript im Browser aktiviert sein.
+129|© 2026 Soccer Chess. Alle Rechte vorbehalten.
+130|Soccer Chess Startseite
+131|Hauptmenü
+133|Soccer Chess Logo
+134|Die zwei Seiten des Spiels
+135|Spielfeld in voller Größe öffnen
+136|Soccer-Chess-Spielfeld: kariertes Fußballfeld mit 30 Spalten und 40 Reihen
+137|Situation hier eingeben
+138|Aufwärmen
+139|Zuerst ein wenig über dich.
+140|Deine Altersgruppe?
+141|12 und jünger
+142|45 und älter
+143|Wie viele Spiele hast du gespielt?
+144|7 oder mehr
+145|Zu wievielt habt ihr gespielt?
+146|2 Personen
+147|3–4 Personen
+148|5 oder mehr
+149|Wie stehst du zu Brettspielen?
+150|Ich spiele oft
+151|Ab und zu
+152|Selten
+153|Und zu Fußball?
+154|Ich spiele und schaue
+155|Ich schaue nur
+156|Kaum Interesse
+157|Regeln
+158|Wie lief das Lernen des Spiels?
+159|Wie war es, die Regeln zu lernen?
+160|Sehr leicht
+161|Leicht
+162|Mittel
+163|Schwer
+164|Sehr schwer
+165|Wie lange hast du gebraucht, um die Regeln zu verstehen?
+166|Weniger als 5 Minuten
+167|5–15 Minuten
+168|15–30 Minuten
+169|Mehr als 30 Minuten
+170|Woher hast du die Regeln gelernt?
+171|Von dieser Seite
+172|Aus den schriftlichen Regeln
+173|Jemand hat sie erklärt
+174|Beim Spielen herausgefunden
+175|Gab es während des Spiels Uneinigkeit über die Regeln?
+176|Nie
+177|Ein- oder zweimal
+178|Oft
+179|Wie war es, den Ballbesitz zu berechnen (Felder zählen)?
+180|Leicht und schnell
+181|Geht so
+182|Bremst das Spiel
+183|Verwirrend
+184|Auf dem Platz
+185|Das Spiel selbst.
+186|Mit wie vielen Zugrunden habt ihr gespielt?
+187|1 Runde
+188|2 Runden
+189|3 oder mehr
+190|Wie lange hat ein Spiel ungefähr gedauert?
+191|Weniger als 15 Minuten
+192|30–60 Minuten
+193|Mehr als 1 Stunde
+194|Wie fandest du die Spieldauer?
+195|Kurz
+196|Genau richtig
+197|Lang
+198|Wie war das Schießen?
+199|Schwer, aber macht Spaß
+200|Zu leicht
+201|Was hat im Spiel mehr gezählt?
+202|Ausgeglichen
+203|Schussgefühl
+204|Welche optionalen Regeln habt ihr ausprobiert?
+205|Keine
+206|Wie war die Qualität von Spielfeld, Figuren, Ball und Torwart?
+207|Sehr gut
+208|Gut
+209|Schwach
+210|Von der Tribüne
+211|Dein Gesamteindruck.
+212|Was hat dir am besten gefallen?
+213|Strategie planen
+214|Schießen
+215|Tore schießen
+216|Den Plan des Gegners durchkreuzen
+217|Wettkampf mit Freunden
+218|Spielerkarten und ihre Werte
+219|Wie viele von 10 Punkten gibst du Soccer Chess?
+220|Würdest du wieder spielen?
+221|Auf jeden Fall
+222|Wahrscheinlich
+223|Bin nicht sicher
+224|Eher nicht
+225|Würdest du es Freunden empfehlen?
+226|Vielleicht
+227|Nein
+228|Schlusspfiff
+229|Letzte Fragen vor dem Verkaufsstart.
+230|Würdest du es kaufen, wenn es in den Handel käme?
+231|Ich würde es sofort kaufen
+232|Kommt auf den Preis an
+233|Ich würde es verschenken
+234|Würde ich nicht kaufen
+235|Welcher Preis wäre deiner Meinung nach angemessen? (türkische Lira)
+236|Hat diese Seite gereicht, um die Regeln zu verstehen?
+237|Ja, sie hat gereicht
+238|Teilweise
+239|Ein Video wäre besser
+240|Zu schnell gesendet. Versuchst du es in einer Minute noch einmal?
+241|Senden fehlgeschlagen. Prüfst du deine Verbindung und versuchst es noch einmal?
+242|Mehrfachauswahl möglich
+243|z. B. 2500
+245|beantwortet
+246|Dauert etwa 2 Minuten. Keine Frage ist Pflicht; kreuze an, was passt, und überspringe den Rest.
+247|Antworten senden und weiter zu ausführlicher Meinung und Vorschlägen
+248|Beantwortest du vor dem Senden mindestens eine Frage?
+249|Wird gesendet…
+250|Dein Name oder eine Kontaktmöglichkeit, wenn du magst
+251|Was würdest du ändern? Welche Regel hat dich verwirrt? Alles, was dir einfällt, hilft uns.
+252|Senden
+253|Ohne Text beenden
+254|Deine Antworten sind angekommen
+255|Ausführliche Meinung und Vorschläge
+256|Auswahlmöglichkeiten sagen nicht alles. Schreib in eigenen Worten deine Idee, die das Spiel besser macht, ein Problem oder was dir gefallen hat.
+257|Deine Meinung und Vorschläge
+258|Name / Kontakt (freiwillig)
+259|Schreibst du ein paar Sätze zum Senden? Wenn du nichts schreiben möchtest, wähle "Ohne Text beenden".
+260|Fertig
+261|Danke, du bist der Spieler des Spiels.
+262|Deine Antworten und deine Meinung sind bei uns angekommen. Du hast Anteil am fertigen Soccer Chess.
+263|Deine Antworten sind bei uns angekommen. Du hast Anteil am fertigen Soccer Chess.
+267|Beschreibst du die Situation in ein paar Worten?
+268|Der Schiedsrichter überlegt…
+269|Zu schnell gefragt. Versuchst du es in einer Minute noch einmal?
+270|Der Schiedsrichter kann gerade nicht antworten.
+271|Der Schiedsrichter ist nicht erreichbar.
+264|Du
+265|Schiedsrichter
+266|Ergänze Details oder stelle eine neue Frage
+274|Chat löschen

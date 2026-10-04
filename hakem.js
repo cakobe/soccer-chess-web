@@ -1,54 +1,94 @@
-// "Hakeme sor" kutusu: soruyu /api/soru adresine gönderir, yanıtı sayfada gösterir.
-// Yanıt alınamazsa (kota dolması dahil) kopyalama ipucunu açar.
+// "Hakeme sor" sohbeti: mesajı önceki konuşmayla birlikte /api/soru adresine gönderir,
+// yanıtı sohbet akışına ekler. Yanıt alınamazsa (kota dolması dahil) kopyalama ipucunu açar.
 (function () {
   var form = document.getElementById('soru-form');
   if (!form) return;
 
   var input = document.getElementById('soru-metin');
+  var label = document.getElementById('soru-etiket');
   var counter = document.getElementById('soru-sayac');
   var button = document.getElementById('soru-gonder');
+  var clear = document.getElementById('soru-temizle');
   var status = document.getElementById('soru-durum');
-  var answer = document.getElementById('soru-yanit');
-  var answerText = document.getElementById('soru-yanit-metin');
+  var chat = document.getElementById('soru-sohbet');
+  var example = document.getElementById('soru-ornek');
   var fallback = document.getElementById('soru-yedek');
   var trap = document.getElementById('soru-tuzak');
   var MAX = Number(input.getAttribute('maxlength')) || 600;
   var TIMEOUT = 70000;
+  var STORAGE_KEY = 'sc-hakem-sohbet';
+  var MAX_STORED = 30;
+
+  // Konuşma geçmişi: { role: 'user' | 'assistant', content: '...' }
+  var history = [];
+  var busy = false;
+
+  function save() {
+    try {
+      sessionStorage.setItem(STORAGE_KEY, JSON.stringify(history.slice(-MAX_STORED)));
+    } catch (e) {}
+  }
+
+  function load() {
+    try {
+      var stored = JSON.parse(sessionStorage.getItem(STORAGE_KEY) || '[]');
+      if (!Array.isArray(stored)) return [];
+      return stored.filter(function (m) {
+        return m && (m.role === 'user' || m.role === 'assistant') && typeof m.content === 'string' && m.content;
+      });
+    } catch (e) {
+      return [];
+    }
+  }
 
   function updateCounter() {
     counter.textContent = input.value.length + ' / ' + MAX;
   }
-  input.addEventListener('input', updateCounter);
 
-  // Örnek soruya dokununca kutuya yazılır
-  var example = document.getElementById('soru-ornek');
-  if (example) {
-    example.addEventListener('click', function () {
-      input.value = document.getElementById('soru-ornek-metin').textContent.replace(/\s+/g, ' ').trim();
-      updateCounter();
-      input.focus();
-    });
+  function addBubble(role, text, pending) {
+    var who = document.createElement('span');
+    who.className = 'chat__who';
+    who.textContent = role === 'user' ? 'Siz' : 'Hakem';
+    var body = document.createElement('p');
+    body.className = 'chat__text';
+    body.textContent = text;
+    var item = document.createElement('div');
+    item.className = 'chat__msg chat__msg--' + (role === 'user' ? 'user' : 'ref') + (pending ? ' is-pending' : '');
+    item.appendChild(who);
+    item.appendChild(body);
+    chat.appendChild(item);
+    chat.hidden = false;
+    chat.scrollTop = chat.scrollHeight;
+    return item;
   }
-  updateCounter();
 
-  function setBusy(busy) {
-    button.disabled = busy;
-    button.textContent = busy ? 'Hakem düşünüyor…' : 'Hakeme sor';
+  // Sohbet başlayınca örnek soru gizlenir, etiket ve temizle düğmesi değişir
+  function refresh() {
+    var started = history.length > 0;
+    chat.hidden = !started && !chat.firstChild;
+    clear.hidden = !started;
+    if (example) example.hidden = started;
+    label.textContent = started ? 'Ek bilgi verin ya da yeni bir soru sorun' : 'Durumu anlatın';
+  }
+
+  function setBusy(value) {
+    busy = value;
+    button.disabled = value;
+    clear.disabled = value;
   }
 
   function showFallback(message) {
     status.textContent = message;
-    answer.hidden = true;
     fallback.hidden = false;
   }
 
-  function ask(question) {
+  function ask(question, previous) {
     var controller = typeof AbortController === 'function' ? new AbortController() : null;
     var timer = controller ? setTimeout(function () { controller.abort(); }, TIMEOUT) : null;
     return fetch('/api/soru', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ question: question, website: trap.value }),
+      body: JSON.stringify({ question: question, history: previous, website: trap.value }),
       signal: controller ? controller.signal : undefined
     }).then(function (res) {
       return res.json().catch(function () { return {}; }).then(function (data) {
@@ -63,33 +103,94 @@
     });
   }
 
-  form.addEventListener('submit', function (event) {
-    event.preventDefault();
-    var question = input.value.trim();
-    if (question.length < 5) {
+  function submit() {
+    if (busy) return;
+    var question = input.value.replace(/\s+/g, ' ').trim();
+    if (question.length < (history.length ? 2 : 5)) {
       status.textContent = 'Durumu birkaç kelimeyle yazar mısın?';
       return;
     }
-    setBusy(true);
+    var previous = history.slice(-8);
+    var mine = addBubble('user', question, false);
+    var pending = addBubble('assistant', 'Hakem düşünüyor…', true);
+    input.value = '';
+    updateCounter();
     status.textContent = '';
     fallback.hidden = true;
+    setBusy(true);
 
-    ask(question).then(function (result) {
+    // Başarısız olursa mesaj sohbetten geri alınır ve kutuya geri yazılır
+    function undo(message, withFallback) {
+      chat.removeChild(mine);
+      chat.removeChild(pending);
+      input.value = question;
+      updateCounter();
       setBusy(false);
+      refresh();
+      if (withFallback) showFallback(message);
+      else status.textContent = message;
+    }
+
+    ask(question, previous).then(function (result) {
       if (result.status === 200 && result.data && result.data.answer) {
-        answerText.textContent = result.data.answer;
-        answer.hidden = false;
-        answer.scrollIntoView({ block: 'nearest' });
+        pending.className = 'chat__msg chat__msg--ref';
+        pending.lastChild.textContent = result.data.answer;
+        history.push({ role: 'user', content: question });
+        history.push({ role: 'assistant', content: result.data.answer });
+        save();
+        setBusy(false);
+        refresh();
+        chat.scrollTop = chat.scrollHeight;
         return;
       }
       if (result.status === 429) {
-        status.textContent = 'Çok hızlı soruldu. Bir dakika sonra tekrar dener misin?';
+        undo('Çok hızlı soruldu. Bir dakika sonra tekrar dener misin?', false);
         return;
       }
-      showFallback('Hakem şu an yanıt veremiyor.');
+      undo('Hakem şu an yanıt veremiyor.', true);
     }, function () {
-      setBusy(false);
-      showFallback('Hakeme ulaşılamadı.');
+      undo('Hakeme ulaşılamadı.', true);
     });
+  }
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    submit();
   });
+
+  // Bilgisayarda Enter gönderir, Shift+Enter yeni satır açar; telefonda Enter yeni satırdır
+  input.addEventListener('keydown', function (event) {
+    var desktop = window.matchMedia && window.matchMedia('(pointer: fine)').matches;
+    if (desktop && event.key === 'Enter' && !event.shiftKey && !event.isComposing) {
+      event.preventDefault();
+      submit();
+    }
+  });
+
+  input.addEventListener('input', updateCounter);
+
+  if (example) {
+    example.addEventListener('click', function () {
+      input.value = document.getElementById('soru-ornek-metin').textContent.replace(/\s+/g, ' ').trim();
+      updateCounter();
+      input.focus();
+    });
+  }
+
+  clear.addEventListener('click', function () {
+    history = [];
+    save();
+    chat.textContent = '';
+    status.textContent = '';
+    fallback.hidden = true;
+    refresh();
+    input.focus();
+  });
+
+  // Sayfa yenilenirse (örneğin dil değişince) sohbet kaldığı yerden sürer
+  history = load();
+  for (var i = 0; i < history.length; i++) addBubble(history[i].role, history[i].content, false);
+  clear.textContent = 'Sohbeti temizle';
+  updateCounter();
+  refresh();
 })();
