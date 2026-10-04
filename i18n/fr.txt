@@ -2,14 +2,24 @@
 1|Soccer Chess : le jeu de société qui allie la stratégie des échecs à l'adresse de frappe du football. Découvrez les règles et évaluez la version d'essai.
 4|Comment jouer
 5|Règles optionnelles
+6|Arbitre IA
 7|Sondage
 13|Un jeu d'adresse et de stratégie
 14|Construisez par les coups.
 15|Concluez par la frappe.
 16|À Soccer Chess, le bon coup ne suffit pas : chaque frappe mal exécutée donne le ballon à l'adversaire. Le match revient à ceux qui pensent comme un joueur d'échecs et frappent comme un footballeur.
 17|Sondage sur la version d'essai
+18|Intelligence artificielle · décide en quelques secondes
+19|Un doute pendant le match ? Décrivez la situation et l'Arbitre IA affiche aussitôt sa décision selon les règles. Personne à l'autre bout, aucune attente.
+20|Bonjour, je suis l'Arbitre IA. Que s'est-il passé dans le match ? Écrivez-le et je vous donne la décision tout de suite.
+21|Un joueur de chaque équipe est à 2 cases du ballon. Qui l'a ?
+22|Le ballon a touché un adversaire et est sorti en touche. À qui est-il ?
+23|Le joueur le plus proche du ballon est le gardien. Que se passe-t-il ?
+24|Que s'est-il passé dans le match ?
+25|Obtenir la décision
 26|En attendant, vous pouvez décrire la situation à l'IA que vous utilisez et lui dire « explique-nous comment continuer selon les règles de ce site ». Il suffit de copier l'adresse du site et de l'ajouter à votre message.
 28|Copier
+29|L'Arbitre IA est une intelligence artificielle : ce que vous écrivez n'est pas envoyé aux propriétaires du site, la réponse est générée automatiquement et peut contenir des erreurs. Le dernier mot revient aux règles et à l'accord entre les équipes.
 30|Équipes
 31|Joueurs
 32|Valeurs de déplacement
@@ -66,197 +76,191 @@
 84|Dernière frappe
 85|Si les deux sont égaux, le joueur de l'équipe qui a frappé le ballon en dernier.
 86|Cas particuliers
-87|Le frappeur
-88|Le footballeur qui a frappé ne peut pas reprendre le ballon même s'il en est le plus proche ; il est ignoré dans le calcul.
-89|Ballon sorti
-90|Si le ballon sort du terrain, le joueur adverse le plus proche de l'endroit de la sortie en prend possession et le ballon est placé sur sa case. Même si le ballon sort après avoir touché un adversaire, il est considéré comme sorti par l'équipe qui a frappé.
-91|Gardien
-92|Pour calculer la possession, le gardien est supposé se trouver sur la case de la surface de but située du côté le plus proche du ballon, et sa distance est comptée depuis cette case. Si ce calcul donne la possession au gardien, c'est son coéquipier le plus proche qui prend le ballon, placé sur la case de ce dernier.
-93|Tir et maniement du gardien
-94|Le joueur qui décide de tirer au but doit l'annoncer à son adversaire avant la frappe. L'adversaire place le gardien où il veut à l'aide de la tige située derrière lui ; dès qu'il lâche la tige, il ne peut plus toucher au gardien, qui reste où il est. Contrairement au baby-foot, on ne fait ni tourner ni bouger le gardien pendant le tir : le gardien est placé d'abord, le tir vient ensuite.
-95|Décision sur la ligne
-96|Pour un but ou une sortie, le ballon doit avoir entièrement franchi la ligne : vu de dessus, il ne doit pas la toucher.
-97|Règles optionnelles
-98|Elles sont facultatives. Les équipes doivent convenir avant le match de celles qui s'appliquent.
-99|Interception
-100|Stratégie +
-101|Si un joueur de l'équipe sans ballon peut atteindre, grâce à sa force de placement, la case de l'adversaire en possession et que son niveau général est supérieur, il prend le ballon et joue son coup en partant de n'importe quelle case voisine de celle où il l'a pris.
-102|Si son niveau général est inférieur, on ajoute +3 au niveau général pour chaque unité de placement restante après avoir atteint l'adversaire. Exemple : un footballeur de placement 5 et de niveau 80 qui atteint son adversaire à la 3e case compte pour 86.
-103|Si, après calcul, les niveaux sont égaux, la tentative échoue et le coup est rejoué.
-104|Met en avant la réflexion stratégique et le calcul ; réduit la fluidité car les coups sont plus lents.
-105|Pas de but depuis sa moitié
-106|Fluidité +
-107|Si le joueur en possession frappe depuis derrière la ligne médiane, le but ne compte pas et la frappe est rejouée.
-108|Réduit les sorties du ballon et fluidifie le jeu ; rend les buts plus difficiles.
-109|Hors-jeu
-110|Réalisme +
-111|Si un joueur de l'équipe qui frappe se trouve 1 case ou plus devant la rangée du dernier joueur adverse, il est ignoré dans le calcul de la possession.
-112|Réduit le nombre de buts et offre un match plus réaliste.
-113|Touche pour nous
-114|Si le ballon touche un joueur et sort par la ligne de touche, la touche revient à l'adversaire de l'équipe touchée. Le ballon est posé sur la case du joueur de l'équipe bénéficiaire le plus proche de l'endroit de la sortie.
-115|Peut provoquer des désaccords du type « touché / pas touché » entre les équipes.
-116|Trois corners, un penalty
-117|Attaque +
-118|Si le ballon touche un joueur adverse et sort par la ligne de but, cela compte comme un corner ; les corners ne sont pas joués et 3 corners donnent 1 penalty.
-119|Pendant le penalty, les défenseurs placés devant le but sont retirés temporairement puis remis sur les mêmes cases après la frappe.
-120|Les cartes spéciales comptent
-121|Collection
-122|Les cartes spéciales, réservées à ceux qui complètent la collection, entrent en jeu et donnent un avantage à leur propriétaire.
-123|Le match est plus équitable si les deux camps possèdent ces cartes.
-124|Passes obligatoires
-125|Avant de commencer, les équipes s'accordent sur un nombre x. Pour obtenir le droit de tirer au but, une équipe doit réussir au moins x passes précises d'affilée sans perdre le ballon.
-126|Le nombre x est fixé d'un commun accord.
-127|02 — Vos retours
-128|Si vous avez joué à la version d'essai, votre avis façonnera la version finale du jeu.
-129|JavaScript doit être activé dans votre navigateur pour répondre au sondage.
-130|© 2026 Soccer Chess. Tous droits réservés.
-131|Page d'accueil de Soccer Chess
-132|Menu principal
-134|Logo de Soccer Chess
-135|Écrivez la situation ici
-136|Les deux facettes du jeu
-137|Ouvrir le terrain en grand format
-138|Terrain de Soccer Chess : terrain de football quadrillé de 30 colonnes et 40 rangées
-139|Échauffement
-140|D'abord, faisons connaissance.
-141|Votre tranche d'âge ?
-142|12 ans et moins
-143|45 ans et plus
-144|Combien de matchs avez-vous joués ?
-145|7 ou plus
-146|À combien avez-vous joué ?
-147|2 personnes
-148|3–4 personnes
-149|5 ou plus
-150|Votre rapport aux jeux de société ?
-151|J'y joue souvent
-152|De temps en temps
-153|Rarement
-154|Et au football ?
-155|Je joue et je regarde
-156|Je regarde seulement
-157|Peu d'intérêt
-158|Règles
-159|Comment s'est passé l'apprentissage du jeu ?
-160|Apprendre les règles, c'était comment ?
-161|Très facile
-162|Facile
-163|Moyen
-164|Difficile
-165|Très difficile
-166|Combien de temps pour comprendre les règles ?
-167|Moins de 5 minutes
-168|5–15 minutes
-169|15–30 minutes
-170|Plus de 30 minutes
-171|Où avez-vous appris les règles ?
-172|Sur ce site
-173|Dans les règles écrites
-174|Quelqu'un me les a expliquées
-175|En jouant
-176|Y a-t-il eu des désaccords sur les règles pendant le match ?
-177|Jamais
-178|Une ou deux fois
-179|Souvent
-180|Calculer qui a le ballon (compter les cases), c'était comment ?
-181|Facile et rapide
-182|Correct
-183|Ça ralentit le jeu
-184|Déroutant
-185|Sur le terrain
-186|Le match lui-même.
-187|Avec combien de tours de coups avez-vous joué ?
-188|1 tour
-189|2 tours
-190|3 ou plus
-191|Combien de temps a duré un match environ ?
-192|Moins de 15 minutes
-193|30–60 minutes
-194|Plus d'une heure
-195|Que pensez-vous de la durée du match ?
-196|Courte
-197|Juste comme il faut
-198|Longue
-199|Frapper le ballon, c'était comment ?
-200|Difficile mais amusant
-201|Trop facile
-202|Qu'est-ce qui a le plus pesé dans le match ?
-203|Équilibré
-204|Adresse de frappe
-205|Quelles règles optionnelles avez-vous essayées ?
-206|Aucune
-207|Que pensez-vous de la qualité du terrain, des pions, du ballon et du gardien ?
-208|Très bonne
-209|Bonne
-210|Faible
-211|Depuis les tribunes
-212|Votre impression générale.
-213|Qu'avez-vous le plus aimé ?
-214|Élaborer une stratégie
-215|Frapper le ballon
-216|Marquer des buts
-217|Contrarier le plan adverse
-218|La compétition entre amis
-219|Les cartes des footballeurs et leurs valeurs
-220|Quelle note sur 10 donnez-vous à Soccer Chess ?
-221|Rejoueriez-vous ?
-222|Absolument
-223|Probablement
-224|Pas sûr
-225|Je ne pense pas
-226|Le recommanderiez-vous à un ami ?
-227|Peut-être
-228|Non
-229|Coup de sifflet final
-230|Dernières questions avant la mise en vente.
-231|L'achèteriez-vous s'il était mis en vente ?
-232|Je l'achèterais tout de suite
-233|Ça dépend du prix
-234|Je l'achèterais pour l'offrir
-235|Je ne l'achèterais pas
-236|Selon vous, quel serait un prix raisonnable ? (livres turques)
-237|Ce site a-t-il suffi pour comprendre les règles ?
-238|Oui, c'était suffisant
-239|En partie
-240|Une vidéo serait mieux
-241|Envoi trop rapide. Pouvez-vous réessayer dans une minute ?
-242|Échec de l'envoi. Pouvez-vous vérifier votre connexion et réessayer ?
-243|Plusieurs choix possibles
-244|ex. 2500
-246|répondues
-247|Environ 2 minutes. Aucune question n'est obligatoire ; cochez ce qui vous correspond et passez le reste.
-248|Envoyer les réponses et passer aux avis et suggestions détaillés
-249|Pouvez-vous répondre à au moins une question avant d'envoyer ?
-250|Envoi en cours…
-251|Votre nom ou un moyen de vous joindre, si vous le souhaitez
-252|Que changeriez-vous ? Quelle règle vous a dérouté ? Tout ce qui vous vient à l'esprit nous est utile.
-253|Envoyer
-254|Terminer sans écrire
-255|Vos réponses sont bien arrivées
-256|Avis et suggestions détaillés
-257|Les options ne disent pas tout. Écrivez avec vos mots votre idée pour améliorer le jeu, un problème rencontré ou ce qui vous a plu.
-258|Votre avis et vos suggestions
-259|Nom / contact (facultatif)
-260|Pouvez-vous écrire quelques phrases à envoyer ? Si vous préférez ne rien écrire, choisissez "Terminer sans écrire".
-261|Terminé
-262|Merci, vous êtes l'homme du match.
-263|Nous avons bien reçu vos réponses et votre avis. Vous aurez votre part dans la version finale de Soccer Chess.
-264|Nous avons bien reçu vos réponses. Vous aurez votre part dans la version finale de Soccer Chess.
-265|Vous
-266|Ajoutez des précisions ou posez une nouvelle question
-267|Pouvez-vous décrire la situation en quelques mots ?
-269|Question posée trop vite. Pouvez-vous réessayer dans une minute ?
-274|Effacer la conversation
-6|Arbitre IA
-18|Intelligence artificielle · décide en quelques secondes
-19|Un doute pendant le match ? Décrivez la situation et l'Arbitre IA affiche aussitôt sa décision selon les règles. Personne à l'autre bout, aucune attente.
-20|Bonjour, je suis l'Arbitre IA. Que s'est-il passé dans le match ? Écrivez-le et je vous donne la décision tout de suite.
-21|Un joueur de chaque équipe est à 2 cases du ballon. Qui l'a ?
-22|Le ballon a touché un adversaire et est sorti en touche. À qui est-il ?
-23|Le joueur le plus proche du ballon est le gardien. Que se passe-t-il ?
-24|Que s'est-il passé dans le match ?
-25|Obtenir la décision
-29|L'Arbitre IA est une intelligence artificielle : ce que vous écrivez n'est pas envoyé aux propriétaires du site, la réponse est générée automatiquement et peut contenir des erreurs. Le dernier mot revient aux règles et à l'accord entre les équipes.
-268|L'Arbitre IA décide…
-270|L'Arbitre IA ne peut pas répondre pour le moment.
-271|Impossible de joindre l'Arbitre IA.
+91|Le frappeur
+92|Le footballeur qui a frappé ne peut pas reprendre le ballon même s'il en est le plus proche ; il est ignoré dans le calcul.
+93|Ballon sorti
+94|Si le ballon sort du terrain, le joueur adverse le plus proche de l'endroit de la sortie en prend possession et le ballon est placé sur sa case. Même si le ballon sort après avoir touché un adversaire, il est considéré comme sorti par l'équipe qui a frappé.
+95|Gardien
+96|Pour calculer la possession, le gardien est supposé se trouver sur la case de la surface de but située du côté le plus proche du ballon, et sa distance est comptée depuis cette case. Si ce calcul donne la possession au gardien, c'est son coéquipier le plus proche qui prend le ballon, placé sur la case de ce dernier.
+97|Tir et maniement du gardien
+98|Le joueur qui décide de tirer au but doit l'annoncer à son adversaire avant la frappe. L'adversaire place le gardien où il veut à l'aide de la tige située derrière lui ; dès qu'il lâche la tige, il ne peut plus toucher au gardien, qui reste où il est. Contrairement au baby-foot, on ne fait ni tourner ni bouger le gardien pendant le tir : le gardien est placé d'abord, le tir vient ensuite.
+99|Décision sur la ligne
+100|Pour un but ou une sortie, le ballon doit avoir entièrement franchi la ligne : vu de dessus, il ne doit pas la toucher.
+101|Règles optionnelles
+102|Elles sont facultatives. Les équipes doivent convenir avant le match de celles qui s'appliquent.
+103|Interception
+104|Stratégie +
+105|Si un joueur de l'équipe sans ballon peut atteindre, grâce à sa force de placement, la case de l'adversaire en possession et que son niveau général est supérieur, il prend le ballon et joue son coup en partant de n'importe quelle case voisine de celle où il l'a pris.
+106|Si son niveau général est inférieur, on ajoute +3 au niveau général pour chaque unité de placement restante après avoir atteint l'adversaire. Exemple : un footballeur de placement 5 et de niveau 80 qui atteint son adversaire à la 3e case compte pour 86.
+107|Si, après calcul, les niveaux sont égaux, la tentative échoue et le coup est rejoué.
+108|Met en avant la réflexion stratégique et le calcul ; réduit la fluidité car les coups sont plus lents.
+109|Pas de but depuis sa moitié
+110|Fluidité +
+111|Si le joueur en possession frappe depuis derrière la ligne médiane, le but ne compte pas et la frappe est rejouée.
+112|Réduit les sorties du ballon et fluidifie le jeu ; rend les buts plus difficiles.
+113|Hors-jeu
+114|Réalisme +
+115|Si un joueur de l'équipe qui frappe se trouve 1 case ou plus devant la rangée du dernier joueur adverse, il est ignoré dans le calcul de la possession.
+116|Réduit le nombre de buts et offre un match plus réaliste.
+117|Touche pour nous
+118|Si le ballon touche un joueur et sort par la ligne de touche, la touche revient à l'adversaire de l'équipe touchée. Le ballon est posé sur la case du joueur de l'équipe bénéficiaire le plus proche de l'endroit de la sortie.
+119|Peut provoquer des désaccords du type « touché / pas touché » entre les équipes.
+120|Trois corners, un penalty
+121|Attaque +
+122|Si le ballon touche un joueur adverse et sort par la ligne de but, cela compte comme un corner ; les corners ne sont pas joués et 3 corners donnent 1 penalty.
+123|Pendant le penalty, les défenseurs placés devant le but sont retirés temporairement puis remis sur les mêmes cases après la frappe.
+124|Les cartes spéciales comptent
+125|Collection
+126|Les cartes spéciales, réservées à ceux qui complètent la collection, entrent en jeu et donnent un avantage à leur propriétaire.
+127|Le match est plus équitable si les deux camps possèdent ces cartes.
+128|Passes obligatoires
+129|Avant de commencer, les équipes s'accordent sur un nombre x. Pour obtenir le droit de tirer au but, une équipe doit réussir au moins x passes précises d'affilée sans perdre le ballon.
+130|Le nombre x est fixé d'un commun accord.
+131|02 — Vos retours
+132|Si vous avez joué à la version d'essai, votre avis façonnera la version finale du jeu.
+133|JavaScript doit être activé dans votre navigateur pour répondre au sondage.
+134|© 2026 Soccer Chess. Tous droits réservés.
+135|Page d'accueil de Soccer Chess
+136|Menu principal
+138|Logo de Soccer Chess
+139|Écrivez la situation ici
+140|Les deux facettes du jeu
+141|Ouvrir le terrain en grand format
+142|Terrain de Soccer Chess : terrain de football quadrillé de 30 colonnes et 40 rangées
+143|Échauffement
+144|D'abord, faisons connaissance.
+145|Votre tranche d'âge ?
+146|12 ans et moins
+147|45 ans et plus
+148|Combien de matchs avez-vous joués ?
+149|7 ou plus
+150|À combien avez-vous joué ?
+151|2 personnes
+152|3–4 personnes
+153|5 ou plus
+154|Votre rapport aux jeux de société ?
+155|J'y joue souvent
+156|De temps en temps
+157|Rarement
+158|Et au football ?
+159|Je joue et je regarde
+160|Je regarde seulement
+161|Peu d'intérêt
+162|Règles
+163|Comment s'est passé l'apprentissage du jeu ?
+164|Apprendre les règles, c'était comment ?
+165|Très facile
+166|Facile
+167|Moyen
+168|Difficile
+169|Très difficile
+170|Combien de temps pour comprendre les règles ?
+171|Moins de 5 minutes
+172|5–15 minutes
+173|15–30 minutes
+174|Plus de 30 minutes
+175|Où avez-vous appris les règles ?
+176|Sur ce site
+177|Dans les règles écrites
+178|Quelqu'un me les a expliquées
+179|En jouant
+180|Y a-t-il eu des désaccords sur les règles pendant le match ?
+181|Jamais
+182|Une ou deux fois
+183|Souvent
+184|Calculer qui a le ballon (compter les cases), c'était comment ?
+185|Facile et rapide
+186|Correct
+187|Ça ralentit le jeu
+188|Déroutant
+189|Sur le terrain
+190|Le match lui-même.
+191|Avec combien de tours de coups avez-vous joué ?
+192|1 tour
+193|2 tours
+194|3 ou plus
+195|Combien de temps a duré un match environ ?
+196|Moins de 15 minutes
+197|30–60 minutes
+198|Plus d'une heure
+199|Que pensez-vous de la durée du match ?
+200|Courte
+201|Juste comme il faut
+202|Longue
+203|Frapper le ballon, c'était comment ?
+204|Difficile mais amusant
+205|Trop facile
+206|Qu'est-ce qui a le plus pesé dans le match ?
+207|Équilibré
+208|Adresse de frappe
+209|Quelles règles optionnelles avez-vous essayées ?
+210|Aucune
+211|Que pensez-vous de la qualité du terrain, des pions, du ballon et du gardien ?
+212|Très bonne
+213|Bonne
+214|Faible
+215|Depuis les tribunes
+216|Votre impression générale.
+217|Qu'avez-vous le plus aimé ?
+218|Élaborer une stratégie
+219|Frapper le ballon
+220|Marquer des buts
+221|Contrarier le plan adverse
+222|La compétition entre amis
+223|Les cartes des footballeurs et leurs valeurs
+224|Quelle note sur 10 donnez-vous à Soccer Chess ?
+225|Rejoueriez-vous ?
+226|Absolument
+227|Probablement
+228|Pas sûr
+229|Je ne pense pas
+230|Le recommanderiez-vous à un ami ?
+231|Peut-être
+232|Non
+233|Coup de sifflet final
+234|Dernières questions avant la mise en vente.
+235|L'achèteriez-vous s'il était mis en vente ?
+236|Je l'achèterais tout de suite
+237|Ça dépend du prix
+238|Je l'achèterais pour l'offrir
+239|Je ne l'achèterais pas
+240|Selon vous, quel serait un prix raisonnable ? (livres turques)
+241|Ce site a-t-il suffi pour comprendre les règles ?
+242|Oui, c'était suffisant
+243|En partie
+244|Une vidéo serait mieux
+245|Envoi trop rapide. Pouvez-vous réessayer dans une minute ?
+246|Échec de l'envoi. Pouvez-vous vérifier votre connexion et réessayer ?
+247|Plusieurs choix possibles
+248|ex. 2500
+250|répondues
+251|Environ 2 minutes. Aucune question n'est obligatoire ; cochez ce qui vous correspond et passez le reste.
+252|Envoyer les réponses et passer aux avis et suggestions détaillés
+253|Pouvez-vous répondre à au moins une question avant d'envoyer ?
+254|Envoi en cours…
+255|Votre nom ou un moyen de vous joindre, si vous le souhaitez
+256|Que changeriez-vous ? Quelle règle vous a dérouté ? Tout ce qui vous vient à l'esprit nous est utile.
+257|Envoyer
+258|Terminer sans écrire
+259|Vos réponses sont bien arrivées
+260|Avis et suggestions détaillés
+261|Les options ne disent pas tout. Écrivez avec vos mots votre idée pour améliorer le jeu, un problème rencontré ou ce qui vous a plu.
+262|Votre avis et vos suggestions
+263|Nom / contact (facultatif)
+264|Pouvez-vous écrire quelques phrases à envoyer ? Si vous préférez ne rien écrire, choisissez "Terminer sans écrire".
+265|Terminé
+266|Merci, vous êtes l'homme du match.
+267|Nous avons bien reçu vos réponses et votre avis. Vous aurez votre part dans la version finale de Soccer Chess.
+268|Nous avons bien reçu vos réponses. Vous aurez votre part dans la version finale de Soccer Chess.
+269|Vous
+270|Ajoutez des précisions ou posez une nouvelle question
+271|Pouvez-vous décrire la situation en quelques mots ?
+272|L'Arbitre IA décide…
+273|Question posée trop vite. Pouvez-vous réessayer dans une minute ?
+274|L'Arbitre IA ne peut pas répondre pour le moment.
+275|Impossible de joindre l'Arbitre IA.
+278|Effacer la conversation
+87|Pion touché, pion joué
+88|À votre tour, dès que vous déplacez un pion, vous devez jouer votre coup avec ce pion ; vous ne pouvez plus utiliser votre coup avec un autre.
+89|Annoncez la case de départ
+90|Le joueur qui déplace un pion pour un coup ou une frappe annonce à voix haute la case de départ du pion (par exemple « K-14 »). Comme le terrain compte beaucoup de cases, l'ancienne position n'est ainsi pas oubliée s'il faut recompter ou remettre le pion en place après la frappe.

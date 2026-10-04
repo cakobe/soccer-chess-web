@@ -85,191 +85,195 @@
 84|Son vuran
 85|İkisi de eşitse topa son vuran takımın oyuncusu.
 86|Özel durumlar
-87|Vuran oyuncu
-88|Vuruşu yapan futbolcu topa en yakın olsa bile tekrar sahip olamaz; hesaplamada yok sayılır.
-89|Top dışarıda
-90|Top saha dışına çıkarsa, çıktığı yere en yakın rakip oyuncu topa sahip olur ve top onun karesine alınır. Top rakibe çarpıp çıksa dahi vuruşu yapan takımdan çıkmış sayılır.
-91|Kaleci
-92|Topun sahibi hesaplanırken kaleci, altıpasın içinde topa yakın olan taraftaki karede duruyormuş gibi varsayılır ve yakınlığı o kareden sayılır. Bu hesapla topa sahip olma hakkı kaleciye çıkarsa, kaleciye en yakın takım arkadaşı topa sahip olur ve top onun karesine alınır.
-93|Şut ve kaleci yönetimi
-94|Kaleye şut çekmeye karar veren oyuncu, vuruştan önce bunu rakibine bildirmek zorundadır. Rakip, kaleciyi arkasındaki çubukla istediği pozisyona getirir; çubuğu bıraktığı andan itibaren kaleciye tekrar müdahale edemez ve kaleci olduğu yerde kalır. Langırttaki gibi şut anında kaleciyi çevirmek ya da oynatmak yoktur: kaleci önceden konumlandırılır, şut sonra çekilir.
-95|Çizgi kararı
-96|Gol ve dışarı kararlarında topun tamamının çizgiyi geçmesi gerekir: izdüşümü çizgiye temas etmemelidir.
-97|Opsiyonel kurallar
-98|İsteğe bağlıdır. Hangilerinin uygulanacağı konusunda maç başlamadan önce anlaşılmış olmalıdır.
-99|Top Kapma
-100|Strateji +
-101|Topa sahip olmayan takımın bir oyuncusu, pozisyon alma gücüyle topa sahip rakibin karesine ulaşabiliyorsa ve genel becerisi daha yüksekse topu kapar; hamlesini, topu kaptığı karenin bitişiğindeki herhangi bir kareden başlayarak yapar.
-102|Genel becerisi düşükse, rakibe ulaştıktan sonra artan her pozisyon alma birimi için genel beceriye +3 eklenir. Örnek: pozisyon alma gücü 5 olan ve rakibine 3. karede ulaşan 80 becerili futbolcu 86 sayılır.
-103|Hesap sonunda beceriler eşitse girişim başarısızdır ve hamle baştan yapılır.
-104|Stratejik ve aritmetik düşünmeyi öne çıkarır; hamleler yavaşladığı için akıcılığı düşürür.
-105|Yarı Saha Gerisi Gol Yok
-106|Akıcılık +
-107|Topa sahip olan oyuncu orta saha çizgisinin gerisindeyken vuruş yaparsa gol olsa bile sayılmaz ve vuruş tekrarlanır.
-108|Topun dışarı çıkma oranını azaltır, oyunu akıcılaştırır; gol atmayı zorlaştırır.
-109|Ofsayt
-110|Gerçekçilik +
-111|Vuruşu yapan takımın bir oyuncusu, en gerideki rakip oyuncunun bulunduğu kare sırasından 1 veya daha fazla kare öndeyse topa sahip olma hesaplamasında dikkate alınmaz.
-112|Gol sayısını düşürür, daha gerçekçi bir maç sunar.
-113|Taç Bizim
-114|Top bir oyuncuya çarpıp taç çizgisinden çıkarsa taç, topun çarptığı takımın rakibinin olur. Top, taç hakkını kazanan takımın çıkış noktasına en yakın oyuncusunun karesine bırakılır.
-115|Takımlar arasında “değdi / değmedi” anlaşmazlıklarına yol açabilir.
-116|Üç Korner Bir Penaltı
-117|Hücum +
-118|Top rakip oyuncuya çarpıp kale çizgisinden çıkarsa korner sayılır; korner kullanılmaz, 3 korner olunca 1 penaltı kazanılır.
-119|Penaltı sırasında kale önündeki savunma oyuncuları geçici olarak kaldırılır ve vuruştan sonra aynı karelere geri konur.
-120|Özel Kart Sayılır
-121|Koleksiyon
-122|Yalnızca koleksiyonu tamamlayanların sahip olabildiği özel kartlar oyuna dahil edilir ve sahibine avantaj sağlar.
-123|İki tarafın da bu kartlara sahip olması daha adil bir maç sağlar.
-124|Pas Şartı
-125|Oyuna başlamadan önce takımlar bir x sayısı üzerinde anlaşır. Bir takımın kaleye şut çekme hakkını elde edebilmesi için topu rakibe kaptırmadan art arda en az x isabetli pas yapması gerekir.
-126|x sayısı karşılıklı anlaşmayla belirlenir.
-127|02 — Geri Bildirim
-128|Deneme sürümünü oynadıysan görüşlerin oyunun son halini şekillendirecek.
-129|Anketi doldurmak için tarayıcında JavaScript açık olmalı.
-130|© 2026 Soccer Chess. Tüm hakları saklıdır.
-131|Soccer Chess ana sayfa
-132|Ana menü
-133|Dil / Language
-134|Soccer Chess logosu
-135|Durumu buraya yazın
-136|Oyunun iki yönü
-137|Sahayı büyük boyutta aç
-138|Soccer Chess sahası: 30 sütun ve 40 sıradan oluşan kareli futbol sahası
-139|Isınma turu
-140|Önce seni tanıyalım.
-141|Yaş aralığın?
-142|12 ve altı
-143|45 ve üzeri
-144|Kaç maç oynadın?
-145|7 ve üzeri
-146|Kaç kişiyle oynadınız?
-147|2 kişi
-148|3–4 kişi
-149|5 ve üzeri
-150|Masa oyunlarıyla aran nasıl?
-151|Sık oynarım
-152|Ara sıra
-153|Nadiren
-154|Futbolla aran nasıl?
-155|Oynarım ve izlerim
-156|Sadece izlerim
-157|Pek ilgim yok
-158|Kurallar
-159|Oyunu öğrenmek nasıl geçti?
-160|Kuralları öğrenmek nasıldı?
-161|Çok kolay
-162|Kolay
-163|Orta
-164|Zor
-165|Çok zor
-166|Kuralları kavraman ne kadar sürdü?
-167|5 dakikadan az
-168|5–15 dakika
-169|15–30 dakika
-170|30 dakikadan fazla
-171|Kuralları nereden öğrendin?
-172|Bu siteden
-173|Yazılı kural metninden
-174|Biri anlattı
-175|Oynarken çözdük
-176|Maç sırasında kural anlaşmazlığı yaşadınız mı?
-177|Hiç
-178|Bir iki kez
-179|Sık sık
-180|Topun kimde olduğunu hesaplamak (kare sayma) nasıldı?
-181|Kolay ve hızlı
-182|İdare eder
-183|Oyunu yavaşlatıyor
-184|Kafa karıştırıcı
-185|Sahada
-186|Maçın kendisi.
-187|Kaç hamle turuyla oynadınız?
-188|1 tur
-189|2 tur
-190|3 ve üzeri
-191|Bir maç yaklaşık ne kadar sürdü?
-192|15 dakikadan az
-193|30–60 dakika
-194|1 saatten fazla
-195|Maç süresi nasıl geldi?
-196|Kısa
-197|Tam kıvamında
-198|Uzun
-199|Vuruş yapmak nasıldı?
-200|Zor ama keyifli
-201|Fazla kolay
-202|Maçta hangisi daha ağır bastı?
-203|İkisi dengeli
-204|Vuruş becerisi
-205|Hangi opsiyonel kuralları denediniz?
-206|Hiçbirini
-207|Saha, piyonlar, top ve kalecinin kalitesi nasıldı?
-208|Çok iyi
-209|İyi
-210|Zayıf
-211|Tribünden yorum
-212|Genel izlenimin.
-213|En çok neyi sevdin?
-214|Strateji kurmak
-215|Vuruş yapmak
-216|Gol atmak
-217|Rakibin planını bozmak
-218|Arkadaşlarla rekabet
-219|Futbolcu kartları ve değerleri
-220|Soccer Chess'e 10 üzerinden kaç verirsin?
-221|Tekrar oynar mısın?
-222|Kesinlikle
-223|Muhtemelen
-224|Emin değilim
-225|Sanmıyorum
-226|Arkadaşına önerir misin?
-227|Belki
-228|Hayır
-229|Son düdük
-230|Piyasaya çıkmadan önce son sorular.
-231|Satışa çıksa alır mıydın?
-232|Hemen alırım
-233|Fiyatına bağlı
-234|Hediye olarak alırım
-235|Almam
-236|Sence makul fiyatı ne olmalı? (TL)
-237|Bu site kuralları anlamana yetti mi?
-238|Evet, yeterli
-239|Kısmen
-240|Video olsa daha iyi olurdu
-241|Çok hızlı gönderildi. Bir dakika sonra tekrar dener misin?
-242|Gönderilemedi. Bağlantını kontrol edip tekrar dener misin?
-243|Birden fazla seçebilirsin
-244|Örn. 2500
-245|TL
-246|yanıtlandı
-247|Yaklaşık 2 dakika sürer. Hiçbir soru zorunlu değil; aklına yatanları işaretle, gerisini geç.
-248|Yanıtları gönder ve detaylı görüş ve öneriye geç
-249|Göndermeden önce en az bir soruyu yanıtlar mısın?
-250|Gönderiliyor…
-251|İstersen adın ya da ulaşabileceğimiz bir adres
-252|Neyi değiştirirdin? Hangi kural kafanı karıştırdı? Aklına gelen her şey işimize yarar.
-253|Gönder
-254|Yazmadan bitir
-255|Yanıtların ulaştı
-256|Detaylı görüş ve öneri
-257|Seçenekler her şeyi anlatmaz. Oyunu daha iyi yapacak fikrini, yaşadığın sorunu ya da hoşuna gideni kendi cümlelerinle yaz.
-258|Görüş ve önerin
-259|Ad / iletişim (isteğe bağlı)
-260|Göndermek için birkaç cümle yazar mısın? Yazmak istemezsen "Yazmadan bitir" de.
-261|Tamamlandı
-262|Teşekkürler, maçın adamı sensin.
-263|Yanıtların ve görüşün bize ulaştı. Soccer Chess'in son hâlinde senin de payın olacak.
-264|Yanıtların bize ulaştı. Soccer Chess'in son hâlinde senin de payın olacak.
-265|Siz
-266|Ek bilgi verin ya da yeni bir soru sorun
-267|Durumu birkaç kelimeyle yazar mısın?
-268|AI Hakem karar veriyor…
-269|Çok hızlı soruldu. Bir dakika sonra tekrar dener misin?
-270|AI Hakem şu an yanıt veremiyor.
-271|AI Hakeme ulaşılamadı.
-272|(pointer: fine)
-273|Enter
-274|Sohbeti temizle
+87|Dokunulan piyon oynanır
+88|Hamle sırası sizdeyken bir piyonu hareket ettirdiğiniz anda hamlenizi o piyonla yapmak zorundasınız; hamle hakkınızı artık başka bir piyonla kullanamazsınız.
+89|Başlangıç karesini söyleyin
+90|Hamle ya da vuruş için bir piyonu yerinden oynatan oyuncu, piyonun başlangıç karesini yüksek sesle söyler (örneğin “K-14”). Sahada çok fazla kare olduğu için, sayımın tekrarlanması ya da piyonun vuruştan sonra yerine konması gerektiğinde eski konum böylece unutulmaz.
+91|Vuran oyuncu
+92|Vuruşu yapan futbolcu topa en yakın olsa bile tekrar sahip olamaz; hesaplamada yok sayılır.
+93|Top dışarıda
+94|Top saha dışına çıkarsa, çıktığı yere en yakın rakip oyuncu topa sahip olur ve top onun karesine alınır. Top rakibe çarpıp çıksa dahi vuruşu yapan takımdan çıkmış sayılır.
+95|Kaleci
+96|Topun sahibi hesaplanırken kaleci, altıpasın içinde topa yakın olan taraftaki karede duruyormuş gibi varsayılır ve yakınlığı o kareden sayılır. Bu hesapla topa sahip olma hakkı kaleciye çıkarsa, kaleciye en yakın takım arkadaşı topa sahip olur ve top onun karesine alınır.
+97|Şut ve kaleci yönetimi
+98|Kaleye şut çekmeye karar veren oyuncu, vuruştan önce bunu rakibine bildirmek zorundadır. Rakip, kaleciyi arkasındaki çubukla istediği pozisyona getirir; çubuğu bıraktığı andan itibaren kaleciye tekrar müdahale edemez ve kaleci olduğu yerde kalır. Langırttaki gibi şut anında kaleciyi çevirmek ya da oynatmak yoktur: kaleci önceden konumlandırılır, şut sonra çekilir.
+99|Çizgi kararı
+100|Gol ve dışarı kararlarında topun tamamının çizgiyi geçmesi gerekir: izdüşümü çizgiye temas etmemelidir.
+101|Opsiyonel kurallar
+102|İsteğe bağlıdır. Hangilerinin uygulanacağı konusunda maç başlamadan önce anlaşılmış olmalıdır.
+103|Top Kapma
+104|Strateji +
+105|Topa sahip olmayan takımın bir oyuncusu, pozisyon alma gücüyle topa sahip rakibin karesine ulaşabiliyorsa ve genel becerisi daha yüksekse topu kapar; hamlesini, topu kaptığı karenin bitişiğindeki herhangi bir kareden başlayarak yapar.
+106|Genel becerisi düşükse, rakibe ulaştıktan sonra artan her pozisyon alma birimi için genel beceriye +3 eklenir. Örnek: pozisyon alma gücü 5 olan ve rakibine 3. karede ulaşan 80 becerili futbolcu 86 sayılır.
+107|Hesap sonunda beceriler eşitse girişim başarısızdır ve hamle baştan yapılır.
+108|Stratejik ve aritmetik düşünmeyi öne çıkarır; hamleler yavaşladığı için akıcılığı düşürür.
+109|Yarı Saha Gerisi Gol Yok
+110|Akıcılık +
+111|Topa sahip olan oyuncu orta saha çizgisinin gerisindeyken vuruş yaparsa gol olsa bile sayılmaz ve vuruş tekrarlanır.
+112|Topun dışarı çıkma oranını azaltır, oyunu akıcılaştırır; gol atmayı zorlaştırır.
+113|Ofsayt
+114|Gerçekçilik +
+115|Vuruşu yapan takımın bir oyuncusu, en gerideki rakip oyuncunun bulunduğu kare sırasından 1 veya daha fazla kare öndeyse topa sahip olma hesaplamasında dikkate alınmaz.
+116|Gol sayısını düşürür, daha gerçekçi bir maç sunar.
+117|Taç Bizim
+118|Top bir oyuncuya çarpıp taç çizgisinden çıkarsa taç, topun çarptığı takımın rakibinin olur. Top, taç hakkını kazanan takımın çıkış noktasına en yakın oyuncusunun karesine bırakılır.
+119|Takımlar arasında “değdi / değmedi” anlaşmazlıklarına yol açabilir.
+120|Üç Korner Bir Penaltı
+121|Hücum +
+122|Top rakip oyuncuya çarpıp kale çizgisinden çıkarsa korner sayılır; korner kullanılmaz, 3 korner olunca 1 penaltı kazanılır.
+123|Penaltı sırasında kale önündeki savunma oyuncuları geçici olarak kaldırılır ve vuruştan sonra aynı karelere geri konur.
+124|Özel Kart Sayılır
+125|Koleksiyon
+126|Yalnızca koleksiyonu tamamlayanların sahip olabildiği özel kartlar oyuna dahil edilir ve sahibine avantaj sağlar.
+127|İki tarafın da bu kartlara sahip olması daha adil bir maç sağlar.
+128|Pas Şartı
+129|Oyuna başlamadan önce takımlar bir x sayısı üzerinde anlaşır. Bir takımın kaleye şut çekme hakkını elde edebilmesi için topu rakibe kaptırmadan art arda en az x isabetli pas yapması gerekir.
+130|x sayısı karşılıklı anlaşmayla belirlenir.
+131|02 — Geri Bildirim
+132|Deneme sürümünü oynadıysan görüşlerin oyunun son halini şekillendirecek.
+133|Anketi doldurmak için tarayıcında JavaScript açık olmalı.
+134|© 2026 Soccer Chess. Tüm hakları saklıdır.
+135|Soccer Chess ana sayfa
+136|Ana menü
+137|Dil / Language
+138|Soccer Chess logosu
+139|Durumu buraya yazın
+140|Oyunun iki yönü
+141|Sahayı büyük boyutta aç
+142|Soccer Chess sahası: 30 sütun ve 40 sıradan oluşan kareli futbol sahası
+143|Isınma turu
+144|Önce seni tanıyalım.
+145|Yaş aralığın?
+146|12 ve altı
+147|45 ve üzeri
+148|Kaç maç oynadın?
+149|7 ve üzeri
+150|Kaç kişiyle oynadınız?
+151|2 kişi
+152|3–4 kişi
+153|5 ve üzeri
+154|Masa oyunlarıyla aran nasıl?
+155|Sık oynarım
+156|Ara sıra
+157|Nadiren
+158|Futbolla aran nasıl?
+159|Oynarım ve izlerim
+160|Sadece izlerim
+161|Pek ilgim yok
+162|Kurallar
+163|Oyunu öğrenmek nasıl geçti?
+164|Kuralları öğrenmek nasıldı?
+165|Çok kolay
+166|Kolay
+167|Orta
+168|Zor
+169|Çok zor
+170|Kuralları kavraman ne kadar sürdü?
+171|5 dakikadan az
+172|5–15 dakika
+173|15–30 dakika
+174|30 dakikadan fazla
+175|Kuralları nereden öğrendin?
+176|Bu siteden
+177|Yazılı kural metninden
+178|Biri anlattı
+179|Oynarken çözdük
+180|Maç sırasında kural anlaşmazlığı yaşadınız mı?
+181|Hiç
+182|Bir iki kez
+183|Sık sık
+184|Topun kimde olduğunu hesaplamak (kare sayma) nasıldı?
+185|Kolay ve hızlı
+186|İdare eder
+187|Oyunu yavaşlatıyor
+188|Kafa karıştırıcı
+189|Sahada
+190|Maçın kendisi.
+191|Kaç hamle turuyla oynadınız?
+192|1 tur
+193|2 tur
+194|3 ve üzeri
+195|Bir maç yaklaşık ne kadar sürdü?
+196|15 dakikadan az
+197|30–60 dakika
+198|1 saatten fazla
+199|Maç süresi nasıl geldi?
+200|Kısa
+201|Tam kıvamında
+202|Uzun
+203|Vuruş yapmak nasıldı?
+204|Zor ama keyifli
+205|Fazla kolay
+206|Maçta hangisi daha ağır bastı?
+207|İkisi dengeli
+208|Vuruş becerisi
+209|Hangi opsiyonel kuralları denediniz?
+210|Hiçbirini
+211|Saha, piyonlar, top ve kalecinin kalitesi nasıldı?
+212|Çok iyi
+213|İyi
+214|Zayıf
+215|Tribünden yorum
+216|Genel izlenimin.
+217|En çok neyi sevdin?
+218|Strateji kurmak
+219|Vuruş yapmak
+220|Gol atmak
+221|Rakibin planını bozmak
+222|Arkadaşlarla rekabet
+223|Futbolcu kartları ve değerleri
+224|Soccer Chess'e 10 üzerinden kaç verirsin?
+225|Tekrar oynar mısın?
+226|Kesinlikle
+227|Muhtemelen
+228|Emin değilim
+229|Sanmıyorum
+230|Arkadaşına önerir misin?
+231|Belki
+232|Hayır
+233|Son düdük
+234|Piyasaya çıkmadan önce son sorular.
+235|Satışa çıksa alır mıydın?
+236|Hemen alırım
+237|Fiyatına bağlı
+238|Hediye olarak alırım
+239|Almam
+240|Sence makul fiyatı ne olmalı? (TL)
+241|Bu site kuralları anlamana yetti mi?
+242|Evet, yeterli
+243|Kısmen
+244|Video olsa daha iyi olurdu
+245|Çok hızlı gönderildi. Bir dakika sonra tekrar dener misin?
+246|Gönderilemedi. Bağlantını kontrol edip tekrar dener misin?
+247|Birden fazla seçebilirsin
+248|Örn. 2500
+249|TL
+250|yanıtlandı
+251|Yaklaşık 2 dakika sürer. Hiçbir soru zorunlu değil; aklına yatanları işaretle, gerisini geç.
+252|Yanıtları gönder ve detaylı görüş ve öneriye geç
+253|Göndermeden önce en az bir soruyu yanıtlar mısın?
+254|Gönderiliyor…
+255|İstersen adın ya da ulaşabileceğimiz bir adres
+256|Neyi değiştirirdin? Hangi kural kafanı karıştırdı? Aklına gelen her şey işimize yarar.
+257|Gönder
+258|Yazmadan bitir
+259|Yanıtların ulaştı
+260|Detaylı görüş ve öneri
+261|Seçenekler her şeyi anlatmaz. Oyunu daha iyi yapacak fikrini, yaşadığın sorunu ya da hoşuna gideni kendi cümlelerinle yaz.
+262|Görüş ve önerin
+263|Ad / iletişim (isteğe bağlı)
+264|Göndermek için birkaç cümle yazar mısın? Yazmak istemezsen "Yazmadan bitir" de.
+265|Tamamlandı
+266|Teşekkürler, maçın adamı sensin.
+267|Yanıtların ve görüşün bize ulaştı. Soccer Chess'in son hâlinde senin de payın olacak.
+268|Yanıtların bize ulaştı. Soccer Chess'in son hâlinde senin de payın olacak.
+269|Siz
+270|Ek bilgi verin ya da yeni bir soru sorun
+271|Durumu birkaç kelimeyle yazar mısın?
+272|AI Hakem karar veriyor…
+273|Çok hızlı soruldu. Bir dakika sonra tekrar dener misin?
+274|AI Hakem şu an yanıt veremiyor.
+275|AI Hakeme ulaşılamadı.
+276|(pointer: fine)
+277|Enter
+278|Sohbeti temizle
