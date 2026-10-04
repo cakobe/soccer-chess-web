@@ -88,7 +88,7 @@
     return fetch('/api/soru', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ question: question, history: previous, website: trap.value }),
+      body: JSON.stringify({ question: question, history: previous, lang: document.documentElement.lang || 'tr', website: trap.value }),
       signal: controller ? controller.signal : undefined
     }).then(function (res) {
       return res.json().catch(function () { return {}; }).then(function (data) {
