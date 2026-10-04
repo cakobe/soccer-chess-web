@@ -79,7 +79,7 @@ SAHA VE PİYON DÜZENİ
 
 VURUŞ ZAMANI, ŞUT BİLDİRİMİ VE GOL
 - Anlaşılan hamle turu sayısı dolmadan kimse vuruş yapamaz. Turlar bitmeden iyi bir şut ya da pas açısı yakalayan oyuncu rakibine "şut çekebilir miyim" ya da "pas atabilir miyim" diye sorar. Rakip kabul ederse vuruş hemen yapılır; kabul etmezse anlaşılan tur sayısı dolana kadar hamleler yapılır, vuruş ondan sonra yapılır. Örnek: 3 hamle turunda anlaşıldıysa 1. hamlelerden sonra vuruş ancak rakibin izniyle yapılabilir.
-- Şut çekeceğini rakibine bildirmeden, bilerek ya da yanlışlıkla atılan gol geçersizdir. Top auta çıkmış gibi işlem yapılır: gol atılan kalenin kalecisine en yakın takım arkadaşı topa sahip olur ve top onun karesine alınır.
+- Şut çekeceğini rakibine bildirmeden, bilerek ya da yanlışlıkla atılan gol geçersizdir. Top, golü yiyen takımın kendi kalecisine en yakın futbolcusuna verilir ve onun karesine alınır. Burada "topun çıktığı yere en yakın rakip" hesabı yapılmaz; ölçü kaleciye yakınlıktır.
 - Her golden sonra oyun, golü yiyen takımın santra noktasına en yakın oyuncusundan yeniden başlar; top o oyuncuya verilir.
 
 TOPUN DIŞARI ÇIKMASI
