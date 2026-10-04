@@ -131,7 +131,7 @@
 
     var body;
     if (item.type === 'sayi') {
-      var input = el('input', { type: 'number', name: name, min: '0', max: '1000000', step: '1', inputmode: 'numeric', class: 'q__number', placeholder: 'Örn. 750', 'aria-label': item.q });
+      var input = el('input', { type: 'number', name: name, min: '0', max: '1000000', step: '1', inputmode: 'numeric', class: 'q__number', placeholder: 'Örn. 2500', 'aria-label': item.q });
       body = el('div', { class: 'chips' }, [input]);
     } else if (item.type === 'puan') {
       body = el('div', { class: 'chips chips--score' });
@@ -168,7 +168,8 @@
 
   function buildStepOne() {
     var bar = el('span', { class: 'survey__bar-fill' });
-    var count = el('span', { class: 'survey__count', text: '' });
+    var countNumber = el('span', { text: '' });
+    var count = el('span', { class: 'survey__count' }, [countNumber, el('span', { text: 'yanıtlandı' })]);
     var progress = el('div', { class: 'survey__progress' }, [el('div', { class: 'survey__bar' }, [bar]), count]);
 
     var form = el('form', { class: 'survey__form', novalidate: '' });
@@ -196,7 +197,7 @@
     function update() {
       var done = collect().length;
       bar.style.width = Math.round((done / questions.length) * 100) + '%';
-      count.textContent = done + ' / ' + questions.length + ' yanıtlandı';
+      countNumber.textContent = done + ' / ' + questions.length + ' ';
     }
     form.addEventListener('change', update);
     form.addEventListener('input', update);

@@ -26,6 +26,13 @@
         <a href="#opsiyonel">Opsiyonel Kurallar</a>
         <a href="#hakem">Hakeme Sor</a>
         <a href="#anket" class="nav__cta">Anket</a>
+        <select class="lang" id="dil" aria-label="Dil / Language">
+          <option value="tr">TR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+          <option value="de">DE</option>
+          <option value="fr">FR</option>
+        </select>
       </nav>
     </div>
   </header>
@@ -307,7 +314,12 @@
 
           <form class="ask" id="soru-form" novalidate>
             <label class="ask__label" for="soru-metin">Durumu anlatın</label>
-            <textarea class="ask__input" id="soru-metin" rows="4" maxlength="600" placeholder="Örn. Vuruştan sonra topa iki takımdan da birer oyuncu 2 kare uzakta kaldı. Top kimde?"></textarea>
+            <textarea class="ask__input" id="soru-metin" rows="4" maxlength="600" placeholder="Durumu buraya yazın"></textarea>
+            <button type="button" class="ask__example" id="soru-ornek">
+              <span class="ask__example-tag">Örnek soru</span>
+              <span id="soru-ornek-metin">Vuruştan sonra topa iki takımdan da birer oyuncu 2 kare uzakta kaldı. Top kimde?</span>
+              <span class="ask__example-hint">Dokunursan kutuya yazılır</span>
+            </button>
             <input type="text" id="soru-tuzak" name="website" class="survey__trap" tabindex="-1" autocomplete="off" aria-hidden="true">
             <div class="ask__row">
               <button type="submit" class="btn btn--primary" id="soru-gonder">Hakeme sor</button>
@@ -364,6 +376,8 @@
     </div>
   </footer>
 
+  <script src="i18n.js"></script>
+  <script src="dil.js"></script>
   <script src="anket.js" defer></script>
   <script src="hakem.js" defer></script>
 

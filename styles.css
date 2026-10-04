@@ -191,6 +191,18 @@ h1, h2, h3, h4 {
   border-color: var(--accent);
 }
 
+/* Dil seçimi */
+.lang {
+  padding: 6px 6px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
 /* --- Butonlar ----------------------------------------------------------- */
 
 .btn {
@@ -810,6 +822,46 @@ h1, h2, h3, h4 {
   border-color: transparent;
 }
 
+.ask__example {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px 14px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 12px;
+  background: none;
+  color: var(--text);
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.ask__example:hover {
+  border-color: var(--accent);
+}
+
+.ask__example-tag,
+.ask__example-hint {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.ask__example-tag {
+  margin-bottom: 4px;
+  font-family: var(--font-display);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.ask__example-hint {
+  margin-top: 4px;
+}
+
 .ask__row {
   display: flex;
   align-items: center;
@@ -1099,10 +1151,14 @@ h1, h2, h3, h4 {
 
 .survey__trap {
   position: absolute;
-  left: -9999px;
-  width: 1px;
-  height: 1px;
+  width: 0;
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
   opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 /* Gönderme */
@@ -1258,7 +1314,26 @@ h1, h2, h3, h4 {
     min-height: 60px;
   }
 
-  .nav__links a:not(.nav__cta) {
+  .nav__links {
+    gap: 12px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  /* Telefonda yalnızca Hakeme Sor, Anket ve dil seçimi kalır */
+  .nav__links a:not(.nav__cta):not([href="#hakem"]) {
+    display: none;
+  }
+
+  .nav__links a[href="#hakem"] {
+    color: var(--text);
+  }
+
+  .nav__cta {
+    padding: 7px 12px;
+  }
+
+  .logo__text {
     display: none;
   }
 

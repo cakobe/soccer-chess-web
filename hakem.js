@@ -19,6 +19,16 @@
     counter.textContent = input.value.length + ' / ' + MAX;
   }
   input.addEventListener('input', updateCounter);
+
+  // Örnek soruya dokununca kutuya yazılır
+  var example = document.getElementById('soru-ornek');
+  if (example) {
+    example.addEventListener('click', function () {
+      input.value = document.getElementById('soru-ornek-metin').textContent.replace(/\s+/g, ' ').trim();
+      updateCounter();
+      input.focus();
+    });
+  }
   updateCounter();
 
   function setBusy(busy) {

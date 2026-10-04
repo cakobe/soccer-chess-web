@@ -1,0 +1,259 @@
+0|Soccer Chess — Where Skill Meets Strategy
+1|Soccer Chess: the board game that combines the strategy of chess with the kicking skill of football. Learn the rules and rate the trial version.
+4|How to Play
+5|Optional Rules
+6|Ask the Ref
+7|Survey
+13|A Game of Skill and Strategy
+14|Build with moves.
+15|Finish with a kick.
+16|In Soccer Chess the right move is not enough: every poorly struck kick hands the ball to your opponent. The match goes to those who think like a chess player and strike like a footballer.
+17|Trial Version Survey
+18|Teams
+19|Players
+20|Movement values
+21|Optional rules
+22|During the move round
+23|Strategy
+24|You work out who runs where, where to dribble the ball and which gap your opponent will close. Every square is a decision.
+25|At the moment of the kick
+26|Skill
+27|However good your plan is, you really do strike the ball. If the kick is not accurate the ball goes to your opponent; it takes a steady hand and good touch.
+28|01 — Rules
+29|The game is built on a single loop: kick, decide who has the ball, move round, kick again. Moves test your mind, kicks test your skill.
+30|The Pitch
+31|The game is played on a football pitch divided into squares. Pieces are placed on the squares and distances are measured by counting squares.
+32|Squares
+33|Columns
+35|Rows in each half
+36|The coordinates are written so that each player can read them from their own side. When describing a position or asking an AI, you can refer to squares by these letters and numbers.
+37|Move straight, count diagonally
+38|Player pieces move only forwards, backwards, left and right; no piece can move diagonally. However, when deciding who has the ball, diagonal squares are also counted when measuring the distance from a player to the ball.
+39|Move round
+40|Before the match, both sides agree on how many move rounds to play with. With 1 round, each team makes one move before every kick: skill comes to the fore and the match flows. The more rounds, the more strategy matters and the fewer kicks there are. The number can be changed during the match only if both teams agree.
+41|2 teams, 2 or more players
+42|There are always two teams on the pitch, but a team can be run by more than one person. Teammates take turns: one person runs the team until the kick is taken, and in the move cycle after the kick the next person takes over until the following kick. So the game can be played one against one, in pairs or with larger teams.
+43|Card values
+44|On the lower back of every player piece there are three numbers showing the maximum number of squares it can move.
+45|Blue number
+46|Positioning
+47|When the opponent has the ball, the maximum number of squares any of your players can move on your turn.
+48|Green number
+49|Dribbling
+50|The maximum number of squares your player in possession can move with the ball.
+51|Red number
+52|Off-the-Ball Run
+53|When you have the ball, the maximum number of squares your players other than the one in possession can move.
+54|Match flow
+55|Setup
+56|The pitch is placed on a completely flat surface such as a table or the floor. Agree on the number of move rounds and on which optional rules apply.
+57|Coin toss and line-up
+58|The winner of the coin toss decides who takes the kick-off. The player taking the kick-off places their pieces on the squares anywhere on the pitch; then the opponent also lines up freely.
+59|Kick
+60|The team in possession takes its kick. You may strike the ball with any part of the player piece. The moment a player piece touches the ball, the kick counts as taken.
+61|Who has the ball
+62|The player nearest to the square where the ball stops gains possession and is moved to the ball. The ball is not moved; the piece is.
+63|The team in possession moves first: either an off-the-ball run or a dribble. When the turn passes to the opponent, they move any one of their players using its positioning value. Either side can say “pass” instead of moving and hand over the turn.
+64|Kick again
+65|When the agreed move rounds are over, the team in possession takes a kick and the loop starts again.
+66|Who has the ball?
+67|Distance is the smallest number of squares a player needs to reach the ball. Ties are broken in this order:
+68|Distance
+69|The player who reaches the ball in the fewest squares.
+70|Overall skill
+71|If the distance is equal, the player with the higher overall skill.
+72|Last kick
+73|If both are equal, the player of the team that kicked the ball last.
+74|Special cases
+75|The kicker
+76|The player who took the kick cannot regain the ball even if nearest to it; that player is ignored in the calculation.
+77|Ball out of play
+78|If the ball leaves the pitch, the opposing player nearest to where it went out gains possession and the ball is placed on that player's square. Even if the ball hits an opponent on the way out, it counts as put out by the kicking team.
+79|Goalkeeper
+80|When working out possession, the goalkeeper is treated as standing on the square inside the six-yard box on the side nearest the ball, and the distance is counted from that square. If this gives possession to the goalkeeper, the goalkeeper's nearest teammate gains the ball and it is placed on that player's square.
+81|Shots and handling the goalkeeper
+82|A player who decides to shoot at goal must tell the opponent before kicking. The opponent uses the rod behind the goalkeeper to set its position; once they let go of the rod they may not touch the goalkeeper again and it stays where it is. Unlike table football, there is no spinning or moving the goalkeeper during the shot: the goalkeeper is positioned first, then the shot is taken.
+83|Line decisions
+84|For goals and out-of-play decisions the whole ball must cross the line: seen from above, it must not touch the line.
+85|Optional rules
+86|These are optional. Teams must agree before the match which of them apply.
+87|Ball Steal
+88|Strategy +
+89|If a player of the team without the ball can reach the square of the opponent in possession using its positioning power and has a higher overall skill, it steals the ball and makes its move starting from any square next to the one where the ball was won.
+90|If its overall skill is lower, +3 is added to overall skill for every unit of positioning power left over after reaching the opponent. Example: a player with positioning power 5 and skill 80 who reaches the opponent on the 3rd square counts as 86.
+91|If the skills are equal after the calculation, the attempt fails and the move is made again.
+92|Brings strategic and arithmetic thinking to the fore; slows the flow because moves take longer.
+93|No Goals from Own Half
+94|Flow +
+95|If the player in possession kicks from behind the halfway line, a goal does not count and the kick is retaken.
+96|Reduces how often the ball goes out and makes the game flow; makes scoring harder.
+97|Offside
+98|Realism +
+99|If a player of the kicking team is 1 or more squares ahead of the row of the rearmost opposing player, that player is ignored when working out possession.
+100|Lowers the number of goals and makes for a more realistic match.
+101|Our Throw-In
+102|If the ball hits a player and goes out over a touchline, the throw-in goes to the opponent of the team it hit. The ball is placed on the square of the player of the team awarded the throw-in who is nearest to where it went out.
+103|Can lead to “it touched / it didn't touch” arguments between teams.
+104|Three Corners, One Penalty
+105|Attack +
+106|If the ball hits an opposing player and goes out over the goal line, it counts as a corner; corners are not taken, and 3 corners earn 1 penalty.
+107|During a penalty, defenders in front of the goal are removed temporarily and put back on the same squares after the kick.
+108|Special Cards Count
+109|Collection
+110|Special cards, available only to those who complete the collection, are included in the game and give their owner an advantage.
+111|The match is fairer when both sides have these cards.
+112|Pass Requirement
+113|Before the game, teams agree on a number x. To earn the right to shoot at goal, a team must complete at least x accurate passes in a row without losing the ball to the opponent.
+114|The number x is set by mutual agreement.
+115|Ask the referee
+116|Not sure what to do next?
+117|Describe the situation you are stuck on, and the AI referee will tell you how to continue according to the rules on this site. You can refer to squares by the letters and numbers on the pitch and give distances in squares.
+118|Describe the situation
+119|Example question
+120|After the kick, one player from each team is 2 squares away from the ball. Who has the ball?
+121|Tap to put it in the box
+122|The referee's ruling
+123|In the meantime, you can describe the situation to the AI assistant you use and say “tell us how to continue according to the rules on this site”. Just copy the site address and add it to your message.
+125|Copy
+126|Answers are generated by AI and may be wrong; the rules and the agreement between the teams have the final say.
+127|02 — Feedback
+128|If you have played the trial version, your views will shape the final game.
+129|JavaScript must be enabled in your browser to fill in the survey.
+130|© 2026 Soccer Chess. All rights reserved.
+131|Soccer Chess home page
+132|Main menu
+134|Soccer Chess logo
+135|The two sides of the game
+136|Open the pitch at full size
+137|Soccer Chess pitch: a squared football pitch with 30 columns and 40 rows
+138|Write the situation here
+139|Warm-up
+140|First, a little about you.
+141|Your age group?
+142|12 and under
+143|45 and over
+144|How many matches have you played?
+145|7 or more
+146|How many people played?
+147|2 people
+148|3–4 people
+149|5 or more
+150|How do you get on with board games?
+151|I play often
+152|Now and then
+153|Rarely
+154|How about football?
+155|I play and watch
+156|I only watch
+157|Not really interested
+158|Rules
+159|How did learning the game go?
+160|How was learning the rules?
+161|Very easy
+162|Easy
+163|Medium
+164|Hard
+165|Very hard
+166|How long did it take to grasp the rules?
+167|Less than 5 minutes
+168|5–15 minutes
+169|15–30 minutes
+170|More than 30 minutes
+171|Where did you learn the rules?
+172|From this site
+173|From the written rules
+174|Someone explained them
+175|We worked it out as we played
+176|Did you disagree about the rules during a match?
+177|Never
+178|Once or twice
+179|Often
+180|How was working out who has the ball (counting squares)?
+181|Quick and easy
+182|It's OK
+183|It slows the game down
+184|Confusing
+185|On the pitch
+186|The match itself.
+187|How many move rounds did you play with?
+188|1 round
+189|2 rounds
+190|3 or more
+191|About how long did a match last?
+192|Less than 15 minutes
+193|30–60 minutes
+194|More than 1 hour
+195|How did the match length feel?
+196|Short
+197|Just right
+198|Long
+199|How was kicking the ball?
+200|Hard but fun
+201|Too easy
+202|Which mattered more in the match?
+203|Evenly balanced
+204|Kicking skill
+205|Which optional rules did you try?
+206|None
+207|How was the quality of the pitch, pieces, ball and goalkeeper?
+208|Very good
+209|Good
+210|Poor
+211|From the stands
+212|Your overall impression.
+213|What did you like most?
+214|Planning strategy
+215|Kicking the ball
+216|Scoring goals
+217|Spoiling the opponent's plan
+218|Competing with friends
+219|Player cards and their values
+220|What would you give Soccer Chess out of 10?
+221|Would you play again?
+222|Definitely
+223|Probably
+224|Not sure
+225|I don't think so
+226|Would you recommend it to a friend?
+227|Maybe
+228|No
+229|Final whistle
+230|Last questions before launch.
+231|Would you buy it if it went on sale?
+232|I'd buy it right away
+233|Depends on the price
+234|I'd buy it as a gift
+235|I wouldn't
+236|What do you think a fair price would be? (Turkish lira)
+237|Was this site enough to understand the rules?
+238|Yes, it was enough
+239|Partly
+240|A video would be better
+241|Sent too quickly. Could you try again in a minute?
+242|Could not send. Could you check your connection and try again?
+243|You can choose more than one
+244|e.g. 2500
+246|answered
+247|Takes about 2 minutes. No question is required; tick what fits and skip the rest.
+248|Send answers and continue to detailed feedback
+249|Could you answer at least one question before sending?
+250|Sending…
+251|Your name or a way to reach you, if you like
+252|What would you change? Which rule confused you? Anything that comes to mind helps us.
+253|Send
+254|Finish without writing
+255|Your answers arrived
+256|Detailed feedback and suggestions
+257|Options can't say everything. In your own words, tell us your idea to make the game better, a problem you had or what you enjoyed.
+258|Your feedback and suggestions
+259|Name / contact (optional)
+260|Could you write a few sentences to send? If you'd rather not, choose "Finish without writing".
+261|Done
+262|Thank you, you're the player of the match.
+263|We received your answers and your feedback. You'll have a share in the final Soccer Chess.
+264|We received your answers. You'll have a share in the final Soccer Chess.
+265|The referee is thinking…
+266|Could you describe the situation in a few words?
+267|Asked too quickly. Could you try again in a minute?
+268|The referee can't answer right now.
+269|Could not reach the referee.
