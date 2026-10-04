@@ -65,6 +65,7 @@ HAMLELER
 - Herhangi bir vuruştan sonra ilk hamleyi topa sahip olan takım yapar.
 - Topa sahip olan takım ya top ayağında olmayan bir futbolcusuna topsuz koşu yaptırır ya da topa sahip futbolcusuyla top sürer. Hamle yapmak istemezse "pas" diyerek sırayı rakibe bırakır.
 - Sıra topa sahip olmayan takıma geçtiğinde pozisyon alma gücüyle herhangi bir oyuncusunu hareket ettirebilir. O da "pas" diyebilir.
+- Top sürme sınırı: hamle turu sayısı kaç olursa olsun, iki vuruş arasındaki hamle turları boyunca topa sahip futbolcu yalnızca 1 kez top sürebilir. Vuruştan sonra top hangi futbolcuya geçerse o da 1 kez top sürebilir; aynı futbolcu başka bir vuruştan sonra topa yeniden sahip olursa yine 1 kez top sürebilir.
 - Anlaşılan hamle turu bittiğinde topa sahip olan takım vuruş yapar.
 - Dokunulan piyon oynanır: hamle sırası sizdeyken bir piyonu hareket ettirdiğiniz anda hamleyi o piyonla yapmak zorunludur; hamle hakkı artık başka bir piyonla kullanılamaz.
 - Başlangıç karesini söyleme: hamle ya da vuruş için bir piyonu yerinden oynatan oyuncu, piyonun başlangıç karesini yüksek sesle söylemelidir (örneğin K-14). Amaç, sayımın tekrarlanması ya da piyonun vuruştan sonra yerine konması gerektiğinde eski konumun unutulmamasıdır.

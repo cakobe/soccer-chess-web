@@ -76,191 +76,193 @@
 84|Letzter Schuss
 85|Ist beides gleich, der Spieler des Teams, das zuletzt geschossen hat.
 86|Sonderfälle
-91|Der Schütze
-92|Der Spieler, der geschossen hat, kann den Ball nicht wiederbekommen, auch wenn er am nächsten steht; er wird bei der Berechnung nicht berücksichtigt.
-93|Ball im Aus
-94|Geht der Ball ins Aus, erhält der gegnerische Spieler, der der Stelle am nächsten ist, den Ball, und der Ball wird auf sein Feld gelegt. Auch wenn der Ball von einem Gegner abprallt und ins Aus geht, gilt er als vom schießenden Team ins Aus gespielt.
-95|Torwart
-96|Bei der Berechnung des Ballbesitzes wird angenommen, dass der Torwart auf dem Feld im Fünfmeterraum steht, das auf der dem Ball näheren Seite liegt; seine Entfernung wird von dort gezählt. Ergibt sich so Ballbesitz für den Torwart, erhält sein nächster Mitspieler den Ball, und der Ball wird auf dessen Feld gelegt.
-97|Torschuss und Torwartführung
-98|Wer aufs Tor schießen will, muss dies dem Gegner vor dem Schuss ansagen. Der Gegner bringt den Torwart mit der Stange dahinter in die gewünschte Position; sobald er die Stange loslässt, darf er den Torwart nicht mehr berühren, und der Torwart bleibt stehen. Anders als beim Tischkicker wird der Torwart beim Schuss nicht gedreht oder bewegt: Erst wird der Torwart gestellt, dann wird geschossen.
-99|Linienentscheidung
-100|Bei Tor- und Aus-Entscheidungen muss der Ball die Linie vollständig überquert haben: Von oben gesehen darf er die Linie nicht berühren.
-101|Optionale Regeln
-102|Sie sind freiwillig. Welche gelten, müssen die Teams vor dem Spiel vereinbaren.
-103|Ballgewinn
-104|Strategie +
-105|Kann ein Spieler des Teams ohne Ball mit seiner Stellungsspiel-Stärke das Feld des ballführenden Gegners erreichen und hat er die höhere Gesamtstärke, erobert er den Ball und macht seinen Zug von einem beliebigen Nachbarfeld des Feldes aus, auf dem er den Ball gewonnen hat.
-106|Ist seine Gesamtstärke niedriger, werden für jede nach dem Erreichen des Gegners übrige Einheit Stellungsspiel +3 zur Gesamtstärke addiert. Beispiel: Ein Spieler mit Stellungsspiel 5 und Stärke 80, der den Gegner auf dem 3. Feld erreicht, zählt als 86.
-107|Sind die Stärken nach der Berechnung gleich, scheitert der Versuch, und der Zug wird neu gemacht.
-108|Betont strategisches und rechnerisches Denken; bremst den Spielfluss, weil die Züge länger dauern.
-109|Kein Tor aus der eigenen Hälfte
-110|Spielfluss +
-111|Schießt der ballführende Spieler von hinter der Mittellinie, zählt ein Tor nicht, und der Schuss wird wiederholt.
-112|Der Ball geht seltener ins Aus, das Spiel wird flüssiger; Tore werden schwieriger.
-113|Abseits
-114|Realismus +
-115|Steht ein Spieler des schießenden Teams 1 oder mehr Felder vor der Reihe des hintersten gegnerischen Spielers, wird er bei der Berechnung des Ballbesitzes nicht berücksichtigt.
-116|Senkt die Zahl der Tore und sorgt für ein realistischeres Spiel.
-117|Einwurf für uns
-118|Prallt der Ball von einem Spieler ab und geht über die Seitenlinie ins Aus, bekommt der Gegner des Teams, das der Ball getroffen hat, den Einwurf. Der Ball wird auf das Feld des Spielers des begünstigten Teams gelegt, der der Stelle am nächsten ist.
-119|Kann zu Streit führen, ob der Ball „berührt / nicht berührt“ wurde.
-120|Drei Ecken, ein Elfmeter
-121|Angriff +
-122|Prallt der Ball von einem gegnerischen Spieler ab und geht über die Torlinie ins Aus, zählt das als Ecke; Ecken werden nicht ausgeführt, 3 Ecken ergeben 1 Elfmeter.
-123|Beim Elfmeter werden Verteidiger vor dem Tor vorübergehend entfernt und nach dem Schuss auf dieselben Felder zurückgestellt.
-124|Sonderkarten zählen
-125|Sammlung
-126|Sonderkarten, die nur besitzt, wer die Sammlung vervollständigt, werden ins Spiel einbezogen und verschaffen ihrem Besitzer einen Vorteil.
-127|Das Spiel ist fairer, wenn beide Seiten diese Karten haben.
-128|Passpflicht
-129|Vor dem Spiel einigen sich die Teams auf eine Zahl x. Um aufs Tor schießen zu dürfen, muss ein Team mindestens x genaue Pässe hintereinander spielen, ohne den Ball an den Gegner zu verlieren.
-130|Die Zahl x wird einvernehmlich festgelegt.
-131|02 — Rückmeldung
-132|Wenn du die Testversion gespielt hast, prägt deine Meinung das fertige Spiel.
-133|Zum Ausfüllen der Umfrage muss JavaScript im Browser aktiviert sein.
-134|© 2026 Soccer Chess. Alle Rechte vorbehalten.
-135|Soccer Chess Startseite
-136|Hauptmenü
-138|Soccer Chess Logo
-139|Situation hier eingeben
-140|Die zwei Seiten des Spiels
-141|Spielfeld in voller Größe öffnen
-142|Soccer-Chess-Spielfeld: kariertes Fußballfeld mit 30 Spalten und 40 Reihen
-143|Aufwärmen
-144|Zuerst ein wenig über dich.
-145|Deine Altersgruppe?
-146|12 und jünger
-147|45 und älter
-148|Wie viele Spiele hast du gespielt?
-149|7 oder mehr
-150|Zu wievielt habt ihr gespielt?
-151|2 Personen
-152|3–4 Personen
-153|5 oder mehr
-154|Wie stehst du zu Brettspielen?
-155|Ich spiele oft
-156|Ab und zu
-157|Selten
-158|Und zu Fußball?
-159|Ich spiele und schaue
-160|Ich schaue nur
-161|Kaum Interesse
-162|Regeln
-163|Wie lief das Lernen des Spiels?
-164|Wie war es, die Regeln zu lernen?
-165|Sehr leicht
-166|Leicht
-167|Mittel
-168|Schwer
-169|Sehr schwer
-170|Wie lange hast du gebraucht, um die Regeln zu verstehen?
-171|Weniger als 5 Minuten
-172|5–15 Minuten
-173|15–30 Minuten
-174|Mehr als 30 Minuten
-175|Woher hast du die Regeln gelernt?
-176|Von dieser Seite
-177|Aus den schriftlichen Regeln
-178|Jemand hat sie erklärt
-179|Beim Spielen herausgefunden
-180|Gab es während des Spiels Uneinigkeit über die Regeln?
-181|Nie
-182|Ein- oder zweimal
-183|Oft
-184|Wie war es, den Ballbesitz zu berechnen (Felder zählen)?
-185|Leicht und schnell
-186|Geht so
-187|Bremst das Spiel
-188|Verwirrend
-189|Auf dem Platz
-190|Das Spiel selbst.
-191|Mit wie vielen Zugrunden habt ihr gespielt?
-192|1 Runde
-193|2 Runden
-194|3 oder mehr
-195|Wie lange hat ein Spiel ungefähr gedauert?
-196|Weniger als 15 Minuten
-197|30–60 Minuten
-198|Mehr als 1 Stunde
-199|Wie fandest du die Spieldauer?
-200|Kurz
-201|Genau richtig
-202|Lang
-203|Wie war das Schießen?
-204|Schwer, aber macht Spaß
-205|Zu leicht
-206|Was hat im Spiel mehr gezählt?
-207|Ausgeglichen
-208|Schussgefühl
-209|Welche optionalen Regeln habt ihr ausprobiert?
-210|Keine
-211|Wie war die Qualität von Spielfeld, Figuren, Ball und Torwart?
-212|Sehr gut
-213|Gut
-214|Schwach
-215|Von der Tribüne
-216|Dein Gesamteindruck.
-217|Was hat dir am besten gefallen?
-218|Strategie planen
-219|Schießen
-220|Tore schießen
-221|Den Plan des Gegners durchkreuzen
-222|Wettkampf mit Freunden
-223|Spielerkarten und ihre Werte
-224|Wie viele von 10 Punkten gibst du Soccer Chess?
-225|Würdest du wieder spielen?
-226|Auf jeden Fall
-227|Wahrscheinlich
-228|Bin nicht sicher
-229|Eher nicht
-230|Würdest du es Freunden empfehlen?
-231|Vielleicht
-232|Nein
-233|Schlusspfiff
-234|Letzte Fragen vor dem Verkaufsstart.
-235|Würdest du es kaufen, wenn es in den Handel käme?
-236|Ich würde es sofort kaufen
-237|Kommt auf den Preis an
-238|Ich würde es verschenken
-239|Würde ich nicht kaufen
-240|Welcher Preis wäre deiner Meinung nach angemessen? (türkische Lira)
-241|Hat diese Seite gereicht, um die Regeln zu verstehen?
-242|Ja, sie hat gereicht
-243|Teilweise
-244|Ein Video wäre besser
-245|Zu schnell gesendet. Versuchst du es in einer Minute noch einmal?
-246|Senden fehlgeschlagen. Prüfst du deine Verbindung und versuchst es noch einmal?
-247|Mehrfachauswahl möglich
-248|z. B. 2500
-250|beantwortet
-251|Dauert etwa 2 Minuten. Keine Frage ist Pflicht; kreuze an, was passt, und überspringe den Rest.
-252|Antworten senden und weiter zu ausführlicher Meinung und Vorschlägen
-253|Beantwortest du vor dem Senden mindestens eine Frage?
-254|Wird gesendet…
-255|Dein Name oder eine Kontaktmöglichkeit, wenn du magst
-256|Was würdest du ändern? Welche Regel hat dich verwirrt? Alles, was dir einfällt, hilft uns.
-257|Senden
-258|Ohne Text beenden
-259|Deine Antworten sind angekommen
-260|Ausführliche Meinung und Vorschläge
-261|Auswahlmöglichkeiten sagen nicht alles. Schreib in eigenen Worten deine Idee, die das Spiel besser macht, ein Problem oder was dir gefallen hat.
-262|Deine Meinung und Vorschläge
-263|Name / Kontakt (freiwillig)
-264|Schreibst du ein paar Sätze zum Senden? Wenn du nichts schreiben möchtest, wähle "Ohne Text beenden".
-265|Fertig
-266|Danke, du bist der Spieler des Spiels.
-267|Deine Antworten und deine Meinung sind bei uns angekommen. Du hast Anteil am fertigen Soccer Chess.
-268|Deine Antworten sind bei uns angekommen. Du hast Anteil am fertigen Soccer Chess.
-269|Du
-270|Ergänze Details oder stelle eine neue Frage
-271|Beschreibst du die Situation in ein paar Worten?
-272|Der KI-Schiri entscheidet…
-273|Zu schnell gefragt. Versuchst du es in einer Minute noch einmal?
-274|Der KI-Schiri kann gerade nicht antworten.
-275|Der KI-Schiri ist nicht erreichbar.
-278|Chat löschen
 87|Berührt, geführt
 88|Sobald du in deinem Zug eine Figur bewegst, musst du den Zug mit dieser Figur machen; du darfst den Zug nicht mehr mit einer anderen Figur ausführen.
 89|Ausgangsfeld ansagen
 90|Wer für einen Zug oder Schuss eine Figur bewegt, sagt ihr Ausgangsfeld laut an (zum Beispiel „K-14“). Weil das Spielfeld so viele Felder hat, wird die alte Position so nicht vergessen, wenn neu gezählt oder die Figur nach dem Schuss zurückgestellt werden muss.
+93|Der Schütze
+94|Der Spieler, der geschossen hat, kann den Ball nicht wiederbekommen, auch wenn er am nächsten steht; er wird bei der Berechnung nicht berücksichtigt.
+95|Ball im Aus
+96|Geht der Ball ins Aus, erhält der gegnerische Spieler, der der Stelle am nächsten ist, den Ball, und der Ball wird auf sein Feld gelegt. Auch wenn der Ball von einem Gegner abprallt und ins Aus geht, gilt er als vom schießenden Team ins Aus gespielt.
+97|Torwart
+98|Bei der Berechnung des Ballbesitzes wird angenommen, dass der Torwart auf dem Feld im Fünfmeterraum steht, das auf der dem Ball näheren Seite liegt; seine Entfernung wird von dort gezählt. Ergibt sich so Ballbesitz für den Torwart, erhält sein nächster Mitspieler den Ball, und der Ball wird auf dessen Feld gelegt.
+99|Torschuss und Torwartführung
+100|Wer aufs Tor schießen will, muss dies dem Gegner vor dem Schuss ansagen. Der Gegner bringt den Torwart mit der Stange dahinter in die gewünschte Position; sobald er die Stange loslässt, darf er den Torwart nicht mehr berühren, und der Torwart bleibt stehen. Anders als beim Tischkicker wird der Torwart beim Schuss nicht gedreht oder bewegt: Erst wird der Torwart gestellt, dann wird geschossen.
+101|Linienentscheidung
+102|Bei Tor- und Aus-Entscheidungen muss der Ball die Linie vollständig überquert haben: Von oben gesehen darf er die Linie nicht berühren.
+103|Optionale Regeln
+104|Sie sind freiwillig. Welche gelten, müssen die Teams vor dem Spiel vereinbaren.
+105|Ballgewinn
+106|Strategie +
+107|Kann ein Spieler des Teams ohne Ball mit seiner Stellungsspiel-Stärke das Feld des ballführenden Gegners erreichen und hat er die höhere Gesamtstärke, erobert er den Ball und macht seinen Zug von einem beliebigen Nachbarfeld des Feldes aus, auf dem er den Ball gewonnen hat.
+108|Ist seine Gesamtstärke niedriger, werden für jede nach dem Erreichen des Gegners übrige Einheit Stellungsspiel +3 zur Gesamtstärke addiert. Beispiel: Ein Spieler mit Stellungsspiel 5 und Stärke 80, der den Gegner auf dem 3. Feld erreicht, zählt als 86.
+109|Sind die Stärken nach der Berechnung gleich, scheitert der Versuch, und der Zug wird neu gemacht.
+110|Betont strategisches und rechnerisches Denken; bremst den Spielfluss, weil die Züge länger dauern.
+111|Kein Tor aus der eigenen Hälfte
+112|Spielfluss +
+113|Schießt der ballführende Spieler von hinter der Mittellinie, zählt ein Tor nicht, und der Schuss wird wiederholt.
+114|Der Ball geht seltener ins Aus, das Spiel wird flüssiger; Tore werden schwieriger.
+115|Abseits
+116|Realismus +
+117|Steht ein Spieler des schießenden Teams 1 oder mehr Felder vor der Reihe des hintersten gegnerischen Spielers, wird er bei der Berechnung des Ballbesitzes nicht berücksichtigt.
+118|Senkt die Zahl der Tore und sorgt für ein realistischeres Spiel.
+119|Einwurf für uns
+120|Prallt der Ball von einem Spieler ab und geht über die Seitenlinie ins Aus, bekommt der Gegner des Teams, das der Ball getroffen hat, den Einwurf. Der Ball wird auf das Feld des Spielers des begünstigten Teams gelegt, der der Stelle am nächsten ist.
+121|Kann zu Streit führen, ob der Ball „berührt / nicht berührt“ wurde.
+122|Drei Ecken, ein Elfmeter
+123|Angriff +
+124|Prallt der Ball von einem gegnerischen Spieler ab und geht über die Torlinie ins Aus, zählt das als Ecke; Ecken werden nicht ausgeführt, 3 Ecken ergeben 1 Elfmeter.
+125|Beim Elfmeter werden Verteidiger vor dem Tor vorübergehend entfernt und nach dem Schuss auf dieselben Felder zurückgestellt.
+126|Sonderkarten zählen
+127|Sammlung
+128|Sonderkarten, die nur besitzt, wer die Sammlung vervollständigt, werden ins Spiel einbezogen und verschaffen ihrem Besitzer einen Vorteil.
+129|Das Spiel ist fairer, wenn beide Seiten diese Karten haben.
+130|Passpflicht
+131|Vor dem Spiel einigen sich die Teams auf eine Zahl x. Um aufs Tor schießen zu dürfen, muss ein Team mindestens x genaue Pässe hintereinander spielen, ohne den Ball an den Gegner zu verlieren.
+132|Die Zahl x wird einvernehmlich festgelegt.
+133|02 — Rückmeldung
+134|Wenn du die Testversion gespielt hast, prägt deine Meinung das fertige Spiel.
+135|Zum Ausfüllen der Umfrage muss JavaScript im Browser aktiviert sein.
+136|© 2026 Soccer Chess. Alle Rechte vorbehalten.
+137|Soccer Chess Startseite
+138|Hauptmenü
+140|Soccer Chess Logo
+141|Situation hier eingeben
+142|Die zwei Seiten des Spiels
+143|Spielfeld in voller Größe öffnen
+144|Soccer-Chess-Spielfeld: kariertes Fußballfeld mit 30 Spalten und 40 Reihen
+145|Aufwärmen
+146|Zuerst ein wenig über dich.
+147|Deine Altersgruppe?
+148|12 und jünger
+149|45 und älter
+150|Wie viele Spiele hast du gespielt?
+151|7 oder mehr
+152|Zu wievielt habt ihr gespielt?
+153|2 Personen
+154|3–4 Personen
+155|5 oder mehr
+156|Wie stehst du zu Brettspielen?
+157|Ich spiele oft
+158|Ab und zu
+159|Selten
+160|Und zu Fußball?
+161|Ich spiele und schaue
+162|Ich schaue nur
+163|Kaum Interesse
+164|Regeln
+165|Wie lief das Lernen des Spiels?
+166|Wie war es, die Regeln zu lernen?
+167|Sehr leicht
+168|Leicht
+169|Mittel
+170|Schwer
+171|Sehr schwer
+172|Wie lange hast du gebraucht, um die Regeln zu verstehen?
+173|Weniger als 5 Minuten
+174|5–15 Minuten
+175|15–30 Minuten
+176|Mehr als 30 Minuten
+177|Woher hast du die Regeln gelernt?
+178|Von dieser Seite
+179|Aus den schriftlichen Regeln
+180|Jemand hat sie erklärt
+181|Beim Spielen herausgefunden
+182|Gab es während des Spiels Uneinigkeit über die Regeln?
+183|Nie
+184|Ein- oder zweimal
+185|Oft
+186|Wie war es, den Ballbesitz zu berechnen (Felder zählen)?
+187|Leicht und schnell
+188|Geht so
+189|Bremst das Spiel
+190|Verwirrend
+191|Auf dem Platz
+192|Das Spiel selbst.
+193|Mit wie vielen Zugrunden habt ihr gespielt?
+194|1 Runde
+195|2 Runden
+196|3 oder mehr
+197|Wie lange hat ein Spiel ungefähr gedauert?
+198|Weniger als 15 Minuten
+199|30–60 Minuten
+200|Mehr als 1 Stunde
+201|Wie fandest du die Spieldauer?
+202|Kurz
+203|Genau richtig
+204|Lang
+205|Wie war das Schießen?
+206|Schwer, aber macht Spaß
+207|Zu leicht
+208|Was hat im Spiel mehr gezählt?
+209|Ausgeglichen
+210|Schussgefühl
+211|Welche optionalen Regeln habt ihr ausprobiert?
+212|Keine
+213|Wie war die Qualität von Spielfeld, Figuren, Ball und Torwart?
+214|Sehr gut
+215|Gut
+216|Schwach
+217|Von der Tribüne
+218|Dein Gesamteindruck.
+219|Was hat dir am besten gefallen?
+220|Strategie planen
+221|Schießen
+222|Tore schießen
+223|Den Plan des Gegners durchkreuzen
+224|Wettkampf mit Freunden
+225|Spielerkarten und ihre Werte
+226|Wie viele von 10 Punkten gibst du Soccer Chess?
+227|Würdest du wieder spielen?
+228|Auf jeden Fall
+229|Wahrscheinlich
+230|Bin nicht sicher
+231|Eher nicht
+232|Würdest du es Freunden empfehlen?
+233|Vielleicht
+234|Nein
+235|Schlusspfiff
+236|Letzte Fragen vor dem Verkaufsstart.
+237|Würdest du es kaufen, wenn es in den Handel käme?
+238|Ich würde es sofort kaufen
+239|Kommt auf den Preis an
+240|Ich würde es verschenken
+241|Würde ich nicht kaufen
+242|Welcher Preis wäre deiner Meinung nach angemessen? (türkische Lira)
+243|Hat diese Seite gereicht, um die Regeln zu verstehen?
+244|Ja, sie hat gereicht
+245|Teilweise
+246|Ein Video wäre besser
+247|Zu schnell gesendet. Versuchst du es in einer Minute noch einmal?
+248|Senden fehlgeschlagen. Prüfst du deine Verbindung und versuchst es noch einmal?
+249|Mehrfachauswahl möglich
+250|z. B. 2500
+252|beantwortet
+253|Dauert etwa 2 Minuten. Keine Frage ist Pflicht; kreuze an, was passt, und überspringe den Rest.
+254|Antworten senden und weiter zu ausführlicher Meinung und Vorschlägen
+255|Beantwortest du vor dem Senden mindestens eine Frage?
+256|Wird gesendet…
+257|Dein Name oder eine Kontaktmöglichkeit, wenn du magst
+258|Was würdest du ändern? Welche Regel hat dich verwirrt? Alles, was dir einfällt, hilft uns.
+259|Senden
+260|Ohne Text beenden
+261|Deine Antworten sind angekommen
+262|Ausführliche Meinung und Vorschläge
+263|Auswahlmöglichkeiten sagen nicht alles. Schreib in eigenen Worten deine Idee, die das Spiel besser macht, ein Problem oder was dir gefallen hat.
+264|Deine Meinung und Vorschläge
+265|Name / Kontakt (freiwillig)
+266|Schreibst du ein paar Sätze zum Senden? Wenn du nichts schreiben möchtest, wähle "Ohne Text beenden".
+267|Fertig
+268|Danke, du bist der Spieler des Spiels.
+269|Deine Antworten und deine Meinung sind bei uns angekommen. Du hast Anteil am fertigen Soccer Chess.
+270|Deine Antworten sind bei uns angekommen. Du hast Anteil am fertigen Soccer Chess.
+271|Du
+272|Ergänze Details oder stelle eine neue Frage
+273|Beschreibst du die Situation in ein paar Worten?
+274|Der KI-Schiri entscheidet…
+275|Zu schnell gefragt. Versuchst du es in einer Minute noch einmal?
+276|Der KI-Schiri kann gerade nicht antworten.
+277|Der KI-Schiri ist nicht erreichbar.
+280|Chat löschen
+91|Nur ein Dribbling
+92|Unabhängig von der Zahl der Zugrunden darf der ballführende Spieler in den Zugrunden zwischen zwei Schüssen nur 1-mal dribbeln. Nach einem Schuss darf der Spieler, der den Ball bekommt, ebenfalls 1-mal dribbeln; erhält derselbe Spieler nach einem weiteren Schuss erneut den Ball, darf er wieder 1-mal dribbeln.
