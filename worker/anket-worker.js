@@ -70,6 +70,11 @@ HAMLELER
 - Dokunulan piyon oynanır: hamle sırası sizdeyken bir piyonu hareket ettirdiğiniz anda hamleyi o piyonla yapmak zorunludur; hamle hakkı artık başka bir piyonla kullanılamaz.
 - Başlangıç karesini söyleme: hamle ya da vuruş için bir piyonu yerinden oynatan oyuncu, piyonun başlangıç karesini yüksek sesle söylemelidir (örneğin K-14). Amaç, sayımın tekrarlanması ya da piyonun vuruştan sonra yerine konması gerektiğinde eski konumun unutulmamasıdır.
 
+SAHA VE PİYON DÜZENİ
+- Sahayı oynatma yasağı: rakibin hamlesini ya da vuruşunu bozmak için oyun sahasını kasten hareket ettirmek kesinlikle yasaktır. Bunu yapan oyuncu hükmen mağlup sayılır ve maç biter.
+- Hamle dışında piyona dokunulmaz: hamle sırası geldiğinde yapılan hamle dışında, kaleciler de dahil sahadaki hiçbir piyon hareket ettirilemez. Tek istisna: oynanan piyon yerine konurken kareye tam oturmadıysa, rakibin bilgisi ve rızasıyla karenin içine düzeltilebilir. Şut bildiriminden sonra savunan tarafın kaleciyi çubukla konumlandırması bu yasağın dışındadır.
+- Kareye tam oturmayan piyon: bir piyon iki karenin ortasında duruyorsa rakip o hamlede uyarılır ve piyonu doğru kareye yerleştirmesi sağlanır. Üzerinden zaman geçtikten sonra hangi karede olduğu anlaşılmayan piyonun hangi karede sayılacağına piyonun sahibi karar verir.
+
 TOPUN DIŞARI ÇIKMASI
 - Vuruştan sonra top saha dışına çıkarsa, topun çıktığı yere en yakın rakip oyuncu topa sahip olur ve top o oyuncunun karesine alınır.
 - Top rakip futbolcuya çarpıp çıksa dahi vuruşu yapan takımdan çıkmış sayılır, top rakibe geçer (opsiyonel "Taç Bizim" kuralı uygulanmıyorsa). Yani top, vuruşu yapan takımın rakibine geçer.
