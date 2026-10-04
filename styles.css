@@ -240,7 +240,7 @@ h1, h2, h3, h4 {
 
 .hero {
   position: relative;
-  padding-block: clamp(72px, 12vw, 148px);
+  padding-block: clamp(40px, 6vw, 80px) clamp(64px, 9vw, 112px);
   overflow: hidden;
 }
 
@@ -255,14 +255,14 @@ h1, h2, h3, h4 {
 .hero__grid {
   position: relative;
   display: grid;
-  grid-template-columns: 1.05fr 1fr;
+  grid-template-columns: 1fr minmax(0, 520px);
   align-items: center;
-  gap: 56px;
+  gap: 48px 56px;
 }
 
 .hero h1 {
   margin-top: 20px;
-  font-size: clamp(40px, 6.2vw, 76px);
+  font-size: clamp(40px, 5.4vw, 68px);
   font-weight: 700;
   letter-spacing: -0.035em;
   line-height: 1.02;
@@ -286,7 +286,7 @@ h1, h2, h3, h4 {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  margin-top: 56px;
+  grid-column: 1 / -1;
   padding-top: 28px;
   border-top: 1px solid var(--line);
 }
@@ -724,32 +724,114 @@ h1, h2, h3, h4 {
   color: var(--text);
 }
 
-/* Yapay zeka ipucu */
+/* AI Hakem kartı */
 
-.tip {
-  display: grid;
-  grid-template-columns: 1fr 1.15fr;
-  align-items: start;
-  gap: 28px 40px;
-  margin-top: 88px;
-  padding: 32px;
-  border: 1px solid rgba(212, 255, 58, 0.28);
-  border-radius: 20px;
-  background: linear-gradient(120deg, rgba(212, 255, 58, 0.07), transparent 60%), var(--surface);
+.ref {
+  position: relative;
+  padding: 24px;
+  border: 1px solid rgba(212, 255, 58, 0.45);
+  border-radius: 22px;
+  background: linear-gradient(160deg, rgba(212, 255, 58, 0.1), transparent 45%), #0b2f20;
+  box-shadow: 0 40px 90px -40px rgba(0, 0, 0, 0.8), 0 0 80px -30px rgba(212, 255, 58, 0.35);
 }
 
-.tip__text {
-  max-width: 58ch;
+.ref__head {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-.tip h3 {
-  margin: 12px 0 10px;
-  font-size: 24px;
+.ref__logo {
+  flex: none;
+  width: 72px;
+  height: 72px;
+  padding: 6px;
+  border-radius: 18px;
+  background: var(--accent);
 }
 
-.tip__text > p:last-child {
+.ref__logo-lit {
+  fill: #d4ff3a;
+  animation: blink 4s infinite;
+}
+
+.ref__head h2 {
+  font-size: 30px;
+  letter-spacing: -0.02em;
+}
+
+.ref__live {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.ref__dot {
+  flex: none;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 0 rgba(212, 255, 58, 0.7);
+  animation: pulse 2s infinite;
+}
+
+.ref__lead {
+  margin: 16px 0 18px;
   font-size: 15px;
   color: var(--muted);
+}
+
+.nav__ai {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--text);
+}
+
+@keyframes pulse {
+  70% { box-shadow: 0 0 0 9px rgba(212, 255, 58, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(212, 255, 58, 0); }
+}
+
+@keyframes blink {
+  0%, 92%, 100% { opacity: 1; }
+  95% { opacity: 0.15; }
+}
+
+/* Örnek sorular: dokununca hemen sorulur */
+
+.ask__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.ask__chip {
+  padding: 8px 12px;
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  background: none;
+  color: var(--text);
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.35;
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.ask__chip:hover {
+  border-color: var(--accent);
+  background: rgba(212, 255, 58, 0.08);
 }
 
 .copy {
@@ -801,7 +883,7 @@ h1, h2, h3, h4 {
 .ask__input {
   display: block;
   width: 100%;
-  min-height: 96px;
+  min-height: 72px;
   padding: 12px 16px;
   border: 1px solid var(--line-strong);
   border-radius: 12px;
@@ -928,7 +1010,7 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  max-height: 420px;
+  max-height: 340px;
   margin-bottom: 18px;
   padding: 4px 4px 4px 0;
   overflow-y: auto;
@@ -1376,13 +1458,10 @@ h1, h2, h3, h4 {
   }
 
   /* Telefonda yalnızca Hakeme Sor, Anket ve dil seçimi kalır */
-  .nav__links a:not(.nav__cta):not([href="#hakem"]) {
+  .nav__links a:not(.nav__cta):not(.nav__ai) {
     display: none;
   }
 
-  .nav__links a[href="#hakem"] {
-    color: var(--text);
-  }
 
   .nav__cta {
     padding: 7px 12px;
@@ -1400,32 +1479,54 @@ h1, h2, h3, h4 {
     width: 68px;
   }
 
-  /* Hero */
+  /* Hero: telefonda başlığın hemen altında AI Hakem kartı gelir */
 
   .hero {
-    padding-block: 40px 64px;
+    padding-block: 24px 56px;
   }
 
   .hero__grid {
-    gap: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .hero__text {
+    display: contents;
   }
 
   .hero__logo {
-    width: 180px;
-    margin: 0 0 24px -6px;
+    order: 1;
+    width: 120px;
+    margin: 0 0 12px -4px;
+  }
+
+  .hero__text .eyebrow {
+    order: 2;
   }
 
   .hero h1 {
-    font-size: clamp(34px, 10.5vw, 56px);
+    order: 3;
+    margin-top: 10px;
+    font-size: clamp(30px, 8.6vw, 46px);
+  }
+
+  .ref {
+    order: 4;
+    margin-top: 22px;
+    padding: 18px;
+    border-radius: 18px;
   }
 
   .hero__lead {
-    margin-top: 20px;
+    order: 5;
+    margin-top: 28px;
   }
 
   .hero__actions {
+    order: 6;
     flex-direction: column;
-    margin-top: 28px;
+    margin-top: 22px;
   }
 
   .hero__actions .btn {
@@ -1433,14 +1534,29 @@ h1, h2, h3, h4 {
   }
 
   .hero__facts {
+    order: 7;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px 16px;
-    margin-top: 40px;
+    margin-top: 36px;
   }
 
-  .hero__board {
-    max-width: 340px;
+  .ref__logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+  }
+
+  .ref__head h2 {
+    font-size: 24px;
+  }
+
+  .ref__live {
+    font-size: 11px;
+  }
+
+  .chat {
+    max-height: 300px;
   }
 
   /* Bölümler */

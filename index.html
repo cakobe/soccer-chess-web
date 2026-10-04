@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
 
@@ -24,7 +24,7 @@
       <nav class="nav__links" aria-label="Ana menü">
         <a href="#kurallar">Nasıl Oynanır</a>
         <a href="#opsiyonel">Opsiyonel Kurallar</a>
-        <a href="#hakem">Hakeme Sor</a>
+        <a href="#hakem" class="nav__ai"><span class="ref__dot"></span>AI Hakem</a>
         <a href="#anket" class="nav__cta">Anket</a>
         <select class="lang" id="dil" aria-label="Dil / Language">
           <option value="tr">TR</option>
@@ -54,17 +54,91 @@
             <a href="#kurallar" class="btn btn--primary">Nasıl Oynanır</a>
             <a href="#anket" class="btn btn--ghost">Deneme Sürümü Anketi</a>
           </div>
-          <dl class="hero__facts">
-            <div><dt>2</dt><dd>Takım</dd></div>
-            <div><dt>2+</dt><dd>Oyuncu</dd></div>
-            <div><dt>3</dt><dd>Hareket değeri</dd></div>
-            <div><dt>7</dt><dd>Opsiyonel kural</dd></div>
-          </dl>
         </div>
 
-        <div class="hero__board" aria-hidden="true">
-          <img src="saha.jpg" alt="" width="1200" height="1576">
-        </div>
+        <!-- AI Hakem (yapay zekâ sohbeti) -->
+        <aside class="ref" id="hakem" aria-labelledby="hakem-baslik">
+          <header class="ref__head">
+            <svg class="ref__logo" viewBox="0 0 96 96" aria-hidden="true">
+              <defs>
+                <clipPath id="forma"><rect x="16" y="52" width="64" height="44" rx="12"/></clipPath>
+              </defs>
+              <line x1="48" y1="7" x2="48" y2="16" stroke="#0b0d10" stroke-width="3"/>
+              <circle class="ref__logo-lit" cx="48" cy="6" r="4"/>
+              <rect x="20" y="26" width="6" height="12" rx="2" fill="#0b0d10"/>
+              <rect x="70" y="26" width="6" height="12" rx="2" fill="#0b0d10"/>
+              <rect x="25" y="15" width="46" height="33" rx="10" fill="#f4f8f3" stroke="#0b0d10" stroke-width="2.5"/>
+              <rect x="31" y="23" width="34" height="13" rx="6.5" fill="#0b0d10"/>
+              <circle class="ref__logo-lit" cx="40.5" cy="29.5" r="3.2"/>
+              <circle class="ref__logo-lit" cx="55.5" cy="29.5" r="3.2"/>
+              <path d="M41 42h14" stroke="#0b0d10" stroke-width="2.5" stroke-linecap="round"/>
+              <rect x="42" y="48" width="12" height="6" fill="#0b0d10"/>
+              <g clip-path="url(#forma)">
+                <rect x="16" y="52" width="64" height="44" fill="#f4f8f3"/>
+                <rect x="16" y="52" width="8" height="44" fill="#0b0d10"/>
+                <rect x="32" y="52" width="8" height="44" fill="#0b0d10"/>
+                <rect x="48" y="52" width="8" height="44" fill="#0b0d10"/>
+                <rect x="64" y="52" width="8" height="44" fill="#0b0d10"/>
+              </g>
+              <rect x="16" y="52" width="64" height="44" rx="12" fill="none" stroke="#0b0d10" stroke-width="2.5"/>
+              <path d="M38 53 48 74 58 53" fill="none" stroke="#d4ff3a" stroke-width="2.5" stroke-linejoin="round"/>
+              <rect x="42" y="72" width="15" height="9" rx="4.5" fill="#d4ff3a" stroke="#0b0d10" stroke-width="2"/>
+              <rect x="55" y="74" width="7" height="5" rx="1.5" fill="#d4ff3a" stroke="#0b0d10" stroke-width="2"/>
+            </svg>
+            <div>
+              <h2 id="hakem-baslik">AI Hakem</h2>
+              <p class="ref__live"><span class="ref__dot"></span>Yapay zekâ · saniyeler içinde karar verir</p>
+            </div>
+          </header>
+          <p class="ref__lead">
+            Maçta kararsız mı kaldınız? Durumu yazın, AI Hakem kurallara göre kararını anında ekrana yazsın.
+            Karşınızda insan yok, beklemek yok.
+          </p>
+
+          <form class="ask" id="soru-form" novalidate>
+            <div class="chat" id="soru-sohbet" aria-live="polite">
+              <div class="chat__msg chat__msg--ref">
+                <span class="chat__who">AI Hakem</span>
+                <p class="chat__text">Merhaba, ben AI Hakem. Maçta ne oldu? Yazın, kurala göre kararı hemen vereyim.</p>
+              </div>
+            </div>
+            <div class="ask__chips" id="soru-ornekler">
+              <button type="button" class="ask__chip">Topa iki takımdan birer oyuncu 2 kare uzakta. Top kimde?</button>
+              <button type="button" class="ask__chip">Top rakibe çarpıp taç çizgisinden çıktı. Kimin olur?</button>
+              <button type="button" class="ask__chip">Topa en yakın oyuncu kaleci çıktı. Ne olacak?</button>
+            </div>
+            <label class="ask__label" for="soru-metin" id="soru-etiket">Maçta ne oldu?</label>
+            <textarea class="ask__input" id="soru-metin" rows="2" maxlength="600" placeholder="Durumu buraya yazın"></textarea>
+            <input type="text" id="soru-tuzak" name="website" hidden tabindex="-1" autocomplete="off" aria-hidden="true">
+            <div class="ask__row">
+              <button type="submit" class="btn btn--primary" id="soru-gonder">Kararı al</button>
+              <button type="button" class="ask__clear" id="soru-temizle" hidden></button>
+              <span class="ask__counter" id="soru-sayac"></span>
+            </div>
+            <p class="ask__status" id="soru-durum" role="status"></p>
+          </form>
+
+          <!-- AI Hakem yanıt veremezse (kota dolması dahil) görünür -->
+          <div class="ask__fallback" id="soru-yedek" hidden>
+            <p>
+              Bu arada kendi kullandığınız yapay zekâya durumu anlatıp “bu sitedeki kurallara göre nasıl devam
+              edeceğimizi anlat” diyebilirsiniz. Site adresini kopyalayıp mesajınıza eklemeniz yeterli.
+            </p>
+            <div class="copy">
+              <span class="copy__url">www.soccer-chess.com</span>
+              <button type="button" class="copy__btn" id="copy-btn" data-copy="www.soccer-chess.com">Kopyala</button>
+            </div>
+          </div>
+
+          <p class="ask__note">AI Hakem bir yapay zekâdır: yazdıklarınız site sahiplerine gönderilmez, yanıt otomatik üretilir ve hata yapabilir. Son söz kurallarda ve takımların anlaşmasındadır.</p>
+        </aside>
+
+        <dl class="hero__facts">
+          <div><dt>2</dt><dd>Takım</dd></div>
+          <div><dt>2+</dt><dd>Oyuncu</dd></div>
+          <div><dt>3</dt><dd>Hareket değeri</dd></div>
+          <div><dt>7</dt><dd>Opsiyonel kural</dd></div>
+        </dl>
       </div>
     </section>
 
@@ -300,50 +374,6 @@
             </div>
           </details>
         </div>
-
-        <!-- Hakeme sor (yapay zekâ) -->
-        <aside class="tip" id="hakem">
-          <div class="tip__text">
-            <p class="eyebrow">Hakeme sor</p>
-            <h3>Kararsız kaldığınız bir an mı var?</h3>
-            <p>
-              Maçta ne yapacağınızı bilemediğiniz durumu yazın; yapay zekâ hakem bu sitedeki kurallara göre nasıl devam
-              edeceğinizi söylesin. Kareleri sahadaki harf ve sayılarla, mesafeleri kare sayısıyla belirtebilirsiniz.
-            </p>
-          </div>
-
-          <form class="ask" id="soru-form" novalidate>
-            <div class="chat" id="soru-sohbet" hidden aria-live="polite"></div>
-            <label class="ask__label" for="soru-metin" id="soru-etiket">Durumu anlatın</label>
-            <textarea class="ask__input" id="soru-metin" rows="3" maxlength="600" placeholder="Durumu buraya yazın"></textarea>
-            <button type="button" class="ask__example" id="soru-ornek">
-              <span class="ask__example-tag">Örnek soru</span>
-              <span id="soru-ornek-metin">Vuruştan sonra topa iki takımdan da birer oyuncu 2 kare uzakta kaldı. Top kimde?</span>
-              <span class="ask__example-hint">Dokunursan kutuya yazılır</span>
-            </button>
-            <input type="text" id="soru-tuzak" name="website" hidden tabindex="-1" autocomplete="off" aria-hidden="true">
-            <div class="ask__row">
-              <button type="submit" class="btn btn--primary" id="soru-gonder">Hakeme sor</button>
-              <button type="button" class="ask__clear" id="soru-temizle" hidden></button>
-              <span class="ask__counter" id="soru-sayac"></span>
-            </div>
-            <p class="ask__status" id="soru-durum" role="status"></p>
-          </form>
-
-          <!-- Hakem yanıt veremezse (kota dolması dahil) görünür -->
-          <div class="ask__fallback" id="soru-yedek" hidden>
-            <p>
-              Bu arada kendi kullandığınız yapay zekâya durumu anlatıp “bu sitedeki kurallara göre nasıl devam
-              edeceğimizi anlat” diyebilirsiniz. Site adresini kopyalayıp mesajınıza eklemeniz yeterli.
-            </p>
-            <div class="copy">
-              <span class="copy__url">www.soccer-chess.com</span>
-              <button type="button" class="copy__btn" id="copy-btn" data-copy="www.soccer-chess.com">Kopyala</button>
-            </div>
-          </div>
-
-          <p class="ask__note">Yanıtları yapay zekâ üretir ve hata yapabilir; son söz kurallarda ve takımların anlaşmasındadır.</p>
-        </aside>
       </div>
     </section>
 
@@ -373,10 +403,10 @@
     </div>
   </footer>
 
-  <script src="i18n.js?v=7"></script>
-  <script src="dil.js?v=7"></script>
-  <script src="anket.js?v=7" defer></script>
-  <script src="hakem.js?v=7" defer></script>
+  <script src="i18n.js?v=8"></script>
+  <script src="dil.js?v=8"></script>
+  <script src="anket.js?v=8" defer></script>
+  <script src="hakem.js?v=8" defer></script>
 
   <script>
     // Site adresini panoya kopyalar

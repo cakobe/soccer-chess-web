@@ -11,7 +11,7 @@
   var clear = document.getElementById('soru-temizle');
   var status = document.getElementById('soru-durum');
   var chat = document.getElementById('soru-sohbet');
-  var example = document.getElementById('soru-ornek');
+  var examples = document.getElementById('soru-ornekler');
   var fallback = document.getElementById('soru-yedek');
   var trap = document.getElementById('soru-tuzak');
   var MAX = Number(input.getAttribute('maxlength')) || 600;
@@ -48,7 +48,7 @@
   function addBubble(role, text, pending) {
     var who = document.createElement('span');
     who.className = 'chat__who';
-    who.textContent = role === 'user' ? 'Siz' : 'Hakem';
+    who.textContent = role === 'user' ? 'Siz' : 'AI Hakem';
     var body = document.createElement('p');
     body.className = 'chat__text';
     body.textContent = text;
@@ -57,7 +57,7 @@
     item.appendChild(who);
     item.appendChild(body);
     chat.appendChild(item);
-    chat.hidden = false;
+
     chat.scrollTop = chat.scrollHeight;
     return item;
   }
@@ -65,10 +65,10 @@
   // Sohbet başlayınca örnek soru gizlenir, etiket ve temizle düğmesi değişir
   function refresh() {
     var started = history.length > 0;
-    chat.hidden = !started && !chat.firstChild;
+
     clear.hidden = !started;
-    if (example) example.hidden = started;
-    label.textContent = started ? 'Ek bilgi verin ya da yeni bir soru sorun' : 'Durumu anlatın';
+    if (examples) examples.hidden = started;
+    label.textContent = started ? 'Ek bilgi verin ya da yeni bir soru sorun' : 'Maçta ne oldu?';
   }
 
   function setBusy(value) {
@@ -112,7 +112,7 @@
     }
     var previous = history.slice(-8);
     var mine = addBubble('user', question, false);
-    var pending = addBubble('assistant', 'Hakem düşünüyor…', true);
+    var pending = addBubble('assistant', 'AI Hakem karar veriyor…', true);
     input.value = '';
     updateCounter();
     status.textContent = '';
@@ -147,9 +147,9 @@
         undo('Çok hızlı soruldu. Bir dakika sonra tekrar dener misin?', false);
         return;
       }
-      undo('Hakem şu an yanıt veremiyor.', true);
+      undo('AI Hakem şu an yanıt veremiyor.', true);
     }, function () {
-      undo('Hakeme ulaşılamadı.', true);
+      undo('AI Hakeme ulaşılamadı.', true);
     });
   }
 
@@ -169,18 +169,21 @@
 
   input.addEventListener('input', updateCounter);
 
-  if (example) {
-    example.addEventListener('click', function () {
-      input.value = document.getElementById('soru-ornek-metin').textContent.replace(/\s+/g, ' ').trim();
-      updateCounter();
-      input.focus();
+  // Örnek soruya dokununca soru hemen gönderilir
+  if (examples) {
+    examples.addEventListener('click', function (event) {
+      var chip = event.target.closest ? event.target.closest('.ask__chip') : null;
+      if (!chip || busy) return;
+      input.value = chip.textContent.replace(/\s+/g, ' ').trim();
+      submit();
     });
   }
 
   clear.addEventListener('click', function () {
     history = [];
     save();
-    chat.textContent = '';
+    // Karşılama mesajı kalır, konuşma silinir
+    while (chat.children.length > 1) chat.removeChild(chat.lastChild);
     status.textContent = '';
     fallback.hidden = true;
     refresh();
