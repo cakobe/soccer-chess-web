@@ -82,193 +82,201 @@
 90|El jugador que mueve una ficha para una jugada o un golpeo dice en voz alta la casilla de salida de la ficha (por ejemplo «K-14»). Como el campo tiene tantas casillas, así no se olvida la posición anterior si hay que repetir el conteo o devolver la ficha a su sitio tras el golpeo.
 91|Una sola conducción
 92|Sea cual sea el número de rondas de jugadas, el futbolista que tiene el balón solo puede conducir 1 vez durante las rondas de jugadas entre dos golpeos. Tras un golpeo, el futbolista que reciba el balón también puede conducir 1 vez; si el mismo futbolista vuelve a tener el balón tras otro golpeo, recupera ese derecho.
-99|El que golpea
-100|El futbolista que realizó el golpeo no puede recuperar el balón aunque sea el más cercano; no se tiene en cuenta en el cálculo.
-101|Balón fuera
-102|Si el balón sale del campo, el jugador rival más cercano al punto por donde salió pasa a poseerlo y el balón se coloca en su casilla. Aunque el balón salga tras golpear a un rival, se considera que salió del equipo que golpeó.
-103|Portero
-104|Al calcular la posesión, se supone que el portero está en la casilla del área pequeña del lado más cercano al balón y su distancia se cuenta desde esa casilla. Si con este cálculo la posesión corresponde al portero, el balón pasa a su compañero más cercano y se coloca en la casilla de este.
-105|Tiros y manejo del portero
-106|Quien decide tirar a puerta debe avisar al rival antes del golpeo. El rival coloca al portero en la posición que quiera con la varilla que tiene detrás; desde que suelta la varilla no puede volver a tocarlo y el portero se queda donde está. A diferencia del futbolín, no se gira ni se mueve al portero durante el tiro: primero se coloca el portero y después se tira.
-107|Decisiones de línea
-108|Para decidir gol o balón fuera, todo el balón debe haber cruzado la línea: visto desde arriba, no debe tocarla.
-109|Reglas opcionales
-110|Son opcionales. Los equipos deben acordar antes del partido cuáles se aplican.
-111|Robo de balón
-112|Estrategia +
-113|Si un jugador del equipo sin balón puede llegar con su poder de posicionamiento a la casilla del rival que lo posee y tiene mayor habilidad general, roba el balón y hace su jugada empezando desde cualquier casilla contigua a aquella donde lo robó.
-114|Si su habilidad general es menor, se suman +3 a la habilidad general por cada unidad de posicionamiento que le sobre tras llegar al rival. Ejemplo: un futbolista con poder de posicionamiento 5 y habilidad 80 que llega al rival en la 3.ª casilla cuenta como 86.
-115|Si tras el cálculo las habilidades son iguales, el intento fracasa y la jugada se repite.
-116|Realza el pensamiento estratégico y aritmético; resta fluidez porque las jugadas son más lentas.
-117|Sin gol desde campo propio
-118|Fluidez +
-119|Si el jugador que tiene el balón golpea desde detrás de la línea de medio campo, el gol no vale y el golpeo se repite.
-120|Reduce las veces que el balón sale del campo y da fluidez al juego; hace más difícil marcar.
-121|Fuera de juego
-122|Realismo +
-123|Si un jugador del equipo que golpea está 1 o más casillas por delante de la fila del último jugador rival, no se le tiene en cuenta al calcular la posesión.
-124|Reduce el número de goles y ofrece un partido más realista.
-125|Saque de banda nuestro
-126|Si el balón golpea a un jugador y sale por la línea de banda, el saque es para el rival del equipo al que golpeó. El balón se deja en la casilla del jugador del equipo beneficiado más cercano al punto de salida.
-127|Puede provocar discusiones de «tocó / no tocó» entre los equipos.
-128|Tres córners, un penalti
-129|Ataque +
-130|Si el balón golpea a un jugador rival y sale por la línea de fondo, cuenta como córner; los córners no se sacan y con 3 córners se gana 1 penalti.
-131|Durante el penalti, los defensores situados delante de la portería se retiran temporalmente y se vuelven a colocar en las mismas casillas tras el golpeo.
-132|Las cartas especiales cuentan
-133|Colección
-134|Las cartas especiales, que solo pueden tener quienes completan la colección, entran en el juego y dan ventaja a su dueño.
-135|El partido es más justo si ambos lados tienen estas cartas.
-136|Requisito de pases
-137|Antes de empezar, los equipos acuerdan un número x. Para ganar el derecho a tirar a puerta, un equipo debe completar al menos x pases precisos seguidos sin perder el balón.
-138|El número x se fija de mutuo acuerdo.
-139|02 — Opiniones
-140|Si has jugado la versión de prueba, tus opiniones darán forma al juego final.
-141|Para rellenar la encuesta, JavaScript debe estar activado en tu navegador.
-142|© 2026 Soccer Chess. Todos los derechos reservados.
-143|Página de inicio de Soccer Chess
-144|Menú principal
-146|Logotipo de Soccer Chess
-147|Escribe aquí la situación
-148|Las dos caras del juego
-149|Abrir el campo a tamaño completo
-150|Campo de Soccer Chess: campo de fútbol cuadriculado de 30 columnas y 40 filas
-151|Calentamiento
-152|Primero, queremos conocerte.
-153|¿Tu franja de edad?
-154|12 o menos
-155|45 o más
-156|¿Cuántos partidos has jugado?
-157|7 o más
-158|¿Cuántas personas jugasteis?
-159|2 personas
-160|3–4 personas
-161|5 o más
-162|¿Qué tal te llevas con los juegos de mesa?
-163|Juego a menudo
-164|De vez en cuando
-165|Rara vez
-166|¿Y con el fútbol?
-167|Juego y lo veo
-168|Solo lo veo
-169|No me interesa mucho
-170|Reglas
-171|¿Cómo fue aprender el juego?
-172|¿Cómo fue aprender las reglas?
-173|Muy fácil
-174|Fácil
-175|Normal
-176|Difícil
-177|Muy difícil
-178|¿Cuánto tardaste en entender las reglas?
-179|Menos de 5 minutos
-180|5–15 minutos
-181|15–30 minutos
-182|Más de 30 minutos
-183|¿Dónde aprendiste las reglas?
-184|En este sitio
-185|En las reglas escritas
-186|Me las explicaron
-187|Las fuimos descubriendo al jugar
-188|¿Hubo desacuerdos sobre las reglas durante el partido?
-189|Nunca
-190|Una o dos veces
-191|A menudo
-192|¿Cómo fue calcular quién tiene el balón (contar casillas)?
-193|Fácil y rápido
-194|Aceptable
-195|Ralentiza el juego
-196|Confuso
-197|En el campo
-198|El partido en sí.
-199|¿Con cuántas rondas de jugadas jugasteis?
-200|1 ronda
-201|2 rondas
-202|3 o más
-203|¿Cuánto duró un partido aproximadamente?
-204|Menos de 15 minutos
-205|30–60 minutos
-206|Más de 1 hora
-207|¿Qué te pareció la duración del partido?
-208|Corta
-209|En su punto
-210|Larga
-211|¿Cómo fue golpear el balón?
-212|Difícil pero divertido
-213|Demasiado fácil
-214|¿Qué pesó más en el partido?
-215|Equilibrado
-216|Habilidad de golpeo
-217|¿Qué reglas opcionales probasteis?
-218|Ninguna
-219|¿Qué tal la calidad del campo, las fichas, el balón y el portero?
-220|Muy buena
-221|Buena
-222|Floja
-223|Desde la grada
-224|Tu impresión general.
-225|¿Qué te gustó más?
-226|Planear la estrategia
-227|Golpear el balón
-228|Marcar goles
-229|Arruinar el plan del rival
-230|Competir con amigos
-231|Las cartas de futbolista y sus valores
-232|¿Qué nota le das a Soccer Chess sobre 10?
-233|¿Volverías a jugar?
-234|Sin duda
-235|Probablemente
-236|No estoy seguro
-237|No creo
-238|¿Se lo recomendarías a un amigo?
-239|Quizá
-240|No
-241|Pitido final
-242|Últimas preguntas antes del lanzamiento.
-243|¿Lo comprarías si saliera a la venta?
-244|Lo compraría enseguida
-245|Depende del precio
-246|Lo compraría para regalar
-247|No lo compraría
-248|¿Qué precio te parecería razonable? (liras turcas)
-249|¿Te bastó este sitio para entender las reglas?
-250|Sí, fue suficiente
-251|En parte
-252|Con un vídeo sería mejor
-253|Se envió demasiado rápido. ¿Puedes intentarlo de nuevo en un minuto?
-254|No se pudo enviar. ¿Puedes revisar tu conexión e intentarlo de nuevo?
-255|Puedes elegir más de una
-256|p. ej. 2500
-258|respondidas
-259|Lleva unos 2 minutos. Ninguna pregunta es obligatoria; marca lo que te encaje y salta el resto.
-260|Enviar respuestas y pasar a opiniones y sugerencias detalladas
-261|¿Puedes responder al menos una pregunta antes de enviar?
-262|Enviando…
-263|Tu nombre o una forma de contactarte, si quieres
-264|¿Qué cambiarías? ¿Qué regla te confundió? Todo lo que se te ocurra nos sirve.
-265|Enviar
-266|Terminar sin escribir
-267|Tus respuestas han llegado
-268|Opiniones y sugerencias detalladas
-269|Las opciones no lo cuentan todo. Escribe con tus palabras tu idea para mejorar el juego, el problema que tuviste o lo que te gustó.
-270|Tu opinión y sugerencias
-271|Nombre / contacto (opcional)
-272|¿Puedes escribir unas frases para enviar? Si prefieres no escribir, elige "Terminar sin escribir".
-273|Completado
-274|Gracias, eres el jugador del partido.
-275|Hemos recibido tus respuestas y tu opinión. Tendrás tu parte en la versión final de Soccer Chess.
-276|Hemos recibido tus respuestas. Tendrás tu parte en la versión final de Soccer Chess.
-277|Tú
-278|Añade detalles o haz una nueva pregunta
-279|¿Puedes describir la situación en pocas palabras?
-280|El Árbitro IA está decidiendo…
-281|Preguntaste demasiado rápido. ¿Puedes intentarlo de nuevo en un minuto?
-282|El Árbitro IA no puede responder ahora.
-283|No se pudo contactar con el Árbitro IA.
-286|Borrar conversación
 93|Prohibido mover el campo
 94|Mover el campo a propósito para estropear la jugada o el golpeo del rival está terminantemente prohibido. El jugador que lo haga pierde el partido por incomparecencia y el partido termina.
 95|No se tocan fichas fuera de la jugada
 96|En tu turno, aparte de la jugada que haces, no puedes mover ninguna ficha del campo, porteros incluidos. La única excepción: si la ficha que has jugado no queda bien dentro de la casilla al colocarla, puedes ajustarla dentro de la casilla con el conocimiento y el consentimiento del rival. Colocar al portero con la varilla antes de un tiro queda fuera de esta regla.
 97|Ficha mal colocada en la casilla
 98|Si una ficha queda entre dos casillas, avisa al rival en esa misma jugada y haz que la coloque en la casilla correcta. Si ha pasado el tiempo y ya no está claro en qué casilla está una ficha, su dueño decide en qué casilla se encuentra.
+107|El que golpea
+108|El futbolista que realizó el golpeo no puede recuperar el balón aunque sea el más cercano; no se tiene en cuenta en el cálculo.
+109|Balón fuera
+110|Si el balón sale del campo, el jugador rival más cercano al punto por donde salió pasa a poseerlo y el balón se coloca en su casilla. Aunque el balón salga tras golpear a un rival, se considera que salió del equipo que golpeó.
+111|Portero
+112|Al calcular la posesión, se supone que el portero está en la casilla del área pequeña del lado más cercano al balón y su distancia se cuenta desde esa casilla. Si con este cálculo la posesión corresponde al portero, el balón pasa a su compañero más cercano y se coloca en la casilla de este.
+113|Tiros y manejo del portero
+114|Quien decide tirar a puerta debe avisar al rival antes del golpeo. El rival coloca al portero en la posición que quiera con la varilla que tiene detrás; desde que suelta la varilla no puede volver a tocarlo y el portero se queda donde está. A diferencia del futbolín, no se gira ni se mueve al portero durante el tiro: primero se coloca el portero y después se tira.
+115|Decisiones de línea
+116|Para decidir gol o balón fuera, todo el balón debe haber cruzado la línea: visto desde arriba, no debe tocarla.
+117|Reglas opcionales
+118|Son opcionales. Los equipos deben acordar antes del partido cuáles se aplican.
+119|Robo de balón
+120|Estrategia +
+121|Si un jugador del equipo sin balón puede llegar con su poder de posicionamiento a la casilla del rival que lo posee y tiene mayor habilidad general, roba el balón y hace su jugada empezando desde cualquier casilla contigua a aquella donde lo robó.
+122|Si su habilidad general es menor, se suman +3 a la habilidad general por cada unidad de posicionamiento que le sobre tras llegar al rival. Ejemplo: un futbolista con poder de posicionamiento 5 y habilidad 80 que llega al rival en la 3.ª casilla cuenta como 86.
+123|Si tras el cálculo las habilidades son iguales, el intento fracasa y la jugada se repite.
+124|Realza el pensamiento estratégico y aritmético; resta fluidez porque las jugadas son más lentas.
+125|Sin gol desde campo propio
+126|Fluidez +
+127|Si el jugador que tiene el balón golpea desde detrás de la línea de medio campo, el gol no vale y el golpeo se repite.
+128|Reduce las veces que el balón sale del campo y da fluidez al juego; hace más difícil marcar.
+129|Fuera de juego
+130|Realismo +
+131|Si un jugador del equipo que golpea está 1 o más casillas por delante de la fila del último jugador rival, no se le tiene en cuenta al calcular la posesión.
+132|Reduce el número de goles y ofrece un partido más realista.
+133|Saque de banda nuestro
+134|Si el balón golpea a un jugador y sale por la línea de banda, el saque es para el rival del equipo al que golpeó. El balón se deja en la casilla del jugador del equipo beneficiado más cercano al punto de salida.
+135|Puede provocar discusiones de «tocó / no tocó» entre los equipos.
+136|Tres córners, un penalti
+137|Ataque +
+138|Si el balón golpea a un jugador rival y sale por la línea de fondo, cuenta como córner; los córners no se sacan y con 3 córners se gana 1 penalti.
+139|Durante el penalti, los defensores situados delante de la portería se retiran temporalmente y se vuelven a colocar en las mismas casillas tras el golpeo.
+140|Las cartas especiales cuentan
+141|Colección
+142|Las cartas especiales, que solo pueden tener quienes completan la colección, entran en el juego y dan ventaja a su dueño.
+143|El partido es más justo si ambos lados tienen estas cartas.
+144|Requisito de pases
+145|Antes de empezar, los equipos acuerdan un número x. Para ganar el derecho a tirar a puerta, un equipo debe completar al menos x pases precisos seguidos sin perder el balón.
+146|El número x se fija de mutuo acuerdo.
+147|02 — Opiniones
+148|Si has jugado la versión de prueba, tus opiniones darán forma al juego final.
+149|Para rellenar la encuesta, JavaScript debe estar activado en tu navegador.
+150|© 2026 Soccer Chess. Todos los derechos reservados.
+151|Página de inicio de Soccer Chess
+152|Menú principal
+154|Logotipo de Soccer Chess
+155|Escribe aquí la situación
+156|Las dos caras del juego
+157|Abrir el campo a tamaño completo
+158|Campo de Soccer Chess: campo de fútbol cuadriculado de 30 columnas y 40 filas
+159|Calentamiento
+160|Primero, queremos conocerte.
+161|¿Tu franja de edad?
+162|12 o menos
+163|45 o más
+164|¿Cuántos partidos has jugado?
+165|7 o más
+166|¿Cuántas personas jugasteis?
+167|2 personas
+168|3–4 personas
+169|5 o más
+170|¿Qué tal te llevas con los juegos de mesa?
+171|Juego a menudo
+172|De vez en cuando
+173|Rara vez
+174|¿Y con el fútbol?
+175|Juego y lo veo
+176|Solo lo veo
+177|No me interesa mucho
+178|Reglas
+179|¿Cómo fue aprender el juego?
+180|¿Cómo fue aprender las reglas?
+181|Muy fácil
+182|Fácil
+183|Normal
+184|Difícil
+185|Muy difícil
+186|¿Cuánto tardaste en entender las reglas?
+187|Menos de 5 minutos
+188|5–15 minutos
+189|15–30 minutos
+190|Más de 30 minutos
+191|¿Dónde aprendiste las reglas?
+192|En este sitio
+193|En las reglas escritas
+194|Me las explicaron
+195|Las fuimos descubriendo al jugar
+196|¿Hubo desacuerdos sobre las reglas durante el partido?
+197|Nunca
+198|Una o dos veces
+199|A menudo
+200|¿Cómo fue calcular quién tiene el balón (contar casillas)?
+201|Fácil y rápido
+202|Aceptable
+203|Ralentiza el juego
+204|Confuso
+205|En el campo
+206|El partido en sí.
+207|¿Con cuántas rondas de jugadas jugasteis?
+208|1 ronda
+209|2 rondas
+210|3 o más
+211|¿Cuánto duró un partido aproximadamente?
+212|Menos de 15 minutos
+213|30–60 minutos
+214|Más de 1 hora
+215|¿Qué te pareció la duración del partido?
+216|Corta
+217|En su punto
+218|Larga
+219|¿Cómo fue golpear el balón?
+220|Difícil pero divertido
+221|Demasiado fácil
+222|¿Qué pesó más en el partido?
+223|Equilibrado
+224|Habilidad de golpeo
+225|¿Qué reglas opcionales probasteis?
+226|Ninguna
+227|¿Qué tal la calidad del campo, las fichas, el balón y el portero?
+228|Muy buena
+229|Buena
+230|Floja
+231|Desde la grada
+232|Tu impresión general.
+233|¿Qué te gustó más?
+234|Planear la estrategia
+235|Golpear el balón
+236|Marcar goles
+237|Arruinar el plan del rival
+238|Competir con amigos
+239|Las cartas de futbolista y sus valores
+240|¿Qué nota le das a Soccer Chess sobre 10?
+241|¿Volverías a jugar?
+242|Sin duda
+243|Probablemente
+244|No estoy seguro
+245|No creo
+246|¿Se lo recomendarías a un amigo?
+247|Quizá
+248|No
+249|Pitido final
+250|Últimas preguntas antes del lanzamiento.
+251|¿Lo comprarías si saliera a la venta?
+252|Lo compraría enseguida
+253|Depende del precio
+254|Lo compraría para regalar
+255|No lo compraría
+256|¿Qué precio te parecería razonable? (liras turcas)
+257|¿Te bastó este sitio para entender las reglas?
+258|Sí, fue suficiente
+259|En parte
+260|Con un vídeo sería mejor
+261|Se envió demasiado rápido. ¿Puedes intentarlo de nuevo en un minuto?
+262|No se pudo enviar. ¿Puedes revisar tu conexión e intentarlo de nuevo?
+263|Puedes elegir más de una
+264|p. ej. 2500
+266|respondidas
+267|Lleva unos 2 minutos. Ninguna pregunta es obligatoria; marca lo que te encaje y salta el resto.
+268|Enviar respuestas y pasar a opiniones y sugerencias detalladas
+269|¿Puedes responder al menos una pregunta antes de enviar?
+270|Enviando…
+271|Tu nombre o una forma de contactarte, si quieres
+272|¿Qué cambiarías? ¿Qué regla te confundió? Todo lo que se te ocurra nos sirve.
+273|Enviar
+274|Terminar sin escribir
+275|Tus respuestas han llegado
+276|Opiniones y sugerencias detalladas
+277|Las opciones no lo cuentan todo. Escribe con tus palabras tu idea para mejorar el juego, el problema que tuviste o lo que te gustó.
+278|Tu opinión y sugerencias
+279|Nombre / contacto (opcional)
+280|¿Puedes escribir unas frases para enviar? Si prefieres no escribir, elige "Terminar sin escribir".
+281|Completado
+282|Gracias, eres el jugador del partido.
+283|Hemos recibido tus respuestas y tu opinión. Tendrás tu parte en la versión final de Soccer Chess.
+284|Hemos recibido tus respuestas. Tendrás tu parte en la versión final de Soccer Chess.
+285|Tú
+286|Añade detalles o haz una nueva pregunta
+287|¿Puedes describir la situación en pocas palabras?
+288|El Árbitro IA está decidiendo…
+289|Preguntaste demasiado rápido. ¿Puedes intentarlo de nuevo en un minuto?
+290|El Árbitro IA no puede responder ahora.
+291|No se pudo contactar con el Árbitro IA.
+294|Borrar conversación
+99|Sanción de la infracción: penalti
+100|Si un jugador mueve una ficha fuera de su turno para sacar ventaja, el rival gana un penalti. En el penalti, las fichas situadas delante de la portería dentro del área se retiran temporalmente del campo, cuidando de no olvidar sus casillas, y se vuelven a colocar justo después del golpeo.
+101|Las rondas deben completarse antes de golpear
+102|Nadie puede golpear antes de completar el número de rondas de jugadas acordado. Si encuentras un buen ángulo de tiro o de pase antes de que terminen las rondas, pregunta al rival: si acepta, golpeas en ese momento; si no, las jugadas continúan hasta completar las rondas y el golpeo se hace después.
+103|Gol marcado sin avisar
+104|El gol marcado sin avisar al rival de que se va a tirar, sea a propósito o por error, no vale. Se actúa como si el balón hubiera salido: el compañero más cercano al portero de la portería donde se marcó pasa a tener el balón, que se coloca en su casilla.
+105|Después de un gol
+106|Tras cada gol, el juego se reanuda desde el jugador del equipo que lo encajó más cercano al punto central.

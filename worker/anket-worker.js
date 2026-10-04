@@ -74,6 +74,13 @@ SAHA VE PİYON DÜZENİ
 - Sahayı oynatma yasağı: rakibin hamlesini ya da vuruşunu bozmak için oyun sahasını kasten hareket ettirmek kesinlikle yasaktır. Bunu yapan oyuncu hükmen mağlup sayılır ve maç biter.
 - Hamle dışında piyona dokunulmaz: hamle sırası geldiğinde yapılan hamle dışında, kaleciler de dahil sahadaki hiçbir piyon hareket ettirilemez. Tek istisna: oynanan piyon yerine konurken kareye tam oturmadıysa, rakibin bilgisi ve rızasıyla karenin içine düzeltilebilir. Şut bildiriminden sonra savunan tarafın kaleciyi çubukla konumlandırması bu yasağın dışındadır.
 - Kareye tam oturmayan piyon: bir piyon iki karenin ortasında duruyorsa rakip o hamlede uyarılır ve piyonu doğru kareye yerleştirmesi sağlanır. Üzerinden zaman geçtikten sonra hangi karede olduğu anlaşılmayan piyonun hangi karede sayılacağına piyonun sahibi karar verir.
+- Yaptırım: kendine avantaj sağlamak amacıyla hamle sırası dışında piyon hareket ettiren oyuncunun rakibi penaltı kazanır.
+- Penaltı vuruşu: ceza sahasında kale önünde bulunan piyonlar, kareleri unutulmayacak şekilde geçici olarak saha dışına alınır ve vuruştan hemen sonra eski yerlerine konur.
+
+VURUŞ ZAMANI, ŞUT BİLDİRİMİ VE GOL
+- Anlaşılan hamle turu sayısı dolmadan kimse vuruş yapamaz. Turlar bitmeden iyi bir şut ya da pas açısı yakalayan oyuncu rakibine "şut çekebilir miyim" ya da "pas atabilir miyim" diye sorar. Rakip kabul ederse vuruş hemen yapılır; kabul etmezse anlaşılan tur sayısı dolana kadar hamleler yapılır, vuruş ondan sonra yapılır. Örnek: 3 hamle turunda anlaşıldıysa 1. hamlelerden sonra vuruş ancak rakibin izniyle yapılabilir.
+- Şut çekeceğini rakibine bildirmeden, bilerek ya da yanlışlıkla atılan gol geçersizdir. Top auta çıkmış gibi işlem yapılır: gol atılan kalenin kalecisine en yakın takım arkadaşı topa sahip olur ve top onun karesine alınır.
+- Her golden sonra oyun, golü yiyen takımın santra noktasına en yakın oyuncusundan yeniden başlar; top o oyuncuya verilir.
 
 TOPUN DIŞARI ÇIKMASI
 - Vuruştan sonra top saha dışına çıkarsa, topun çıktığı yere en yakın rakip oyuncu topa sahip olur ve top o oyuncunun karesine alınır.

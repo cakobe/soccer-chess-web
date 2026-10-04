@@ -82,193 +82,201 @@
 90|A player who moves a piece for a move or a kick says the piece's starting square out loud (for example “K-14”). Because the pitch has so many squares, this keeps the old position from being forgotten if the count has to be repeated or the piece has to be put back after the kick.
 91|One dribble only
 92|However many move rounds you play with, the player in possession may dribble only once during the move rounds between two kicks. After a kick, whichever player gains the ball may also dribble once; if the same player gains the ball again after another kick, the allowance is renewed.
-99|The kicker
-100|The player who took the kick cannot regain the ball even if nearest to it; that player is ignored in the calculation.
-101|Ball out of play
-102|If the ball leaves the pitch, the opposing player nearest to where it went out gains possession and the ball is placed on that player's square. Even if the ball hits an opponent on the way out, it counts as put out by the kicking team.
-103|Goalkeeper
-104|When working out possession, the goalkeeper is treated as standing on the square inside the six-yard box on the side nearest the ball, and the distance is counted from that square. If this gives possession to the goalkeeper, the goalkeeper's nearest teammate gains the ball and it is placed on that player's square.
-105|Shots and handling the goalkeeper
-106|A player who decides to shoot at goal must tell the opponent before kicking. The opponent uses the rod behind the goalkeeper to set its position; once they let go of the rod they may not touch the goalkeeper again and it stays where it is. Unlike table football, there is no spinning or moving the goalkeeper during the shot: the goalkeeper is positioned first, then the shot is taken.
-107|Line decisions
-108|For goals and out-of-play decisions the whole ball must cross the line: seen from above, it must not touch the line.
-109|Optional Rules
-110|These are optional. Teams must agree before the match which of them apply.
-111|Ball Steal
-112|Strategy +
-113|If a player of the team without the ball can reach the square of the opponent in possession using its positioning power and has a higher overall skill, it steals the ball and makes its move starting from any square next to the one where the ball was won.
-114|If its overall skill is lower, +3 is added to overall skill for every unit of positioning power left over after reaching the opponent. Example: a player with positioning power 5 and skill 80 who reaches the opponent on the 3rd square counts as 86.
-115|If the skills are equal after the calculation, the attempt fails and the move is made again.
-116|Brings strategic and arithmetic thinking to the fore; slows the flow because moves take longer.
-117|No Goals from Own Half
-118|Flow +
-119|If the player in possession kicks from behind the halfway line, a goal does not count and the kick is retaken.
-120|Reduces how often the ball goes out and makes the game flow; makes scoring harder.
-121|Offside
-122|Realism +
-123|If a player of the kicking team is 1 or more squares ahead of the row of the rearmost opposing player, that player is ignored when working out possession.
-124|Lowers the number of goals and makes for a more realistic match.
-125|Our Throw-In
-126|If the ball hits a player and goes out over a touchline, the throw-in goes to the opponent of the team it hit. The ball is placed on the square of the player of the team awarded the throw-in who is nearest to where it went out.
-127|Can lead to “it touched / it didn't touch” arguments between teams.
-128|Three Corners, One Penalty
-129|Attack +
-130|If the ball hits an opposing player and goes out over the goal line, it counts as a corner; corners are not taken, and 3 corners earn 1 penalty.
-131|During a penalty, defenders in front of the goal are removed temporarily and put back on the same squares after the kick.
-132|Special Cards Count
-133|Collection
-134|Special cards, available only to those who complete the collection, are included in the game and give their owner an advantage.
-135|The match is fairer when both sides have these cards.
-136|Pass Requirement
-137|Before the game, teams agree on a number x. To earn the right to shoot at goal, a team must complete at least x accurate passes in a row without losing the ball to the opponent.
-138|The number x is set by mutual agreement.
-139|02 — Feedback
-140|If you have played the trial version, your views will shape the final game.
-141|JavaScript must be enabled in your browser to fill in the survey.
-142|© 2026 Soccer Chess. All rights reserved.
-143|Soccer Chess home page
-144|Main menu
-146|Soccer Chess logo
-147|Write the situation here
-148|The two sides of the game
-149|Open the pitch at full size
-150|Soccer Chess pitch: a squared football pitch with 30 columns and 40 rows
-151|Warm-up
-152|First, a little about you.
-153|Your age group?
-154|12 and under
-155|45 and over
-156|How many matches have you played?
-157|7 or more
-158|How many people played?
-159|2 people
-160|3–4 people
-161|5 or more
-162|How do you get on with board games?
-163|I play often
-164|Now and then
-165|Rarely
-166|How about football?
-167|I play and watch
-168|I only watch
-169|Not really interested
-170|Rules
-171|How did learning the game go?
-172|How was learning the rules?
-173|Very easy
-174|Easy
-175|Medium
-176|Hard
-177|Very hard
-178|How long did it take to grasp the rules?
-179|Less than 5 minutes
-180|5–15 minutes
-181|15–30 minutes
-182|More than 30 minutes
-183|Where did you learn the rules?
-184|From this site
-185|From the written rules
-186|Someone explained them
-187|We worked it out as we played
-188|Did you disagree about the rules during a match?
-189|Never
-190|Once or twice
-191|Often
-192|How was working out who has the ball (counting squares)?
-193|Quick and easy
-194|It's OK
-195|It slows the game down
-196|Confusing
-197|On the pitch
-198|The match itself.
-199|How many move rounds did you play with?
-200|1 round
-201|2 rounds
-202|3 or more
-203|About how long did a match last?
-204|Less than 15 minutes
-205|30–60 minutes
-206|More than 1 hour
-207|How did the match length feel?
-208|Short
-209|Just right
-210|Long
-211|How was kicking the ball?
-212|Hard but fun
-213|Too easy
-214|Which mattered more in the match?
-215|Evenly balanced
-216|Kicking skill
-217|Which optional rules did you try?
-218|None
-219|How was the quality of the pitch, pieces, ball and goalkeeper?
-220|Very good
-221|Good
-222|Poor
-223|From the stands
-224|Your overall impression.
-225|What did you like most?
-226|Planning strategy
-227|Kicking the ball
-228|Scoring goals
-229|Spoiling the opponent's plan
-230|Competing with friends
-231|Player cards and their values
-232|What would you give Soccer Chess out of 10?
-233|Would you play again?
-234|Definitely
-235|Probably
-236|Not sure
-237|I don't think so
-238|Would you recommend it to a friend?
-239|Maybe
-240|No
-241|Final whistle
-242|Last questions before launch.
-243|Would you buy it if it went on sale?
-244|I'd buy it right away
-245|Depends on the price
-246|I'd buy it as a gift
-247|I wouldn't
-248|What do you think a fair price would be? (Turkish lira)
-249|Was this site enough to understand the rules?
-250|Yes, it was enough
-251|Partly
-252|A video would be better
-253|Sent too quickly. Could you try again in a minute?
-254|Could not send. Could you check your connection and try again?
-255|You can choose more than one
-256|e.g. 2500
-258|answered
-259|Takes about 2 minutes. No question is required; tick what fits and skip the rest.
-260|Send answers and continue to detailed feedback
-261|Could you answer at least one question before sending?
-262|Sending…
-263|Your name or a way to reach you, if you like
-264|What would you change? Which rule confused you? Anything that comes to mind helps us.
-265|Send
-266|Finish without writing
-267|Your answers arrived
-268|Detailed feedback and suggestions
-269|Options can't say everything. In your own words, tell us your idea to make the game better, a problem you had or what you enjoyed.
-270|Your feedback and suggestions
-271|Name / contact (optional)
-272|Could you write a few sentences to send? If you'd rather not, choose "Finish without writing".
-273|Done
-274|Thank you, you're the player of the match.
-275|We received your answers and your feedback. You'll have a share in the final Soccer Chess.
-276|We received your answers. You'll have a share in the final Soccer Chess.
-277|You
-278|Add details or ask a new question
-279|Could you describe the situation in a few words?
-280|The AI Referee is deciding…
-281|Asked too quickly. Could you try again in a minute?
-282|The AI Referee can't answer right now.
-283|Could not reach the AI Referee.
-286|Clear chat
 93|Moving the pitch is forbidden
 94|Deliberately moving the pitch to spoil the opponent's move or kick is strictly forbidden. A player who does so loses by forfeit and the match ends.
 95|No touching pieces outside your move
 96|On your turn, apart from the move you are making, you may not move any piece on the pitch, goalkeepers included. The only exception: if the piece you played is not fully inside its square when put down, you may adjust it into the square with your opponent's knowledge and consent. Positioning the goalkeeper with the rod before a shot is not covered by this rule.
 97|A piece not fully on a square
 98|If a piece is sitting between two squares, point it out to your opponent on that move and have them place it on the correct square. If time has passed and it is no longer clear which square a piece is on, the owner of the piece decides its square.
+107|The kicker
+108|The player who took the kick cannot regain the ball even if nearest to it; that player is ignored in the calculation.
+109|Ball out of play
+110|If the ball leaves the pitch, the opposing player nearest to where it went out gains possession and the ball is placed on that player's square. Even if the ball hits an opponent on the way out, it counts as put out by the kicking team.
+111|Goalkeeper
+112|When working out possession, the goalkeeper is treated as standing on the square inside the six-yard box on the side nearest the ball, and the distance is counted from that square. If this gives possession to the goalkeeper, the goalkeeper's nearest teammate gains the ball and it is placed on that player's square.
+113|Shots and handling the goalkeeper
+114|A player who decides to shoot at goal must tell the opponent before kicking. The opponent uses the rod behind the goalkeeper to set its position; once they let go of the rod they may not touch the goalkeeper again and it stays where it is. Unlike table football, there is no spinning or moving the goalkeeper during the shot: the goalkeeper is positioned first, then the shot is taken.
+115|Line decisions
+116|For goals and out-of-play decisions the whole ball must cross the line: seen from above, it must not touch the line.
+117|Optional Rules
+118|These are optional. Teams must agree before the match which of them apply.
+119|Ball Steal
+120|Strategy +
+121|If a player of the team without the ball can reach the square of the opponent in possession using its positioning power and has a higher overall skill, it steals the ball and makes its move starting from any square next to the one where the ball was won.
+122|If its overall skill is lower, +3 is added to overall skill for every unit of positioning power left over after reaching the opponent. Example: a player with positioning power 5 and skill 80 who reaches the opponent on the 3rd square counts as 86.
+123|If the skills are equal after the calculation, the attempt fails and the move is made again.
+124|Brings strategic and arithmetic thinking to the fore; slows the flow because moves take longer.
+125|No Goals from Own Half
+126|Flow +
+127|If the player in possession kicks from behind the halfway line, a goal does not count and the kick is retaken.
+128|Reduces how often the ball goes out and makes the game flow; makes scoring harder.
+129|Offside
+130|Realism +
+131|If a player of the kicking team is 1 or more squares ahead of the row of the rearmost opposing player, that player is ignored when working out possession.
+132|Lowers the number of goals and makes for a more realistic match.
+133|Our Throw-In
+134|If the ball hits a player and goes out over a touchline, the throw-in goes to the opponent of the team it hit. The ball is placed on the square of the player of the team awarded the throw-in who is nearest to where it went out.
+135|Can lead to “it touched / it didn't touch” arguments between teams.
+136|Three Corners, One Penalty
+137|Attack +
+138|If the ball hits an opposing player and goes out over the goal line, it counts as a corner; corners are not taken, and 3 corners earn 1 penalty.
+139|During a penalty, defenders in front of the goal are removed temporarily and put back on the same squares after the kick.
+140|Special Cards Count
+141|Collection
+142|Special cards, available only to those who complete the collection, are included in the game and give their owner an advantage.
+143|The match is fairer when both sides have these cards.
+144|Pass Requirement
+145|Before the game, teams agree on a number x. To earn the right to shoot at goal, a team must complete at least x accurate passes in a row without losing the ball to the opponent.
+146|The number x is set by mutual agreement.
+147|02 — Feedback
+148|If you have played the trial version, your views will shape the final game.
+149|JavaScript must be enabled in your browser to fill in the survey.
+150|© 2026 Soccer Chess. All rights reserved.
+151|Soccer Chess home page
+152|Main menu
+154|Soccer Chess logo
+155|Write the situation here
+156|The two sides of the game
+157|Open the pitch at full size
+158|Soccer Chess pitch: a squared football pitch with 30 columns and 40 rows
+159|Warm-up
+160|First, a little about you.
+161|Your age group?
+162|12 and under
+163|45 and over
+164|How many matches have you played?
+165|7 or more
+166|How many people played?
+167|2 people
+168|3–4 people
+169|5 or more
+170|How do you get on with board games?
+171|I play often
+172|Now and then
+173|Rarely
+174|How about football?
+175|I play and watch
+176|I only watch
+177|Not really interested
+178|Rules
+179|How did learning the game go?
+180|How was learning the rules?
+181|Very easy
+182|Easy
+183|Medium
+184|Hard
+185|Very hard
+186|How long did it take to grasp the rules?
+187|Less than 5 minutes
+188|5–15 minutes
+189|15–30 minutes
+190|More than 30 minutes
+191|Where did you learn the rules?
+192|From this site
+193|From the written rules
+194|Someone explained them
+195|We worked it out as we played
+196|Did you disagree about the rules during a match?
+197|Never
+198|Once or twice
+199|Often
+200|How was working out who has the ball (counting squares)?
+201|Quick and easy
+202|It's OK
+203|It slows the game down
+204|Confusing
+205|On the pitch
+206|The match itself.
+207|How many move rounds did you play with?
+208|1 round
+209|2 rounds
+210|3 or more
+211|About how long did a match last?
+212|Less than 15 minutes
+213|30–60 minutes
+214|More than 1 hour
+215|How did the match length feel?
+216|Short
+217|Just right
+218|Long
+219|How was kicking the ball?
+220|Hard but fun
+221|Too easy
+222|Which mattered more in the match?
+223|Evenly balanced
+224|Kicking skill
+225|Which optional rules did you try?
+226|None
+227|How was the quality of the pitch, pieces, ball and goalkeeper?
+228|Very good
+229|Good
+230|Poor
+231|From the stands
+232|Your overall impression.
+233|What did you like most?
+234|Planning strategy
+235|Kicking the ball
+236|Scoring goals
+237|Spoiling the opponent's plan
+238|Competing with friends
+239|Player cards and their values
+240|What would you give Soccer Chess out of 10?
+241|Would you play again?
+242|Definitely
+243|Probably
+244|Not sure
+245|I don't think so
+246|Would you recommend it to a friend?
+247|Maybe
+248|No
+249|Final whistle
+250|Last questions before launch.
+251|Would you buy it if it went on sale?
+252|I'd buy it right away
+253|Depends on the price
+254|I'd buy it as a gift
+255|I wouldn't
+256|What do you think a fair price would be? (Turkish lira)
+257|Was this site enough to understand the rules?
+258|Yes, it was enough
+259|Partly
+260|A video would be better
+261|Sent too quickly. Could you try again in a minute?
+262|Could not send. Could you check your connection and try again?
+263|You can choose more than one
+264|e.g. 2500
+266|answered
+267|Takes about 2 minutes. No question is required; tick what fits and skip the rest.
+268|Send answers and continue to detailed feedback
+269|Could you answer at least one question before sending?
+270|Sending…
+271|Your name or a way to reach you, if you like
+272|What would you change? Which rule confused you? Anything that comes to mind helps us.
+273|Send
+274|Finish without writing
+275|Your answers arrived
+276|Detailed feedback and suggestions
+277|Options can't say everything. In your own words, tell us your idea to make the game better, a problem you had or what you enjoyed.
+278|Your feedback and suggestions
+279|Name / contact (optional)
+280|Could you write a few sentences to send? If you'd rather not, choose "Finish without writing".
+281|Done
+282|Thank you, you're the player of the match.
+283|We received your answers and your feedback. You'll have a share in the final Soccer Chess.
+284|We received your answers. You'll have a share in the final Soccer Chess.
+285|You
+286|Add details or ask a new question
+287|Could you describe the situation in a few words?
+288|The AI Referee is deciding…
+289|Asked too quickly. Could you try again in a minute?
+290|The AI Referee can't answer right now.
+291|Could not reach the AI Referee.
+294|Clear chat
+99|The penalty for this offence: a penalty kick
+100|If a player moves a piece outside their turn to gain an advantage, the opponent is awarded a penalty. For the penalty, pieces standing in front of the goal in the penalty area are taken off the pitch temporarily, making sure their squares are remembered, and are put back right after the kick.
+101|Rounds must be complete before a kick
+102|Nobody may kick before the agreed number of move rounds is complete. If you find a good angle for a shot or pass before the rounds are over, ask your opponent: if they agree you kick straight away; if not, moves continue until the rounds are complete and the kick is taken after that.
+103|A goal scored without warning
+104|A goal scored without telling the opponent that you are going to shoot, whether on purpose or by mistake, does not count. Play continues as if the ball had gone out: the nearest teammate of the goalkeeper of the goal that was scored in gains the ball, and it is placed on that player's square.
+105|After a goal
+106|After every goal, play restarts from the player of the conceding team who is nearest to the centre spot.
