@@ -202,8 +202,8 @@ function statLines(stats, day) {
 async function alertOnce(env, kind, day, subject, lines) {
   const key = `${kind}:${day}`;
   if (await env.KV.get(key)) return;
-  await env.KV.put(key, "1", { expirationTtl: 3 * 86400 });
   await env.EMAIL.send({ to: env.DEST, from: FROM_AI, subject, text: lines.join("\n") });
+  await env.KV.put(key, "1", { expirationTtl: 3 * 86400 });
 }
 
 function isQuotaError(message) {
